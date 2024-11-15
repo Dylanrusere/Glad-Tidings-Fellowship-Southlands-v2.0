@@ -12,8 +12,8 @@ export const Home = () => {
         </div>
 
         <div className="about">
-          
+
         </div>
     </div>
-  )
-}
+  );
+};
