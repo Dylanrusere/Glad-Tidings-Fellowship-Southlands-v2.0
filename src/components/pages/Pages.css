@@ -39,6 +39,17 @@
 
 .home_head{
     color: #fff;
+    margin: 0;
+    font-size: 50px;
+    font-family: 'chillaxmedium';
+
+    @media(max-width:550px){
+        font-size: 30px;
+    }
+
+    @media(max-width:350px){
+        font-size: 20px;
+    }    
 }
 
 .sub_head{
@@ -50,15 +61,46 @@
 }
 
 .hero_btns_container {
+    position: absolute;
     display: flex;
     gap: 1rem; /* Spacing between buttons */
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+    z-index: 1100;
+    margin-top: -15%;
+
+    @media(max-width:1000px){
+        margin-top: -20%;
+    }
+
+    @media(max-width:800px){
+        margin-top: -25%;
+    }
+
+    @media(max-width:550px){
+        margin-top: -40%;
+    }
+
+    @media(max-width:440px){
+        flex-direction: column;
+        margin-top: -50%;
+    }
+
+    @media(max-width:400px){
+        margin-top: -60%;
+    }
+
+    @media(max-width:330px){
+        margin-top: -70%;
+    }
+
+    @media(max-width:300px){
+        margin-top: -80%;
+    }
   }
   
-  .video-play-button,
-  .upcoming-events-button {
+  .video-play-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,15 +109,18 @@
     font-weight: bold;
     text-decoration: none;
     color: #fff;
-    background-color: #007bff;
+    background-color: transparent;
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.2s ease;
+
+    span{
+        font-size: 25px;
+    }
   }
   
-  .video-play-button:hover,
-  .upcoming-events-button:hover {
-    background-color: #0056b3;
+  .video-play-button:hover {
+    background-color: #000066;
     transform: scale(1.05);
   }
   
@@ -106,12 +151,26 @@
   }
   
   /* Custom styling for the Upcoming Events button */
+
   .upcoming-events-button {
-    background-color: #28a745;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
   }
   
   .upcoming-events-button:hover {
-    background-color: #1e7e34;
+    background-color: #fff;
+    color: #000066;
+    transform: scale(1.05);
   }
   
 

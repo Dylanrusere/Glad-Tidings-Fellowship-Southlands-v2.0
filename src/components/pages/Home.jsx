@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Pages.css";
 import TypingEffect from 'react-typing-effect';
-import { FaPlay, FaCalendarAlt } from 'react-icons/fa';
+import { FaCalendarAlt, FaPlayCircle } from 'react-icons/fa';
 import events from '../videos/events.mp4';
 import welcome from '../images/GT-Logo-blue.png';
 import pastor_lee from '../images/pastor_mucheka.jpg';
@@ -26,13 +26,17 @@ export const Home = () => {
                 eraseSpeed={50}
                 eraseDelay={2000}
                 typingDelay={500}
-                className="page_headings home_head"
+                className="home_head"
               />
               <p className="overall_headings home_head"></p>
               <p className="sub_head">Go Ye Therefore...We are going <br/><span>Matthew 28:19</span></p>
+            </div>
+            
+          </div>
+          <div className="overall_container ">
               <div className="hero_btns_container">
                 <a href="https://youtube.com" className="video-play-button">
-                  <span className="icon pulse"><FaPlay /></span>
+                  <span className="icon pulse"><FaPlayCircle /></span>
                   Watch Live
                 </a>
                 <a href="#upcoming-events" className="upcoming-events-button">
@@ -41,7 +45,6 @@ export const Home = () => {
                 </a>
               </div>
             </div>
-          </div>
         </div>
 
         <div className="welcome_section">

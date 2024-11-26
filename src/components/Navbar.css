@@ -82,14 +82,19 @@
   display: none;
   flex-direction: column;
   cursor: pointer;
+  margin-top: 4%;
 }
 
 .bar {
   width: 25px;
   height: 3px;
-  margin: 5px;
+  border-radius: 50px;
   background-color: white;
   transition: all 0.3s ease;
+}
+
+.bar2, .bar3{
+  margin-top: 4px;
 }
 
 .open.bar1 {
@@ -123,14 +128,15 @@
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+    flex-direction: row;
   }
   
   .dropdown-menu {
-    position: static;
+    position: absolute;
     width: 100%;
   }
   
   .dropdown:hover .dropdown-menu {
-    display: none;
+    
   }
 }

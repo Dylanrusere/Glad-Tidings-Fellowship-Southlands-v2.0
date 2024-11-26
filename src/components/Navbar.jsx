@@ -19,13 +19,6 @@ export const Navbar = () => {
         <div className="navbar-logo">
           <Link to="/"><img src={logo} alt="Church Logo" /></Link>
         </div>
-        
-        {/* Hamburger Icon */}
-        <div className="hamburger-icon" onClick={toggleMenu}>
-          <span className={menuOpen ? 'bar bar1 open' : 'bar bar1'}></span>
-          <span className={menuOpen ? 'bar bar2 open' : 'bar bar2'}></span>
-          <span className={menuOpen ? 'bar bar3 open' : 'bar bar3'}></span>
-        </div>
 
         {/* Navbar Links */}
         <ul className={`navbar-links ${menuOpen ? 'active' : ''}`}>
@@ -67,6 +60,13 @@ export const Navbar = () => {
           <li><Link to="/news">News & Updates</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
+
+        {/* Hamburger Icon */}
+        <div className="hamburger-icon" onClick={toggleMenu}>
+          <span className={menuOpen ? 'bar bar1 open' : 'bar bar1'}></span>
+          <span className={menuOpen ? 'bar bar2 open' : 'bar bar2'}></span>
+          <span className={menuOpen ? 'bar bar3 open' : 'bar bar3'}></span>
+        </div>
       </nav>
     </div>
   );
