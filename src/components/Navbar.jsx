@@ -26,9 +26,10 @@ export const Navbar = () => {
                 About Us
                 {showAboutUs && (
                 <ul className="dropdown-menu">
-                    <li><Link to="/about/history">Our Assembly History</Link></li>
-                    <li><Link to="/about/leadership">Our Leadership</Link></li>
-                    <li><Link to="/about/mission">Our Mission</Link></li>
+                    <li><Link to="/about">Our Assembly History</Link></li>
+                    <li><Link to="/about">Our Leadership</Link></li>
+                    <li><Link to="/about">Our Ministries</Link></li>
+                    <li><Link to="/about">Our Mission</Link></li>
                 </ul>
                 )}
             </li>
