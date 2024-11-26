@@ -14,7 +14,7 @@ export const Navbar = () => {
 
   return (
     <div>
-      <div className="top_menu">asdh</div>
+      <div className="top_menu"></div>
       <nav className="navbar">
         <div className="navbar-logo">
           <Link to="/"><img src={logo} alt="Church Logo" /></Link>
