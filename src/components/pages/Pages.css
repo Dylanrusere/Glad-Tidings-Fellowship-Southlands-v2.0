@@ -49,6 +49,72 @@
     }
 }
 
+.hero_btns_container {
+    display: flex;
+    gap: 1rem; /* Spacing between buttons */
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .video-play-button,
+  .upcoming-events-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .video-play-button:hover,
+  .upcoming-events-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px; /* Space between icon and text */
+  }
+  
+  .pulse {
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Custom styling for the Upcoming Events button */
+  .upcoming-events-button {
+    background-color: #28a745;
+  }
+  
+  .upcoming-events-button:hover {
+    background-color: #1e7e34;
+  }
+  
+
 /* Welcome */
 .welcome_section{
     padding: 5% 0;
@@ -156,6 +222,95 @@
     width: 100%;
     border-radius: 15px;
     border-bottom-right-radius: 110px;
+}
+
+/* Brief History */
+.brief_history{
+    padding: 5% 0;
+}
+
+.lines{
+    position: absolute;
+    width: 15%;
+    margin-top: -2%;
+    margin-left: 2%;
+    z-index: -1;
+    opacity: 0.45;
+
+    @media(max-width:600px){
+        width: 20%;
+    }
+
+    @media(max-width:350px){
+        width: 30%;
+    }
+}
+
+.brief_history_head{
+    color: #000066;
+}
+
+.years_grid_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3%;
+
+    @media(max-width:600px){
+        grid-template-columns: 1fr;
+    }
+}
+
+.years_image_container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.when_it_started{
+    color: #00006677;
+}
+
+.years_img{
+    width: 100%;
+    opacity: 0.55;
+}
+
+/* Disciples In Action */
+.disciples{
+    padding: 5% 0;
+}
+
+.disciples_head{
+    color: #000066;
+}
+
+.disciples_grid_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3%;
+
+    @media(max-width:1000px){
+        grid-template-columns: 1fr;
+    }
+}
+
+.disciples_image_container{
+    width: 100%;
+    background-color: #000066;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 500px;
+    border-bottom-left-radius: 500px;
+}
+
+.disciples_img_container{
+    margin: 4%;
+}
+
+.disciples_img{
+    width: 100%;
+    border-radius: 20px;
+    border-bottom-right-radius: 150px;
 }
 
 /* ----------------About Page---------------------- */

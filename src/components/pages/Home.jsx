@@ -1,20 +1,18 @@
 import React from 'react';
 import "./Pages.css";
 import TypingEffect from 'react-typing-effect';
+import { FaPlay, FaCalendarAlt } from 'react-icons/fa';
 import events from '../videos/events.mp4';
-import  play_btn from '../icons/play.png';
 import welcome from '../images/GT-Logo-blue.png';
 import pastor_lee from '../images/pastor_mucheka.jpg';
 import UpcomingEvents from '../components/UpcomingEvents';
+import lines from '../icons/ancient-scroll.png';
+import yearsImg from '../icons/years.png';
+import disciples from '../images/gt-founding-fathers.jpeg';
 
 export const Home = () => {
   return (
     <div className='home'>
-        {/* <div className="home_hero">
-                <div className="overall_container">
-                    aghjdshjv
-                </div>
-        </div> */}
         <div className="home_video_container">
           <video className='home_video_background' autoPlay loop muted>
             <source src={events} type="video/mp4" />
@@ -33,7 +31,14 @@ export const Home = () => {
               <p className="overall_headings home_head"></p>
               <p className="sub_head">Go Ye Therefore...We are going <br/><span>Matthew 28:19</span></p>
               <div className="hero_btns_container">
-                <a href='https:youtube.com' class="video-play-button"></a>
+                <a href="https://youtube.com" className="video-play-button">
+                  <span className="icon pulse"><FaPlay /></span>
+                  Watch Live
+                </a>
+                <a href="#upcoming-events" className="upcoming-events-button">
+                  <span className="icon"><FaCalendarAlt /></span>
+                  Upcoming Events
+                </a>
               </div>
             </div>
           </div>
@@ -74,9 +79,71 @@ export const Home = () => {
               </div>
              </div>
            </div>
-
-           <UpcomingEvents/>
         </div>
-    </div>
+        <UpcomingEvents/>
+        
+
+        {/* Brief History */}
+        <div className="brief_history">
+          <img className='lines' src={lines} alt="" />
+          <div className="overall_container">
+            <p className="overall_headings brief_history_head">a brief history of glad tidings fellowship</p>
+            <p className="brief_history_par">
+            The vision of Glad Tidings Fellowship was imparted to Pastor Richmond Chiundiza, who, at the 
+            time, was serving as a Pastor at Christian Life Center in Harare. While at Christian Life Center,
+             he worked closely with Pastor Steve Bacon, contributing significantly to the ministry. 
+             In addition to his pastoral duties, Pastor Chiundiza held the role of National Director for 
+             Campus Crusade for Christ in Zimbabwe, showcasing his dedication to spreading the Gospel and 
+             nurturing spiritual growth on a national scale.
+            </p>
+
+            <div className="years_container">
+              <div className="years_grid_container">
+                <div className="years_content_container">
+                  <p className="years_content_par">
+                  In 1982, driven by his deep conviction and calling, Pastor Chiundiza translated this 
+                  God-given vision into reality. He founded Glad Tidings Fellowship, a ministry that 
+                  began its journey with humble beginnings, gathering for services at Highfield Secondary 
+                  School in Harare. This marked the beginning of a mission-focused community dedicated to 
+                  spreading the message of hope, faith, and salvation, which has since grown into a 
+                  cornerstone of spiritual transformation and community building in Zimbabwe and beyond.
+                  </p>
+                </div>
+                <div className="years_image_container">
+                  <div>
+                    <p className="overall_headings when_it_started">when the ministry started</p>
+                    <img className='years_img' src={yearsImg} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* DIA */}
+        <div className="disciples">
+          <div className="overall_container">
+            <p className="overall_headings disciples_head">disciples in action</p>
+            <div className="disciples_grid_container">
+              <div className="disciples_image_container">
+                  <div className='disciples_img_container'>
+                    <img className='disciples_img' src={disciples} alt="" />
+                  </div>
+              </div>
+              <div className="disciples_content">
+                <p className="disciples_par">
+                  Disciples in Action is a devoted team of Apostles who were chosen and used by the Lord Jesus 
+                  Christ to establish the Glad Tidings Fellowship (GTF) denomination. This dynamic Apostolic 
+                  board has played a pivotal role in the growth and development of Glad Tidings Fellowship by 
+                  planting and strengthening the majority of its assemblies. Through their unwavering faith 
+                  and dedication, they have laid a strong spiritual foundation for countless believers and 
+                  congregations within the fellowship.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
   );
 };
