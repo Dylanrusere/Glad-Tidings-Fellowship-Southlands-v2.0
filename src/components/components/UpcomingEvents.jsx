@@ -28,8 +28,8 @@ const UpcomingEvents = () => {
     {
       id: 3,
       name: "youth inaugural tournament",
-      startDate: new Date("2024-12-06T09:00:00"),
-      endDate: new Date("2024-12-06T17:00:00"),
+      startDate: new Date("2024-12-07T09:00:00"),
+      endDate: new Date("2024-12-07T17:00:00"),
       venue: "tba(harare)",
     },
   ]);
