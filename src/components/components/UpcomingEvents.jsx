@@ -25,6 +25,13 @@ const UpcomingEvents = () => {
       endDate: new Date("2024-12-26T17:00:00"),
       venue: "lady enereta high school, bindura",
     },
+    {
+      id: 3,
+      name: "youth inaugural tournament",
+      startDate: new Date("2024-12-06T09:00:00"),
+      endDate: new Date("2024-12-06T17:00:00"),
+      venue: "tba(harare)",
+    },
   ]);
 
   // Sort events by the nearest start date
