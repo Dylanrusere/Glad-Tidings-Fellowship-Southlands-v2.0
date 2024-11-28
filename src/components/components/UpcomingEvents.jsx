@@ -16,7 +16,7 @@ const UpcomingEvents = () => {
       name: "children`s church annual camp",
       startDate: new Date("2024-12-06T09:00:00"),
       endDate: new Date("2024-12-08T16:00:00"),
-      venue: "lady enereta high school, bindura",
+      venue: "mother touch jnr, tynwald",
     },
     {
       id: 3,
