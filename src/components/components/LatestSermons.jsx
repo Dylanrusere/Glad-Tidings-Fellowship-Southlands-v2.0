@@ -50,6 +50,7 @@ export const LatestSermons = () => {
                 key={sermon.id}
                 imageSrc={sermon.imageSrc}
                 heading={sermon.heading}
+                preacher={sermon.preacher}
                 date={sermon.date}
                 content={sermon.content}
                 link={sermon.link}
