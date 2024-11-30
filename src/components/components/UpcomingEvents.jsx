@@ -6,31 +6,31 @@ const UpcomingEvents = () => {
   const [events, setEvents] = useState([
     {
       id: 1,
-      name: "men`s braai",
+      name: "Men`s Braai",
       startDate: new Date("2024-12-01T11:00:00"),
       endDate: new Date("2024-12-01T16:00:00"),
-      venue: "southlands glad tidings fellowship, southlands park",
+      venue: "Southlands Glad Tidings Fellowship, Southlands Park",
     },
     {
       id: 2,
-      name: "children`s church annual camp",
+      name: "Children`s Church Annual Camp",
       startDate: new Date("2024-12-06T09:00:00"),
       endDate: new Date("2024-12-08T16:00:00"),
-      venue: "mother touch jnr, tynwald",
+      venue: "Mother Touch Jnr, Tynwald",
     },
     {
       id: 3,
-      name: "youth annual camp",
+      name: "Youth Annual Camp",
       startDate: new Date("2024-12-22T09:00:00"),
       endDate: new Date("2024-12-26T17:00:00"),
-      venue: "lady enereta high school, bindura",
+      venue: "Lady Enereta High School, Bindura",
     },
     {
       id: 3,
-      name: "youth inaugural tournament",
+      name: "Youth Inaugural Tournament",
       startDate: new Date("2024-12-07T09:00:00"),
       endDate: new Date("2024-12-07T17:00:00"),
-      venue: "tba(harare)",
+      venue: "TBA(Harare)",
     },
   ]);
 
@@ -81,39 +81,41 @@ const UpcomingEvents = () => {
 
   return (
     <div>
-        <div className="events_big_container">
-            <div className="overall_container">
-                <p className="overall_headings">upcoming events</p>
-                <div className="events_grid_contrainer">
-                    {sortedEvents.map((event, index) => {
-                    const now = new Date();
-                    const isOngoing = now >= event.startDate && now <= event.endDate;
-                    const hasEnded = now > event.endDate;
-                    return (
-                        <div className="event_id" key={event.id}>
-                            <h3 className="event_name" >{event.name}</h3>
-                            <p>Start: {event.startDate.toDateString()} {event.startDate.toLocaleTimeString()}</p>
-                            <p>End: {event.endDate.toDateString()} {event.endDate.toLocaleTimeString()}</p>
-                            {isOngoing ? (
-                                <p style={{ color: "green", fontWeight: "bold" }}>Status: Ongoing</p>
-                            ) : hasEnded ? (
-                                <p style={{ color: "red", fontWeight: "bold" }}>Status: Ended</p>
-                            ) : (
-                                <p>
-                                Countdown:{" "}
-                                {timeLefts[index]
-                                    ? `${timeLefts[index].days || 0}d ${timeLefts[index].hours || 0}h ${
-                                        timeLefts[index].minutes || 0
-                                    }m ${timeLefts[index].seconds || 0}s`
-                                    : "Event started"}
-                                </p>
-                            )}
-                            <p className="event_venue">Venue: <span>{event.venue}</span></p>
-                        </div>
-                    );
-                    })}
-                </div>
-            </div>
+        <div className="bg_upcoming_events">
+          <div className="events_big_container">
+              <div className="overall_container">
+                  <p className="overall_headings">Upcoming Events</p>
+                  <div className="events_grid_contrainer">
+                      {sortedEvents.map((event, index) => {
+                      const now = new Date();
+                      const isOngoing = now >= event.startDate && now <= event.endDate;
+                      const hasEnded = now > event.endDate;
+                      return (
+                          <div className="event_id" key={event.id}>
+                              <h3 className="event_name" >{event.name}</h3>
+                              <p>Start: {event.startDate.toDateString()} {event.startDate.toLocaleTimeString()}</p>
+                              <p>End: {event.endDate.toDateString()} {event.endDate.toLocaleTimeString()}</p>
+                              {isOngoing ? (
+                                  <p style={{ color: "green", fontWeight: "bold" }}>Status: Ongoing</p>
+                              ) : hasEnded ? (
+                                  <p style={{ color: "red", fontWeight: "bold" }}>Status: Ended</p>
+                              ) : (
+                                  <p>
+                                  Countdown:{" "}
+                                  {timeLefts[index]
+                                      ? `${timeLefts[index].days || 0}d ${timeLefts[index].hours || 0}h ${
+                                          timeLefts[index].minutes || 0
+                                      }m ${timeLefts[index].seconds || 0}s`
+                                      : "Event started"}
+                                  </p>
+                              )}
+                              <p className="event_venue">Venue: <span>{event.venue}</span></p>
+                          </div>
+                      );
+                      })}
+                  </div>
+              </div>
+          </div>
         </div>
     </div>
   );

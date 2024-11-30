@@ -2,8 +2,15 @@
     margin: 0 5%;
 }
 
+.bg_upcoming_events{
+    background-image: url(../images/home-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .events_big_container{
-    background-color: #000066;
+    background-color: #00006673;
     color: #fff;
     padding: 3% 0;
     margin-top: 3%;
@@ -53,14 +60,342 @@
     }
 }
 
+/* -------------------------------Latest Sermons-------------------- */
+.latest_sermons_big_container{
+    padding: 5% 0;
+}
+
+.latest_sermons_head{
+    color: #000066;
+}
+
+.latest_sermon_sub_par{
+    width: 60%;
+
+    @media(max-width:600px){
+        width: 100%;
+    }
+
+    span{
+        font-weight: 500;
+    }
+}
+ 
+.latest_sermons_grid_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+
+    @media(max-width:900px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(max-width:600px){
+        grid-template-columns: 1fr;
+    }
+  }
+  
+  .latest_sermons_card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card_image_container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+  }
+  
+  .card_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card_overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Partial gradient overlay */
+    background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0)
+    );
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+  }
+  
+  .card_content_container {
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+
+    @media(max-width:600){
+        padding-bottom: 50px;
+    }
+  }
+  
+  .card_heading {
+    font-family: 'chillaxmedium';
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .card_content {
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+
+    span{
+        margin-right: 5px;
+    }
+  }
+
+  .card_date{
+    
+    span{
+        margin-right: 5px;
+    }
+  }
+
+  .latest_sermons_card{
+
+    @media(max-width:900px){
+        padding-bottom: 30px;
+    }
+    
+    @media(max-width600px){
+        padding-bottom: 40px;
+    }
+  }
+  
+  .latest_sermons_card:hover .card_overlay {
+    transform: translateY(0);
+  }
+  
+  .latest_sermons_card:hover .card_content_container {
+    transform: translateY(-10px);
+  }
+
+  .card_button {
+    display: flex;
+    margin-top: 10px;
+    padding: 5px 10px;
+    width: 50%;
+    background-color: transparent;
+    color: #555;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #000066;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.5s all ease-in-out;
+    
+    span{
+        margin-right: 5px;
+        font-size: 18px;
+    }
+
+    @media(max-width:965px){
+        width: 60%;
+    }
+
+    @media(max-width:600){
+        width: 50%;
+        margin-bottom: 20px;
+    }
+  }
+  
+  .card_button:hover {
+    background-color: #000066;
+    color: #fff;
+    transform: scale(1.05);
+  }
+
+  .sermons_archives {
+    font-family:'poppins regular';
+    cursor: pointer;
+    margin-top: 50px;
+    display: flex;
+    margin-top: 50px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid #000066;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.5s all ease-in-out;
+
+    @media(max-width:965px){
+        width: 60%;
+    }
+
+    @media(max-width:600){
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    @media(max-width:365px){
+        width: 70%;
+    }
+
+    @media(max-width:325px){
+        width: 100%;
+    }
+  }
+
+  .folder{
+      margin-right: 5px;
+      font-size: 18px;
+      color: #000066;
+  }
+
+  .sermon_archive_archive{
+    color: #000066;
+  }
+  
+  .sermons_archives:hover {
+    background-color: #000066;
+    transform: scale(1.05);
+    color: #fff;
+  }
+
+  .sermons_archives:hover .sermon_archive_archive{
+    color: #fff;
+  }
+
+  .sermons_archives:hover .folder{
+    color: #fff;
+  }
+  
+
+/* ------------------------------ Weekly Programs--------------------- */
+.weekly_programs_container_bg{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.home_video_background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  background-attachment: fixed;
+}
+
+.weekly_programs_container{
+  background-color: #00006677;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 5% 0;
+
+  @media(max-width:850px){
+    padding: 5% 0 10% 0;
+  }
+
+  @media(max-width:850px){
+    padding: 5% 0 20% 0;
+  }
+
+  @media(max-width:500px){
+    padding: 5% 0 30% 0;
+  }
+
+  @media(max-width:320px){
+    padding: 5% 0 40% 0;
+  }
+}
+
+.weekly_programs_heading{
+  color: #fff;
+}
+
+.weekly_programs_grid_container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3%;
+  color: #fff;
+
+  @media(max-width:850px){
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media(max-width:600px){
+    grid-template-columns: 1fr;
+    gap: 1%;
+  }
+}
+
+.program_day{
+  font-family: 'chillaxmedium';
+  font-size: 25px;
+}
+
+.program_head{
+  font-weight: 600;
+    
+  span{
+      margin-right: 5px;
+      font-size: 18px;
+  }
+}
+
+.program_time{
+  font-weight: 600;
+    
+  span{
+      margin-right: 5px;
+      font-size: 18px;
+  }
+}
+
+.program_location{
+  font-weight: 600;
+    
+  span{
+      margin-right: 5px;
+      font-size: 18px;
+  }
+}
+
+.program_get_directions{
+  color: #fff;
+  transition: 0.5s all ease-in-out;
+}
+
+.program_get_directions:hover{
+  font-weight: 600;
+}
+
 /* -------------------------------Overall styles------------------- */
 .overall_headings{
     margin-bottom: 15px;
     font-size: 30px;
     font-family: 'chillaxmedium';
+
+    @media(max-width:350px){
+        font-size: 20px;
+    } 
 }
 
 .page_headings{
     font-size: 50px;
     font-family: 'chillaxmedium';
+
+    @media(max-width:350px){
+        font-size: 30px;
+    } 
 }

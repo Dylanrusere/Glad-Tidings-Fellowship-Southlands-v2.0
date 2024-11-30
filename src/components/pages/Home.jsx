@@ -9,6 +9,8 @@ import UpcomingEvents from '../components/UpcomingEvents';
 import lines from '../icons/ancient-scroll.png';
 import yearsImg from '../icons/years.png';
 import disciples from '../images/gt-founding-fathers.jpeg';
+import { LatestSermons } from '../components/LatestSermons';
+import { WeeklyPrograms } from '../components/WeeklyPrograms';
 
 export const Home = () => {
   return (
@@ -20,8 +22,8 @@ export const Home = () => {
           <div className="home_head_container">
             <div className="overall_container">
               <TypingEffect
-                text={['southlands glad tidings', 'the center of praise,', 'the center of worship,',
-                  'the center of prayer,', 'the center of devotion']}
+                text={['Southlands Glad Tidings', 'The center of Praise,', 'The center of Worship,',
+                  'The center of Prayer,', 'The center of Devotion']}
                 speed={100}
                 eraseSpeed={50}
                 eraseDelay={2000}
@@ -47,12 +49,13 @@ export const Home = () => {
             </div>
         </div>
 
+        {/* Welcome Message */}
         <div className="welcome_section">
         <img className='welcome_bg' src={welcome} alt="" />
            <div className="overall_container">
              <div className="welcome_head_container">
                <p className="head_display">Welcome</p>
-               <p className="overall_headings welcome_head">welcome to southlands glad tidings <br /> fellowship assembly</p>
+               <p className="overall_headings welcome_head">Welcome to Southlands Glad Tidings <br /> Fellowship Assembly</p>
              </div>
 
              <div className="welcome_content_container">
@@ -90,7 +93,7 @@ export const Home = () => {
         <div className="brief_history">
           <img className='lines' src={lines} alt="" />
           <div className="overall_container">
-            <p className="overall_headings brief_history_head">a brief history of glad tidings fellowship</p>
+            <p className="overall_headings brief_history_head">A Brief History of Glad Tidings Fellowship</p>
             <p className="brief_history_par">
             The vision of Glad Tidings Fellowship was imparted to Pastor Richmond Chiundiza, who, at the 
             time, was serving as a Pastor at Christian Life Center in Harare. While at Christian Life Center,
@@ -114,7 +117,7 @@ export const Home = () => {
                 </div>
                 <div className="years_image_container">
                   <div>
-                    <p className="overall_headings when_it_started">when the ministry started</p>
+                    <p className="overall_headings when_it_started">The year the ministry started</p>
                     <img className='years_img' src={yearsImg} alt="" />
                   </div>
                 </div>
@@ -126,7 +129,7 @@ export const Home = () => {
         {/* DIA */}
         <div className="disciples">
           <div className="overall_container">
-            <p className="overall_headings disciples_head">disciples in action</p>
+            <p className="overall_headings disciples_head">Disciples In Action</p>
             <div className="disciples_grid_container">
               <div className="disciples_image_container">
                   <div className='disciples_img_container'>
@@ -147,6 +150,11 @@ export const Home = () => {
           </div>
         </div>
 
+        {/* Latest Sermons */}
+        <LatestSermons/>
+
+        {/* Weekly Programs */}
+        <WeeklyPrograms/>
       </div>
   );
 };
