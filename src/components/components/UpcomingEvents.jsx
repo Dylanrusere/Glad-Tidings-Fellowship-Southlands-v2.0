@@ -21,7 +21,7 @@ const UpcomingEvents = () => {
     {
       id: 3,
       name: "Youth Inaugural Tournament",
-      startDate: new Date("2024-12-07T09:00:00"),
+      startDate: new Date("2024-12-07T09:30:00"),
       endDate: new Date("2024-12-07T17:00:00"),
       venue: "Mufakose High 1",
     },
