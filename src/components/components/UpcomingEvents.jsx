@@ -6,20 +6,13 @@ const UpcomingEvents = () => {
   const [events, setEvents] = useState([
     {
       id: 1,
-      name: "Men`s Braai",
-      startDate: new Date("2024-12-01T11:00:00"),
-      endDate: new Date("2024-12-01T16:00:00"),
-      venue: "Southlands Glad Tidings Fellowship, Southlands Park",
-    },
-    {
-      id: 2,
       name: "Children`s Church Annual Camp",
       startDate: new Date("2024-12-06T09:00:00"),
       endDate: new Date("2024-12-08T16:00:00"),
       venue: "Mother Touch Jnr, Tynwald",
     },
     {
-      id: 3,
+      id: 2,
       name: "Youth Annual Camp",
       startDate: new Date("2024-12-22T09:00:00"),
       endDate: new Date("2024-12-26T17:00:00"),
@@ -30,7 +23,7 @@ const UpcomingEvents = () => {
       name: "Youth Inaugural Tournament",
       startDate: new Date("2024-12-07T09:00:00"),
       endDate: new Date("2024-12-07T17:00:00"),
-      venue: "TBA(Harare)",
+      venue: "Mufakose High 1",
     },
   ]);
 
