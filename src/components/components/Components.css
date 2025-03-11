@@ -60,6 +60,42 @@
     }
 }
 
+.rsvp_btn {
+  padding: 10px 30px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 1000px;
+  transition: 0.5s all ease, transform 0.2s ease;
+}
+
+.rsvp_btn:hover {
+  background-color: #fff;
+  color: #000066;
+  transform: scale(1.05);
+}
+
+.event_details_btn {
+  margin-left: 15px;
+  padding: 10px 30px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #000066;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 1000px;
+  transition: 0.5s all ease, transform 0.2s ease;
+}
+
+.event_details_btn:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  transform: scale(1.05);
+}
+
 /* -------------------------------Latest Sermons-------------------- */
 .latest_sermons_big_container{
     padding: 5% 0;
@@ -184,6 +220,8 @@
 
   .card_button {
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 10px;
     padding: 5px 10px;
     width: 50%;
@@ -192,12 +230,12 @@
     text-align: center;
     text-decoration: none;
     border: 1px solid #000066;
-    border-radius: 5px;
-    font-size: 14px;
+    border-radius: 1000px;
     transition: 0.5s all ease-in-out;
     
     span{
         margin-right: 5px;
+        margin-top: 5px;
         font-size: 18px;
     }
 
@@ -206,7 +244,6 @@
     }
 
     @media(max-width:600){
-        width: 50%;
         margin-bottom: 20px;
     }
   }
@@ -223,15 +260,24 @@
     margin-top: 50px;
     display: flex;
     margin-top: 50px;
-    padding: 5px 10px;
+    padding: 10px 20px;
     background-color: transparent;
     border: 1px solid #000066;
     color: #fff;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 14px;
+    border-radius: 1000px;
+    font-size: 16px;
     transition: 0.5s all ease-in-out;
+
+    span{
+      margin-top: 5px;
+      margin-right: 5px;
+      font-size: 18px;
+      color: #000066;
+    }
 
     @media(max-width:965px){
         width: 60%;
@@ -252,9 +298,6 @@
   }
 
   .folder{
-      margin-right: 5px;
-      font-size: 18px;
-      color: #000066;
   }
 
   .sermon_archive_archive{
@@ -372,12 +415,236 @@
 }
 
 .program_get_directions{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 5px 10px;
+  width: 40%;
+  background-color: transparent;
   color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 1000px;
   transition: 0.5s all ease-in-out;
+
+  @media(max-width:1190px){
+    width: 60%;
+  }
+
+  @media(max-width:850px){
+    width: 40%;
+  }
+
+  @media(max-width:780px){
+    width: 60%;
+  }
 }
 
 .program_get_directions:hover{
-  font-weight: 600;
+  background-color: #fff;
+  color: #000066;
+  transform: scale(1.05);
+}
+
+
+/* -------------------------------Ministries----------------------- */
+.ministries_container{
+  padding: 5% 0;
+}
+
+.ministries_grid_container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3%;
+
+  @media(max-width:1000px){
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media(max-width:660px){
+    grid-template-columns: 1fr;
+    gap: 1%;
+  }
+}
+
+.ministries_card{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+
+  @media(max-width:660px){
+  }
+}
+
+/* -------------------------------Resources------------------------ */
+.resources_comp_section{
+  margin: 5% 0;
+}
+
+.resources_comp{
+  color: #000066;
+}
+
+/* --------------------------------News Comp----------------------------- */
+.news_comp_section{
+  margin: 5% 0;
+}
+
+.news_comp{
+  color: #000066;
+}
+
+/* --------------------------------Contact---------------------------- */
+.contact_comp_section{
+  margin: 5% 0;
+}
+
+.contact_comp{
+  color: #000066;
+}
+
+/* -----------Footer---------- */
+.footer_container{
+  background-color: #000066;
+  padding: 5%;
+}
+
+.footer_grid_container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3%;
+  padding-bottom: 4%;
+
+  @media(max-width:800px){
+    grid-template-columns: 1fr;
+    padding-bottom: 10%;
+  }
+
+  @media(max-width:560px){
+    padding-bottom: 20%;
+  }
+}
+
+.footer_contact_links{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_link{
+  color: #fff;
+  transition: 0.5s ease-in-out;
+  margin-top: 10px;
+}
+
+.footer_link:hover{
+  color: #ffffff7e;
+}
+/*  */
+.social_media_link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media(max-width:800px){
+    align-items: start;
+  }
+}
+
+.footer_logo{
+  width: 200px;
+
+  @media(max-width:560px){
+    width: 150px;
+  }
+
+  @media(max-width:350px){
+    width: 130px;
+  }
+}
+
+.footer_social_media_links{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.footer_social_media_links a{
+  font-size: 30px;
+  color: #fff;
+  margin-right: 15px;
+  transition: 0.5s ease-in-out;
+}
+
+.footer_social_media_links a:hover{
+  color: #ffffff8f;
+}
+
+/*  */
+.none{
+  display: none;
+
+  @media(max-width:800px){
+    display: block;
+  }
+}
+
+.to_be_none{
+  @media(max-width:800px){
+    display: none;
+  }
+}
+
+.footer_quick_links{
+  text-align: right;
+
+  @media(max-width:800px){
+    text-align: left;
+  }
+}
+
+.footer_quick_links_links{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_quick_link{
+  color: #fff;
+  transition: 0.5s ease-in-out;
+  margin-top: 10px;
+}
+
+.footer_quick_link:hover{
+  color: #ffffff7e;
+}
+
+.footer_heads{
+  font-family: 'chillaxmedium';
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.bottom_footer_container{
+  border-top: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+
+  p{
+    margin: 0;
+  }
+}
+
+.it_team{
+  color: #ffffff7e;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.it_team:hover{
+  color: #fff;
 }
 
 /* -------------------------------Overall styles------------------- */

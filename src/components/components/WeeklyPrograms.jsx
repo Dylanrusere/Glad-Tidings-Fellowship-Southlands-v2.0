@@ -1,5 +1,6 @@
 import React from 'react';
 import weeklyPrograms from '../videos/weekly_programs.mp4';
+import './Components.css';
 import {  FaMapMarkerAlt, FaCalendarAlt, FaClock } from 'react-icons/fa'
 
 export const WeeklyPrograms = () => {
@@ -16,9 +17,9 @@ export const WeeklyPrograms = () => {
                     <div className="program_container">
                         <p className="program_day">Sunday</p>
                         <p className="program_head"><span><FaCalendarAlt/></span>Children`s Church Meeting</p>
-                        <p className="program_time"><span><FaClock/></span>0700hrs - 0800hrs</p>
+                        <p className="program_time"><span><FaClock/></span>0700hrs - 0830hrs</p>
                         <p className="program_location"><span><FaMapMarkerAlt/></span>Local Church</p>
-                        <a href='as' className="program_get_directions">Need Directions?</a>
+                        <a href='/events' className="program_get_directions">Need Directions?</a>
                     </div>
                     <div className="program_container">
                         <p className="program_day">Sunday</p>
@@ -30,14 +31,14 @@ export const WeeklyPrograms = () => {
                     <div className="program_container">
                         <p className="program_day">Sunday</p>
                         <p className="program_head"><span><FaCalendarAlt/></span>Choir Practise</p>
-                        <p className="program_time"><span><FaClock/></span>130hrs - 1300hrs</p>
+                        <p className="program_time"><span><FaClock/></span>1130hrs - 1300hrs</p>
                         <p className="program_location"><span><FaMapMarkerAlt/></span>Local Church</p>
                         <a href='as' className="program_get_directions">Need Directions?</a>
                     </div>
                     <div className="program_container">
                         <p className="program_day">Sunday</p>
                         <p className="program_head"><span><FaCalendarAlt/></span>Youth Meeting</p>
-                        <p className="program_time"><span><FaClock/></span>0400hrs - 1500hrs</p>
+                        <p className="program_time"><span><FaClock/></span>1400hrs - 1500hrs</p>
                         <p className="program_location"><span><FaMapMarkerAlt/></span>Local Church</p>
                         <a href='as' className="program_get_directions">Need Directions?</a>
                     </div>

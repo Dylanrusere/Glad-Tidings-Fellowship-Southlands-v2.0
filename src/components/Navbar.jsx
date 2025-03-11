@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FaEnvelope, FaWhatsapp, FaInstagram, FaFacebook, FaYoutube } from 'react-icons/fa';
 import './Navbar.css';
 import logo from './images/GTLogo.png';
 
@@ -14,7 +15,23 @@ export const Navbar = () => {
 
   return (
     <div>
-      <div className="top_menu"></div>
+      <div className="top_menu">
+        <Link>
+          <FaFacebook />
+        </Link>
+        <Link>
+          <FaInstagram />
+        </Link>
+        <Link to="https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V">
+          <FaWhatsapp />
+        </Link>
+        <Link to="https://youtube.com/@GladTidingsFellowshipSouthland">
+          <FaYoutube />
+        </Link>
+        <Link>
+          <FaEnvelope />
+        </Link>
+      </div>
       <nav className="navbar">
         <div className="navbar-logo">
           <Link to="/"><img src={logo} alt="Church Logo" /></Link>
@@ -47,6 +64,8 @@ export const Navbar = () => {
             {showMinistries && (
               <ul className="dropdown-menu">
                 <li><Link to="/children">Children's Church Ministry</Link></li>
+                <li><Link to="/choir">Choir</Link></li>
+                <li><Link to="/homegroups">Homegroups</Link></li>
                 <li><Link to="/ladies">Ladies' Fellowship</Link></li>
                 <li><Link to="/men">Men's Fellowship</Link></li>
                 <li><Link to="/youth">Youth Ministry</Link></li>

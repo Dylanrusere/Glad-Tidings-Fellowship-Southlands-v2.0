@@ -18,6 +18,16 @@ export const About = () => {
           <p className="tabs">Our Mission</p>
         </div>
       </div>
+
+      {/* Our Assembly History */}
+      <section id="assembly_history">
+
+      </section>
+
+      {/* Our Leadership */}
+      <section id="leadership">
+
+      </section>
     </div>
   )
 }

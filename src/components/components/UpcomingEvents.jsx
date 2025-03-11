@@ -1,29 +1,52 @@
 import React, { useState, useEffect } from "react";
+import {  FaMapMarkerAlt, FaCalendarAlt, FaClock } from 'react-icons/fa';
 import './Components.css';
+import { Link } from "react-router-dom";
 
 const UpcomingEvents = () => {
   // Example event data
   const [events, setEvents] = useState([
+    // {
+    //   id: 1,
+    //   name: "Children`s Church Annual Camp",
+    //   startDate: new Date("2024-12-06T09:00:00"),
+    //   endDate: new Date("2024-12-08T16:00:00"),
+    //   venue: "Mother Touch Jnr, Tynwald",
+    // },
+    // {
+    //   id: 2,
+    //   name: "Youth Annual Camp",
+    //   startDate: new Date("2024-12-22T09:00:00"),
+    //   endDate: new Date("2024-12-26T17:00:00"),
+    //   venue: "Lady Enereta High School, Bindura",
+    // },
+    // {
+    //   id: 3,
+    //   name: "Youth Inaugural Tournament",
+    //   startDate: new Date("2024-12-07T09:30:00"),
+    //   endDate: new Date("2024-12-07T17:00:00"),
+    //   venue: "Mufakose High 1",
+    // },
     {
-      id: 1,
-      name: "Children`s Church Annual Camp",
-      startDate: new Date("2024-12-06T09:00:00"),
-      endDate: new Date("2024-12-08T16:00:00"),
-      venue: "Mother Touch Jnr, Tynwald",
+      id: 4,
+      name: "Worship Night",
+      startDate: new Date("2025-03-28T21:00:00"),
+      endDate: new Date("2025-03-29T05:00:00"),
+      venue: "Glad Tidings Fellowship Southlands",
     },
     {
-      id: 2,
-      name: "Youth Annual Camp",
-      startDate: new Date("2024-12-22T09:00:00"),
-      endDate: new Date("2024-12-26T17:00:00"),
-      venue: "Lady Enereta High School, Bindura",
+      id: 5,
+      name: "Annual Ladies Fellowship Conference",
+      startDate: new Date("2025-04-17T13:00:00"),
+      endDate: new Date("2025-04-20T13:00:00"),
+      venue: "Glad Tidings Fellowship Southlands",
     },
     {
-      id: 3,
-      name: "Youth Inaugural Tournament",
-      startDate: new Date("2024-12-07T09:30:00"),
-      endDate: new Date("2024-12-07T17:00:00"),
-      venue: "Mufakose High 1",
+      id: 5,
+      name: "August Annual Conference",
+      startDate: new Date("2025-08-10T08:00:00"),
+      endDate: new Date("2025-08-12T13:00:00"),
+      venue: "Glad Tidings Fellowship Southlands",
     },
   ]);
 
@@ -102,7 +125,11 @@ const UpcomingEvents = () => {
                                       : "Event started"}
                                   </p>
                               )}
-                              <p className="event_venue">Venue: <span>{event.venue}</span></p>
+                              <p className="event_venue"><FaMapMarkerAlt/> <span>{event.venue}</span></p>
+                              <div className="event_btns">
+                                <a href="as" className="rsvp_btn">RSVP</a>
+                                <a href="as" className="event_details_btn">Event Details</a>
+                              </div>
                           </div>
                       );
                       })}
