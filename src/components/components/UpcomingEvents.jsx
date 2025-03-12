@@ -159,7 +159,7 @@ const UpcomingEvents = () => {
       venue: "Glad Tidings Fellowship Southlands",
       image: sermonOne,
       organizers: "Glad Tidings Fellowship",
-      whatsappNumber: "263782002822",
+      whatsappNumber: "263783002822",
     },
     {
       id: 2,
@@ -169,7 +169,7 @@ const UpcomingEvents = () => {
       venue: "Glad Tidings Fellowship Southlands",
       image: "../images/home-3.jpg",
       organizers: "Ladies Ministry",
-      whatsappNumber: "263782002822",
+      whatsappNumber: "263783002822",
     },
   ]);
 
