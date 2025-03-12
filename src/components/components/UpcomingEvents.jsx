@@ -210,7 +210,7 @@ const UpcomingEvents = () => {
     };
 
     emailjs
-      .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", templateParams, "YOUR_USER_ID")
+      .send("service_4i482nn", "template_mvosjkq", templateParams, "8SPYhoIB0J2JMNjE2")
       .then(() => alert("RSVP sent successfully to email!"))
       .catch(() => alert("Failed to send RSVP."));
 
