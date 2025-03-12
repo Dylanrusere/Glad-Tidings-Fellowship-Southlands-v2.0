@@ -179,6 +179,7 @@ const UpcomingEvents = () => {
   const [isRSVPModalOpen, setRSVPModalOpen] = useState(false);
   const [isDetailsModalOpen, setDetailsModalOpen] = useState(false);
   const [formData, setFormData] = useState({ name: "", email: "", phone: "" });
+  const [notification, setNotification] = useState({ message: "", type: "" });
 
   const openRSVPModal = (event) => {
     setSelectedEvent(event);
@@ -196,6 +197,14 @@ const UpcomingEvents = () => {
     setFormData({ name: "", email: "", phone: "" });
   };
 
+  const showNotification = (message, type) => {
+    setNotification({ message, type });
+
+    setTimeout(() => {
+      setNotification({ message: "", type: "" });
+    }, 3000);
+  };
+
   const handleRSVPSubmit = (e) => {
     e.preventDefault();
     if (!selectedEvent) return;
@@ -211,8 +220,12 @@ const UpcomingEvents = () => {
 
     emailjs
       .send("service_4i482nn", "template_mvosjkq", templateParams, "8SPYhoIB0J2JMNjE2")
-      .then(() => alert("RSVP sent successfully to email!"))
-      .catch(() => alert("Failed to send RSVP."));
+      .then(() => {
+        showNotification("RSVP sent successfully!", "success");
+      })
+      .catch(() => {
+        showNotification("Failed to send RSVP. Try again!", "error");
+      });
 
     const whatsappNumber = selectedEvent.whatsappNumber;
     const whatsappMessage = `Hello, I would like to RSVP for ${selectedEvent.name}.\n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nEvent Date: ${selectedEvent.startDate.toDateString()}\nVenue: ${selectedEvent.venue}`;
