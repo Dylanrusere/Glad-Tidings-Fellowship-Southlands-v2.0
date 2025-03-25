@@ -166,6 +166,7 @@
   margin-top: 5%;
 }
 
+
 /* Modal Close Button */
 .modal_content button[type="submit"] {
   font-family:'poppins regular';
@@ -505,6 +506,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3%;
+  margin-bottom: 7%;
   color: #fff;
 
   @media(max-width:850px){
@@ -520,6 +522,8 @@
 .program_day{
   font-family: 'chillaxmedium';
   font-size: 25px;
+  color: #fff;
+  font-weight: 500;
 }
 
 .program_head{
@@ -554,7 +558,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 10px;
-  padding: 5px 10px;
+  padding: 10px 10px;
   width: 40%;
   background-color: transparent;
   color: #fff;
@@ -611,6 +615,10 @@
 
   @media(max-width:660px){
   }
+}
+
+.ministries_btn{
+  padding: 10px;
 }
 
 /* -------------------------------Resources------------------------ */

@@ -10,9 +10,9 @@ export const Ministries = () => {
             <div className="overall_container">
                 <p className="overall_headings latest_sermons_head">Our Ministries</p>
                 <p className="latest_sermon_sub_par">
-                    These are the finest Latest Sermons from three(3) weeks ago, if you want
-                    a message from beyond three weeks, please feel free to visit Our Sermons
-                    Archive. <br />
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut repellat 
+                    dignissimos tenetur ex, dicta inventore ipsum est, quia vel adipisci officia 
+                    a consequuntur. Dicta eos eaque minus natus maiores reprehenderit?<br />
                     <span>Be Blessed</span>
                 </p>
 
@@ -27,7 +27,7 @@ export const Ministries = () => {
                             <h3 className="card_preacher"></h3>
                             <p className="card_date">Catch Phrase of the ministry</p>
                             <p className="card_date">- Scripture</p>
-                            <Link to="children"  className="card_button">
+                            <Link to="children"  className="card_button ministries_btn">
                             Learn More
                             </Link>
                         </div>
@@ -42,7 +42,7 @@ export const Ministries = () => {
                             <h3 className="card_preacher"></h3>
                             <p className="card_date">Catch Phrase of the ministry</p>
                             <p className="card_date">- Scripture</p>
-                            <Link to="choir"  className="card_button">
+                            <Link to="choir"  className="card_button ministries_btn">
                             Learn More
                             </Link>
                         </div>
@@ -57,7 +57,7 @@ export const Ministries = () => {
                             <h3 className="card_preacher"></h3>
                             <p className="card_date">Catch Phrase of the ministry</p>
                             <p className="card_date">- Scripture</p>
-                            <Link to="homegroups"  className="card_button">
+                            <Link to="homegroups"  className="card_button ministries_btn">
                             Learn More
                             </Link>
                         </div>
@@ -72,7 +72,7 @@ export const Ministries = () => {
                             <h3 className="card_preacher"></h3>
                             <p className="card_date">Catch Phrase of the ministry</p>
                             <p className="card_date">- Scripture</p>
-                            <Link to="ladies"  className="card_button">
+                            <Link to="ladies"  className="card_button ministries_btn">
                             Learn More
                             </Link>
                         </div>
@@ -87,7 +87,7 @@ export const Ministries = () => {
                             <h3 className="card_preacher"></h3>
                             <p className="card_date">Catch Phrase of the ministry</p>
                             <p className="card_date">- Scripture</p>
-                            <Link to="men"  className="card_button">
+                            <Link to="men"  className="card_button ministries_btn">
                             Learn More
                             </Link>
                         </div>
@@ -102,7 +102,7 @@ export const Ministries = () => {
                             <h3 className="card_preacher"></h3>
                             <p className="card_date">Catch Phrase of the ministry</p>
                             <p className="card_date">- Scripture</p>
-                            <Link to="youth"  className="card_button">
+                            <Link to="youth"  className="card_button ministries_btn">
                             Learn More
                             </Link>
                         </div>

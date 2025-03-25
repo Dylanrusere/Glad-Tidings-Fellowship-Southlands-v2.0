@@ -51,49 +51,49 @@
 //   ]);
 
 //   // Sort events by the nearest start date
-//   const sortedEvents = events.sort((a, b) => a.startDate - b.startDate);
+  // const sortedEvents = events.sort((a, b) => a.startDate - b.startDate);
 
-//   // Countdown function
-//   const calculateTimeLeft = (eventDate) => {
-//     const now = new Date();
-//     const difference = eventDate - now;
-//     let timeLeft = {};
+  // // Countdown function
+  // const calculateTimeLeft = (eventDate) => {
+  //   const now = new Date();
+  //   const difference = eventDate - now;
+  //   let timeLeft = {};
 
-//     if (difference > 0) {
-//       timeLeft = {
-//         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-//         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-//         minutes: Math.floor((difference / 1000 / 60) % 60),
-//         seconds: Math.floor((difference / 1000) % 60),
-//       };
-//     }
-//     return timeLeft;
-//   };
+  //   if (difference > 0) {
+  //     timeLeft = {
+  //       days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+  //       hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+  //       minutes: Math.floor((difference / 1000 / 60) % 60),
+  //       seconds: Math.floor((difference / 1000) % 60),
+  //     };
+  //   }
+  //   return timeLeft;
+  // };
 
-//   const [timeLefts, setTimeLefts] = useState(
-//     sortedEvents.map((event) => calculateTimeLeft(event.startDate))
-//   );
+  // const [timeLefts, setTimeLefts] = useState(
+  //   sortedEvents.map((event) => calculateTimeLeft(event.startDate))
+  // );
 
-//   useEffect(() => {
-//     const timer = setInterval(() => {
-//       // Update countdown
-//       setTimeLefts(
-//         sortedEvents.map((event) => calculateTimeLeft(event.startDate))
-//       );
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     // Update countdown
+  //     setTimeLefts(
+  //       sortedEvents.map((event) => calculateTimeLeft(event.startDate))
+  //     );
 
-//       // Remove events that ended 2 days ago
-//       const now = new Date();
-//       setEvents((prevEvents) =>
-//         prevEvents.filter((event) => {
-//           const twoDaysAfterEnd = new Date(event.endDate);
-//           twoDaysAfterEnd.setDate(twoDaysAfterEnd.getDate() + 2);
-//           return twoDaysAfterEnd >= now;
-//         })
-//       );
-//     }, 1000);
+  //     // Remove events that ended 2 days ago
+  //     const now = new Date();
+  //     setEvents((prevEvents) =>
+  //       prevEvents.filter((event) => {
+  //         const twoDaysAfterEnd = new Date(event.endDate);
+  //         twoDaysAfterEnd.setDate(twoDaysAfterEnd.getDate() + 2);
+  //         return twoDaysAfterEnd >= now;
+  //       })
+  //     );
+  //   }, 1000);
 
-//     return () => clearInterval(timer);
-//   }, [sortedEvents]);
+  //   return () => clearInterval(timer);
+  // }, [sortedEvents]);
 
 //   return (
 //     <div>
@@ -146,30 +146,33 @@
 import React, { useState } from "react";
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
-import sermonOne from "../images/home-1.jpg";
+import nightOfWorship from "../images/eventsCovers/Night of Worship.jpg";
+import ladiesConf from "../images/eventsCovers/2025 ladies fellwoship conf.jpg";
 import './Components.css';
 
 const UpcomingEvents = () => {
   const [events] = useState([
     {
       id: 1,
-      name: "Worship Night",
+      name: "A Night Of Worship",
       startDate: new Date("2025-03-28T21:00:00"),
       endDate: new Date("2025-03-29T05:00:00"),
       venue: "Glad Tidings Fellowship Southlands",
-      image: sermonOne,
+      image: nightOfWorship,
       organizers: "Glad Tidings Fellowship",
       whatsappNumber: "263783002822",
+      location: "https://googlemaps.comasd",
     },
     {
       id: 2,
       name: "Annual Ladies Fellowship Conference",
       startDate: new Date("2025-04-17T13:00:00"),
       endDate: new Date("2025-04-20T13:00:00"),
-      venue: "Glad Tidings Fellowship Southlands",
-      image: "../images/home-3.jpg",
+      venue: "Washington Hills Secondary",
+      image: ladiesConf,
       organizers: "Ladies Ministry",
       whatsappNumber: "263783002822",
+      location: "https://googlemaps.com",
     },
   ]);
 
@@ -218,14 +221,14 @@ const UpcomingEvents = () => {
       venue: selectedEvent.venue,
     };
 
-    emailjs
-      .send("service_4i482nn", "template_mvosjkq", templateParams, "8SPYhoIB0J2JMNjE2")
-      .then(() => {
-        showNotification("RSVP sent successfully!", "success");
-      })
-      .catch(() => {
-        showNotification("Failed to send RSVP. Try again!", "error");
-      });
+    // emailjs
+    //   .send("service_4i482nn", "template_mvosjkq", templateParams, "8SPYhoIB0J2JMNjE2")
+    //   .then(() => {
+    //     showNotification("RSVP sent successfully!", "success");
+    //   })
+    //   .catch(() => {
+    //     showNotification("Failed to send RSVP. Try again!", "error");
+    //   });
 
     const whatsappNumber = selectedEvent.whatsappNumber;
     const whatsappMessage = `Hello, I would like to RSVP for ${selectedEvent.name}.\n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nEvent Date: ${selectedEvent.startDate.toDateString()}\nVenue: ${selectedEvent.venue}`;
@@ -303,7 +306,10 @@ const UpcomingEvents = () => {
             <p><strong>Time:</strong> {selectedEvent?.startDate.toLocaleTimeString()} - {selectedEvent?.endDate.toLocaleTimeString()}</p>
             <p><strong>Venue:</strong> {selectedEvent?.venue}</p>
             <p><strong>Organizers:</strong> {selectedEvent?.organizers}</p>
-            <button onClick={closeModals}>Close</button>
+            <div className="modal_btns_events">
+              <a href={selectedEvent.location}><button type="submit">Directions</button></a>
+              <button type="button" onClick={closeModals}>Close</button>
+            </div>
           </div>
         </div>
       )}

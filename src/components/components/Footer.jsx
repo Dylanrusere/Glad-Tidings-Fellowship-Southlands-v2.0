@@ -1,9 +1,9 @@
 import React from 'react';
 import './Components.css';
 import logo from '../images/footer_logo.png';
-import {  FaMapMarkerAlt } from 'react-icons/fa';
+import {  FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { FaEnvelope, FaWhatsapp, FaInstagram, FaFacebook, FaYoutube } from 'react-icons/fa';
+import { FaEnvelope, FaWhatsapp, FaInstagram, FaFacebook, FaYoutube, FaPhone } from 'react-icons/fa';
 
 export const Footer = () => {
   return (
@@ -33,9 +33,9 @@ export const Footer = () => {
                 <p className="footer_heads">Contact</p>
                 <div className="footer_contact_links">
                     <a href='a' className="footer_link"><span><FaMapMarkerAlt/></span> 7417 Southlands Park, Waterfalls, Hre</a>
-                    <a href='a' className="footer_link"><span><FaMapMarkerAlt/></span> Service Time: 0800hrs</a>
-                    <a href='a' className="footer_link"><span><FaMapMarkerAlt/></span> Send Us a Message</a>
-                    <a href='a' className="footer_link"><span><FaMapMarkerAlt/></span> +263 77 000 0000</a>
+                    <a href='a' className="footer_link"><span><FaClock/></span> Service Time: 0800hrs</a>
+                    <a href='a' className="footer_link"><span><FaEnvelope/></span> Send Us a Message</a>
+                    <a href='a' className="footer_link"><span><FaPhone/></span> +263 77 000 0000</a>
                 </div>
             </div>
             <div className="social_media_link to_be_none">
