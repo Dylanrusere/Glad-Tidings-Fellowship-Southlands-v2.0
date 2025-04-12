@@ -79,7 +79,7 @@ export const Home = () => {
                     <span className="icon pulse"><FaPlayCircle /></span>
                     Watch Live
                   </a>
-                  <a href="#upcoming-events" className="upcoming-events-button">
+                  <a href="#upcoming_events_home" className="upcoming-events-button">
                     <span className="icon"><FaCalendarAlt /></span>
                     Upcoming Events
                   </a>
@@ -88,41 +88,41 @@ export const Home = () => {
           </div>
           {/* Welcome Message */}
           <div className="welcome_section">
-          <img className='welcome_bg' src={welcome} alt="" />
-             <div className="overall_container">
-               <div className="welcome_head_container">
-                 <p className="head_display">Welcome</p>
-                 <p className="overall_headings welcome_head">Welcome to Southlands Glad Tidings <br /> Fellowship Assembly</p>
-               </div>
-               <div className="welcome_content_container">
-                <div className="welcome_message_container">
-                  <p className="welcome_message">
-                    I extend my warmest greetings to you in the Name of our Lord Jesus Christ.
-                    Thank you for setting aside time to know more about us. <br /><br />
-                    Southlands Glad Tidings Fellowship Assembly is a Christ focused Church
-                    <strong>(1 Peter 2 vs 6; Ephesians 2 vs 20)</strong>. We believe with the core of our beings that
-                    without God's Love and sending Jesus Christ to Die for our SIN and the Help of
-                    the Holy Spirit, humanity was doomed to eternal destruction <strong>
-                      (1 Corinthians 1 vs 30;John 3 vs 16-18)</strong>. Therefore everything we
-                      do is centered around HIM and to please HIM
-                    <strong>(Hebrews 12 vs 1-2)</strong>.<br /><br />
-                    Please feel free to browse through our website and familiarise yourself with our
-                    activities as we seek to please our LORD <strong>(Ecclesiastes 12 vs 13)</strong>. We are looking
-                    forward to hear from you soon. For more information and prayer request, feel free
-                    to send us a message through our contact page and we will be in touch.<br /><br />
-                    Shalom,<br /><br />
-                    Pastor L Mucheka
-                  </p>
+              <img className='welcome_bg' src={welcome} alt="" />
+              <div className="overall_container">
+                <div className="welcome_head_container">
+                  <p className="head_display">Welcome</p>
+                  <p className="overall_headings welcome_head">Welcome to Southlands Glad Tidings <br /> Fellowship Assembly</p>
                 </div>
-                <div className="pastor_image_big_container">
-                  <div className="pastor_img_container">
-                      <img className='pastor_mucheka_img' src={pastor_lee} alt="Pastor L. Mucheka" />
+                <div className="welcome_content_container">
+                  <div className="welcome_message_container">
+                    <p className="welcome_message">
+                      I extend my warmest greetings to you in the Name of our Lord Jesus Christ.
+                      Thank you for setting aside time to know more about us. <br /><br />
+                      Southlands Glad Tidings Fellowship Assembly is a Christ focused Church
+                      <strong>(1 Peter 2 vs 6; Ephesians 2 vs 20)</strong>. We believe with the core of our beings that
+                      without God's Love and sending Jesus Christ to Die for our SIN and the Help of
+                      the Holy Spirit, humanity was doomed to eternal destruction <strong>
+                        (1 Corinthians 1 vs 30;John 3 vs 16-18)</strong>. Therefore everything we
+                        do is centered around HIM and to please HIM
+                      <strong>(Hebrews 12 vs 1-2)</strong>.<br /><br />
+                      Please feel free to browse through our website and familiarise yourself with our
+                      activities as we seek to please our LORD <strong>(Ecclesiastes 12 vs 13)</strong>. We are looking
+                      forward to hear from you soon. For more information and prayer request, feel free
+                      to send us a message through our contact page and we will be in touch.<br /><br />
+                      Shalom,<br /><br />
+                      Pastor L Mucheka
+                    </p>
+                  </div>
+                  <div className="pastor_image_big_container">
+                    <div className="pastor_img_container">
+                        <img className='pastor_mucheka_img' src={pastor_lee} alt="Pastor L. Mucheka" />
+                    </div>
                   </div>
                 </div>
-               </div>
-             </div>
+              </div>
           </div>
-          <UpcomingEvents/>
+          <div id="upcoming_events_home"><UpcomingEvents/></div>
       
           {/* Brief History */}
           <div className="brief_history">

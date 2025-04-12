@@ -13,7 +13,7 @@ export const LatestSermons = () => {
       heading: "The Lord has not forgetten you - Part 2",
       preacher: "Pastor L. Mucheka",
       date: "Sun, 15 December 2024",
-      link: "/sermon/",
+      link: "https://youtube.com/GladTidingsFellowshipSouthland",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ export const LatestSermons = () => {
       heading: "The Lord has not forgetten you",
       preacher: "Pastor L. Mucheka",
       date: "Sun, 08 December 2024",
-      link: "/sermon/",
+      link: "https://youtube.com/GladTidingsFellowshipSouthland",
     },
     {
       id: 3,
@@ -29,7 +29,7 @@ export const LatestSermons = () => {
       heading: "",
       preacher: "Children`s Church",
       date: "Sun, 01 December 2024",
-      link: "/sermon/",
+      link: "https://youtube.com/GladTidingsFellowshipSouthland",
     },
 
   ];
@@ -58,7 +58,7 @@ export const LatestSermons = () => {
             ))}
           </div>
           
-          <button className="sermons_archives"><Link className="sermon_archive_archive"> <span><FaFolder className="folder"/></span>Our Sermons Archive</Link></button>
+          <button className="sermons_archives"><Link to="sermons" className="sermon_archive_archive"> <span><FaFolder className="folder"/></span>Our Sermons Archive</Link></button>
 
         </div>
     </div>
