@@ -1,68 +1,130 @@
-import React from 'react';
-import weeklyPrograms from '../videos/weekly_programs.mp4';
-import './Components.css';
-import {  FaMapMarkerAlt, FaCalendarAlt, FaClock } from 'react-icons/fa'
+import React, { useState } from 'react';
+import { FaCalendarAlt, FaClock, FaMapMarkerAlt } from 'react-icons/fa';
 
 export const WeeklyPrograms = () => {
+  const [activeDay, setActiveDay] = useState(null);
+
+  const toggleDay = (day) => {
+    setActiveDay(prevDay => (prevDay === day ? null : day));
+  };
+
+  const data = [
+    {
+      day: 'Sunday',
+      programs: [
+        {
+          name: 'Main Service',
+          time: '0800hrs - 1100hrs',
+          location: 'Local Church',
+          link: '#',
+        },
+        {
+          name: 'Children`s Church Service',
+          time: '0730hrs - 0830hrs',
+          location: 'Local Church',
+          link: '#',
+        },
+        {
+          name: 'Choir Practise',
+          time: '1130hrs - 1330hrs',
+          location: 'Local Church',
+          link: '#',
+        },
+        {
+          name: 'Youth Session',
+          time: '1400hrs - 1500hrs',
+          location: 'Local Church',
+          link: '#',
+        },
+      ],
+    },
+    {
+      day: 'Tuesday',
+      programs: [
+        {
+          name: 'Home Groups',
+          time: '1830hrs - 1930hrs',
+          location: 'Nearby Home Group',
+          link: '#',
+        },
+      ],
+    },
+    {
+      day: 'Wednesday',
+      programs: [
+        {
+          name: 'Ladies Meeting',
+          time: '1300hrs - 1500hrs',
+          location: 'Local Church',
+          link: '#',
+        },
+      ],
+    },
+    {
+      day: 'Thursday',
+      programs: [
+        {
+          name: 'Kingdoms',
+          time: '1830hrs - 1930hrs',
+          location: 'Local Church',
+          link: '#',
+        },
+      ],
+    },
+    {
+      day: 'Friday',
+      programs: [
+        {
+          name: 'Men`s Fellowship Meeting',
+          time: '1830hrs - 1930hrs',
+          location: 'Local Church',
+          link: '#',
+        },
+      ],
+    },
+  ];
+
   return (
     <div>
-        <div className="weekly_programs_container_bg">
-          <video className='home_video_background' autoPlay loop muted>
-            <source src={weeklyPrograms} type="video/mp4" />
-          </video>
-          <div className="weekly_programs_container">
-            <div className="overall_container">
-                <p className="overall_headings weekly_programs_heading">Our Weekly Programs</p>
-                <p className="program_day">Sunday</p>
-                <div className="weekly_programs_grid_container">
-                    <div className="program_container">
-                        <p className="program_head"><span><FaCalendarAlt/></span>Children`s Church Meeting</p>
-                        <p className="program_time"><span><FaClock/></span>0700hrs - 0830hrs</p>
-                        <p className="program_location"><span><FaMapMarkerAlt/></span>Local Church</p>
-                        <a href='/events' className="program_get_directions">Need Directions?</a>
-                    </div>
-                    <div className="program_container">
-                        <p className="program_head"><span><FaCalendarAlt/></span>Main Church Service</p>
-                        <p className="program_time"><span><FaClock/></span>0730hrs - 1100hrs</p>
-                        <p className="program_location"><span><FaMapMarkerAlt/></span>Local Church</p>
-                        <a href='as' className="program_get_directions">Need Directions?</a>
-                    </div>
-                    <div className="program_container">
-                        <p className="program_head"><span><FaCalendarAlt/></span>Choir Practise</p>
-                        <p className="program_time"><span><FaClock/></span>1130hrs - 1300hrs</p>
-                        <p className="program_location"><span><FaMapMarkerAlt/></span>Local Church</p>
-                        <a href='as' className="program_get_directions">Need Directions?</a>
-                    </div>
-                    <div className="program_container">
-                        <p className="program_head"><span><FaCalendarAlt/></span>Youth Meeting</p>
-                        <p className="program_time"><span><FaClock/></span>1400hrs - 1500hrs</p>
-                        <p className="program_location"><span><FaMapMarkerAlt/></span>Local Church</p>
-                        <a href='as' className="program_get_directions">Need Directions?</a>
-                    </div>
+        <div className="overall_container">
+            <p className="weekly_programs_heading overall_headings">Our Weekly Programs</p>
+            <div className="timeline_container">
+              {data.map((entry, index) => (
+                <div key={index} className="timeline_item">
+                  <div className="timeline_left">
+                    <div
+                      className={`timeline_dot ${activeDay === entry.day ? 'active' : ''}`}
+                      onClick={() => toggleDay(entry.day)}
+                    ></div>
+                    {index < data.length - 1 && <div className="timeline_line"></div>}
+                  </div>
+                  <div className="timeline_content" onClick={() => toggleDay(entry.day)}>
+                    <div className="timeline_day">{entry.day}</div>
+                    {activeDay === entry.day && (
+                      <div className="weekly_programs_grid_container">
+                        {entry.programs.map((program, i) => (
+                          <div key={i} className="program_container">
+                            <p className="program_head">
+                              <span><FaCalendarAlt /></span> {program.name}
+                            </p>
+                            <p className="program_time">
+                              <span><FaClock /></span> {program.time}
+                            </p>
+                            <p className="program_location">
+                              <span><FaMapMarkerAlt /></span> {program.location}
+                            </p>
+                            <a href={program.link} className="program_get_directions">
+                              Need Directions?
+                            </a>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 </div>
-
-                <p className="program_day">Tuesday</p>
-                <div className="weekly_programs_grid_container">
-                    <div className="program_container">
-                        <p className="program_head"><span><FaCalendarAlt/></span>Homegroups</p>
-                        <p className="program_time"><span><FaClock/></span>1830hrs - 1930hrs</p>
-                        <p className="program_location"><span><FaMapMarkerAlt/></span>Homegroup Near You</p>
-                        <a href='/events' className="program_get_directions">Need Directions?</a>
-                    </div>
-                </div>
-
-                <p className="program_day">Wednesday</p>
-                <div className="weekly_programs_grid_container">
-                    <div className="program_container">
-                        <p className="program_head"><span><FaCalendarAlt/></span>Ladies Fellowship Meeting</p>
-                        <p className="program_time"><span><FaClock/></span>1300hrs - 1500hrs</p>
-                        <p className="program_location"><span><FaMapMarkerAlt/></span>Local Church</p>
-                        <a href='/events' className="program_get_directions">Need Directions?</a>
-                    </div>
-                </div>
+              ))}
             </div>
-          </div>
         </div>
     </div>
-  )
-}
+  );
+};

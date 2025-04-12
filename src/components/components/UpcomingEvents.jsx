@@ -104,7 +104,9 @@ const UpcomingEvents = () => {
                 <p>Start: {event.startDate.toDateString()} {event.startDate.toLocaleTimeString()}</p>
                 <p>End: {event.endDate.toDateString()} {event.endDate.toLocaleTimeString()}</p>
                 <p className="event_venue"><FaMapMarkerAlt /> {event.venue}</p>
-                <p className="event_status">{getEventStatus(event)}</p>
+                <p className="event_status">
+                  {getEventStatus(event) !== "🟢 Ongoing" && <i className="fa-solid fa-clock"></i>} {getEventStatus(event)}
+                </p>
                 <div className="event_btns">
                   <button className="rsvp_btn" onClick={() => openRSVPModal(event)}>RSVP</button>
                   <button className="event_details_btn" onClick={() => openDetailsModal(event)}>Event Details</button>
