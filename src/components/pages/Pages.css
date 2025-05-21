@@ -9,8 +9,8 @@
 
 .home_hero{
     width: 100%;
-    height: 90vh;
-    background-image: url(../images/homebg.png);
+    height: 100vh;
+    background-image: url(../assets/images/homebg.png);
     background-position: center;
     background-size: cover;
 }
@@ -22,7 +22,7 @@
 .home_video_container{
     position: relative;
     width: 100%;
-    height: 85vh;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -41,7 +41,7 @@
     position: relative;
     z-index: 1;
     width: 100%;
-    height: 85vh;
+    height: 100vh;
     display: flex;
     align-items: center;
 }
@@ -269,7 +269,6 @@
 }
 
 .pastor_image_big_container{
-    
 
     @media(max-width:600px){
         margin: 0 5%;
@@ -417,32 +416,498 @@
 /* ----------------About Page---------------------- */
 .about_page_hero{
     width: 100%;
-    height: 40vh;
-    background-image: url(../images/home-3.jpg);
-    background-position: center;
+    height: 70vh;
+    background-image: url(../assets/images/home-3.jpg);
+    background-position: bottom;
     background-size: cover;
+    background-attachment: fixed;
+
+    @media(max-width:700px){
+        height: 50vh;
+    }
 }
 
 .about_page_overlay{
     width: 100%;
-    height: 40vh;
+    height: 70vh;
     background-color: #00006677;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media(max-width:700px){
+        height: 50vh;
+    }
 }
 
 .about_head{
     color: #fff;
 }
 
+.about_welcome{
+    padding-top: 3%;
+}
+
+.about_bg_img{
+    width: 20%;
+}
+
+.our_mission_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our_mission{
+    margin-top: 5%;
+}
+
+.our_mission_head{
+    color: #000066;
+}
+
+.our_mission_grid{
+    margin: 3% 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+
+    @media(max-width:700px){
+        grid-template-columns: 1fr;
+    }
+}
+
+.mission_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.great_commission{
+    font-size: 25px;
+    color: #000066;
+    font-family: 'chillax';
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+.mission_text_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.scripture{
+    font-family: 'chillaxmedium';
+    font-weight: 600;
+    color: #000066;
+
+    @media(max-width:700px){
+        margin-top: 3%;
+    }
+}
+
+.verse{
+    color: #000066;
+    font-weight: 600;
+
+    @media(max-width:700px){
+        margin-top: 1%;
+    }
+}
+
+/* Our Journey */
+#our_journey{
+    margin: 5% 0 ;
+}
+
+.journey_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.journey_par{
+    width: 60%;
+
+    @media(max-width:700px){
+        width: 100%;
+    }
+}
+
+.journey_grid_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3%;
+    margin-top: 4%;
+}
+
+.about_video_container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video_thumbnail {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../assets/images/home-3.jpg) center/cover no-repeat;
+    cursor: pointer;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pulse_button {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: pulse 1.5s infinite;
+    z-index: 10;
+  }
+  
+  .play_icon {
+    font-size: 32px;
+    color: #000;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+  }
+  
+  .youtube_iframe {
+    width: 100%;
+    height: 100%;
+  }
+  
+
+/* Our leadership */
+#our_leadership{
+    margin: 8% 0 5% 0;
+}
+
+.leadership_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.leadership_par{
+    width: 60%;
+
+    @media(max-width:700px){
+        width: 100%;
+    }
+}
+
+.leaders_heading{
+    font-size: 25px;
+    font-family: 'chillax';
+    color: #000066; 
+    font-weight: 600;
+    margin: 5% 0;
+
+    @media(max-width:750px){
+        margin: 10% 0 5% 0;
+    }
+
+    @media(max-width:500px){
+        margin: 15% 0 5% 0;
+    }
+}
+
+.up_headings{
+    
+
+    @media(max-width:500px){
+        margin: 30% 0 5% 0;
+    }
+}
+
+.leaders_grid_container{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+
+    @media(max-width:750px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media(max-width:600px){
+        margin: 5% 5%;
+    }
+
+    @media(max-width:500px){
+        grid-template-columns: 1fr;
+        gap: 1%;
+    }
+}
+
+.leader_img_container{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.leader_img{
+    width: 100%;
+    border-radius: 15px;
+    border-bottom-right-radius: 110px;
+    transition: 0.5s ease-in-out;
+
+    @media(max-width:900px){
+        border-bottom-right-radius: 90px;
+    }
+
+    @media(max-width:500px){
+        border-bottom-right-radius: 110px;
+    }
+
+    @media(max-width:400px){
+        border-bottom-right-radius: 90px;
+    }
+}
+
+.leader_img_container:hover .leader_img{
+    border-radius: 15px;
+}
+
+.leader_name{
+    margin-top: 3%;
+    font-family: 'chillaxmedium';
+    font-size: 20px;
+
+    @media(max-width:900px){
+        font-size: 17px;
+    }
+
+    @media(max-width:500px){
+        font-size: 20px;
+    }
+
+    @media(max-width:330px){
+        font-size: 17px;
+    }
+}
+
+/* Join Us Every Sunday */
+#join_us_everysunday{
+    margin: 5% 0;
+
+    @media(max-width:750px){
+        margin: 8% 0 5% 0;
+    }
+
+    @media(max-width:500px){
+        margin: 15% 0 5% 0;
+    }
+}
+
+.join_us_flex{
+    display: flex;
+    gap: 3%;
+    align-items: center;
+
+    @media(max-width:800px){
+        flex-wrap: wrap;
+    }
+}
+
+.join_us_head{
+    font-size: 25px;
+    font-family: 'chillax';
+    font-weight: 600;
+    color: #000066;
+}
+
+.join_us_left_container{
+    width: 100%;
+
+    img{
+        width: 100%;
+    }
+}
+
+/* ------------------------------Ministries------------------------- */
+.ministry_heading {
+    text-align: center;
+    color: #000066;
+    margin: 5% 0;
+  }
+  
+  .ministry_theme {
+    font-size: 25px;
+    font-family: 'chillax';
+    font-weight: 600;
+  }
+  
+  .about_ministry_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about_ministry_text {
+    flex: 1 1 300px;
+    font-size: 1rem;
+  
+    @media (max-width: 768px) {
+        flex: 1;
+      }
+  }
+  
+  @media (max-width: 768px) {
+    .about_ministry_container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  .video_background {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  /* ---------- YouTube Wrapper ---------- */
+  .youtube_video_wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 50vh;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #000066;
+  
+    @media (max-width: 768px) {
+        max-width: 100%;
+      }
+  }
+  
+  /* ---------- Thumbnail Container ---------- */
+  .youtube_thumbnail {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .thumbnail_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  /* ---------- Circular Pulse Play Button ---------- */
+  .play_button_pulse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(0, 0, 102, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: circularPulse 1.8s infinite;
+  }
+  
+  .play_button {
+    font-size: 30px;
+    margin-left: 2px;
+    color: white;
+    z-index: 3;
+  }
+  
+  /* ---------- Circular Pulse Keyframes ---------- */
+  @keyframes circularPulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 102, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 20px rgba(0, 0, 102, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 102, 0);
+    }
+  }
+  
+  /* ---------- Embedded YouTube Video ---------- */
+  .youtube_video {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .childrens_leaders{
+    text-align: center;
+  }
+
+.childrens_grid{
+    margin-bottom: 5%;
+
+    @media(max-width:750px){
+        margin-bottom: 10%;
+    }
+
+    @media(max-width:500px){
+        margin-bottom: 20%;
+    }
+}
+  
+  
+  
 
 /* ------------------------------Events------------------------------ */
 .video_container{
     position: relative;
     width: 100%;
-    height: 40vh;
+    height: 70vh;
     overflow: hidden;
+
+    @media(max-width:700px){
+        height: 50vh;
+    }
 }
 
 .video_background{
@@ -460,33 +925,74 @@
     position: relative;
     z-index: 1;
     width: 100%;
-    height: 40vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media(max-width:700px){
+        height: 50vh;
+    }
 }
 
 .events_head{
+    text-align: center;
     color: #fff;
 }
 
+.top_events{
+    height: 18vh;
 
-/* ------------------------------About Page--------------------------- */
-#assembly_history{
-    width: 100%;
-    height: 100vh;
+    @media(max-width:1000px){
+        height: 15vh;
+    }
+
+    @media(max-width:500px){
+        height: 13vh;
+    }
 }
 
-#leadership{
-    width: 100%;
-    height: 100vh;
+/* ------------------------------Resources--------------------------- */
+.searchbar{
+    font-family: 'chillax';
+    font-size: 15px;
+    margin-top: 2%;
+    padding: 1% 2%;
+    border-radius: 1000px;
+    border: 2px solid #000066;
+    width: 50%;
+
+    @media(max-width:420px){
+        font-size: 13px;
+    }
 }
+
+.searchBarbtn{
+    font-family: 'chillax';
+    margin-left: 2%;
+    cursor: pointer;
+    padding: 1% 2%;
+    border-radius: 1000px;
+    border: 1px solid transparent;
+    background-color: #000066;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+.searchBarbtn:hover{
+    border: 1px solid #000066;
+    background-color: transparent;
+    color: #000066;
+}
+
+
 
 /* --------------------------Overall Styles---------------------------- */
 .overall_headings{
     margin: 0;
     font-size: 30px;
     font-family: 'chillaxmedium';
+    font-weight: 600;
 
     @media(max-width:350px){
         font-size: 20px;

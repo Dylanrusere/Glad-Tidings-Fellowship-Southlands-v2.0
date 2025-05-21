@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaMapMarkerAlt } from 'react-icons/fa';
-import nightOfWorship from "../images/eventsCovers/Night of Worship.jpg";
-import ladiesConf from "../images/eventsCovers/2025 ladies fellwoship conf.jpg";
+import nightOfWorship from "../assets/images/eventsCovers/Night of Worship.jpg";
+import ladiesConf from "../assets/images/eventsCovers/2025 ladies fellwoship conf.jpg";
 import './Components.css';
 
 const UpcomingEvents = () => {
@@ -97,22 +97,26 @@ const UpcomingEvents = () => {
         <div className="overall_container">
           <p className="overall_headings">Upcoming Events</p>
           <div className="events_grid_container">
-            {sortedEvents.map((event) => (
-              <div className="event_id" key={event.id}>
-                <img src={event.image} alt={event.name} className="event_flyer" />
-                <h3 className="event_name">{event.name}</h3>
-                <p>Start: {event.startDate.toDateString()} {event.startDate.toLocaleTimeString()}</p>
-                <p>End: {event.endDate.toDateString()} {event.endDate.toLocaleTimeString()}</p>
-                <p className="event_venue"><FaMapMarkerAlt /> {event.venue}</p>
-                <p className="event_status">
-                  {getEventStatus(event) !== "🟢 Ongoing" && <i className="fa-solid fa-clock"></i>} {getEventStatus(event)}
-                </p>
-                <div className="event_btns">
-                  <button className="rsvp_btn" onClick={() => openRSVPModal(event)}>RSVP</button>
-                  <button className="event_details_btn" onClick={() => openDetailsModal(event)}>Event Details</button>
+            {sortedEvents.length === 0 ? (
+              <p className="no_events_msg">📭 Currently, there are no upcoming events.</p>
+            ) : (
+              sortedEvents.map((event) => (
+                <div className="event_id" key={event.id}>
+                  <img src={event.image} alt={event.name} className="event_flyer" />
+                  <h3 className="event_name">{event.name}</h3>
+                  <p>Start: {event.startDate.toDateString()} {event.startDate.toLocaleTimeString()}</p>
+                  <p>End: {event.endDate.toDateString()} {event.endDate.toLocaleTimeString()}</p>
+                  <p className="event_venue"><FaMapMarkerAlt /> {event.venue}</p>
+                  <p className="event_status">
+                    {getEventStatus(event) !== "🟢 Ongoing" && <i className="fa-solid fa-clock"></i>} {getEventStatus(event)}
+                  </p>
+                  <div className="event_btns">
+                    <button className="rsvp_btn" onClick={() => openRSVPModal(event)}>RSVP</button>
+                    <button className="event_details_btn" onClick={() => openDetailsModal(event)}>Event Details</button>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))
+            )}
           </div>
         </div>
       </div>
@@ -163,7 +167,9 @@ const UpcomingEvents = () => {
             <p><strong>Venue:</strong> {selectedEvent?.venue}</p>
             <p><strong>Organizers:</strong> {selectedEvent?.organizers}</p>
             <div className="modal_btns_events">
-              <a href={selectedEvent.location}><button type="submit">Directions</button></a>
+              <a href={selectedEvent.location} target="_blank" rel="noopener noreferrer">
+                <button type="button">Directions</button>
+              </a>
               <button type="button" onClick={closeModals}>Close</button>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Components.css';
-import sermonOne from "../images/home-1.jpg";
+import sermonOne from "../assets/images/home-1.jpg";
 import { Link } from "react-router-dom";
 
 export const Ministries = () => {

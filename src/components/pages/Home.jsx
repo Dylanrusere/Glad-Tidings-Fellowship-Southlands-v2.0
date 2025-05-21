@@ -2,17 +2,16 @@ import React, { useState, useEffect } from 'react';
 import "./Pages.css";
 import TypingEffect from 'react-typing-effect';
 import { FaCalendarAlt, FaPlayCircle, FaArrowUp } from 'react-icons/fa';
-import events from '../videos/events.mp4';
-import welcome from '../images/GT-Logo-blue.png';
-import pastor_lee from '../images/pastor_mucheka.jpg';
-import UpcomingEvents from '../components/UpcomingEvents';
-import lines from '../icons/ancient-scroll.png';
-import yearsImg from '../icons/years.png';
-import disciples from '../images/gt-founding-fathers.jpeg';
+import events from '../assets/videos/events.mp4';
+import welcome from '../assets/images/GT-Logo-blue.png';
+import pastor_lee from '../assets/images/pastor_mucheka.jpg';
+import AllEvents from '../components/AllEvents';
+import lines from '../assets/icons/ancient-scroll.png';
+import yearsImg from '../assets/icons/years.png';
+import disciples from '../assets/images/gt-founding-fathers.jpeg';
 import { LatestSermons } from '../components/LatestSermons';
 import { WeeklyPrograms } from '../components/WeeklyPrograms';
 import { Ministries } from '../components/Ministries';
-import { ResourcesComp } from '../components/ResourcesComp';
 import { NewsComp } from '../components/NewsComp';
 import { ContactComp } from '../components/ContactComp';
 import { Footer } from '../components/Footer';
@@ -50,7 +49,7 @@ export const Home = () => {
           }}
           >
           <FaArrowUp className="arrow-icon" />
-        </div>
+      </div>
 
       <div className='home'>
           <div className="home_video_container">
@@ -86,6 +85,7 @@ export const Home = () => {
                 </div>
               </div>
           </div>
+          
           {/* Welcome Message */}
           <div className="welcome_section">
               <img className='welcome_bg' src={welcome} alt="" />
@@ -122,7 +122,9 @@ export const Home = () => {
                 </div>
               </div>
           </div>
-          <div id="upcoming_events_home"><UpcomingEvents/></div>
+          <div id="upcoming_events_home">
+            <AllEvents showUpcomingOnly={true} />
+          </div>
       
           {/* Brief History */}
           <div className="brief_history">
@@ -189,8 +191,6 @@ export const Home = () => {
           <WeeklyPrograms/>
           {/* Our Ministries */}
           <Ministries/>
-          {/* Resources */}
-          <ResourcesComp/>
           {/* News */}
           <NewsComp/>
           {/* Contact */}

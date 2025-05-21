@@ -1,6 +1,6 @@
 import React from 'react';
 import './Components.css';
-import logo from '../images/footer_logo.png';
+import logo from '../assets/images/footer_logo.png';
 import {  FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { FaEnvelope, FaWhatsapp, FaInstagram, FaFacebook, FaYoutube, FaPhone } from 'react-icons/fa';
