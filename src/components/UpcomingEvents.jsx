@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import nightOfWorship from "../assets/images/eventsCovers/Night of Worship.jpg";
 import ladiesConf from "../assets/images/eventsCovers/2025 ladies fellwoship conf.jpg";
+import mensConf from '../assets/images/eventsCovers/2025 Men`s Conference - 2.png'
+import youthConf from '../assets/images/eventsCovers/2025 Annual Youth Conference.jpg'
 import './Components.css';
 
 const UpcomingEvents = () => {
@@ -27,6 +29,28 @@ const UpcomingEvents = () => {
       organizers: "Ladies Ministry",
       whatsappNumber: "263783002822",
       location: "https://googlemaps.com",
+    },
+    {
+      id: 3,
+      name: "Annual Youth Camp",
+      startDate: new Date("2025-12-22T13:00:00"),
+      endDate: new Date("2025-12-26T15:00:00"),
+      venue: "TBA",
+      image: youthConf,
+      organizers: "Youth Ministry",
+      whatsappNumber: "263783002822",
+      location: "https://googlemaps.com",
+    },
+    {
+      id: 4,
+      name: "Biannual Mens Fellowship Conference",
+      startDate: new Date("2025-05-26T08:00:00"),
+      endDate: new Date("2025-05-26T15:00:00"),
+      venue: "Glad Tidings Fellowship Goshen Centre, Mufakose",
+      image: mensConf,
+      organizers: "Mens Fellowship",
+      whatsappNumber: "263783002822",
+      location: "https://g.co/kgs/oorRXJS",
     },
   ]);
 

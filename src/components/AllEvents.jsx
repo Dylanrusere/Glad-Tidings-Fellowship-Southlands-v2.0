@@ -50,7 +50,7 @@ const AllEvents = ({ showUpcomingOnly = false }) => {
       image: mensConf,
       organizers: "Mens Fellowship",
       whatsappNumber: "263783002822",
-      location: "https://googlemaps.com",
+      location: "https://g.co/kgs/oorRXJS",
     },
   ]);
 

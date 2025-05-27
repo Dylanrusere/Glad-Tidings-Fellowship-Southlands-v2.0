@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaArrowUp } from 'react-icons/fa';
 import AllEvents from '../components/AllEvents'; // import the component
+import { Footer } from '../components/Footer';
 
 export const Events = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -38,6 +39,9 @@ export const Events = () => {
           </div>
       <div className="top_events"></div>   
       <AllEvents />
+      <div className="top_events"></div>
+
+      <Footer/>
     </div>
   );
 };

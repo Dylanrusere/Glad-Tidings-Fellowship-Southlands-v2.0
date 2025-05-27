@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { FaEnvelope, FaWhatsapp, FaInstagram, FaFacebook, FaYoutube } from 'react-icons/fa';
 import './Navbar.css';
-import logo from './assets/images/GTLogo.png';
+import logo from '../assets/images/GTLogo.png';
 
 export const Navbar = () => {
   const [showMinistries, setShowMinistries] = useState(false);
@@ -45,13 +45,13 @@ export const Navbar = () => {
               <ul className="dropdown-menu">
                 <li><NavLink to="/children">Children's Church Ministry</NavLink></li>
                 <li><NavLink to="/choir">Choir</NavLink></li>
-                <li><NavLink to="/homegroups">Homegroups</NavLink></li>
                 <li><NavLink to="/ladies">Ladies' Fellowship</NavLink></li>
                 <li><NavLink to="/men">Men's Fellowship</NavLink></li>
                 <li><NavLink to="/youth">Youth Ministry</NavLink></li>
               </ul>
             )}
           </li>
+          <li><NavLink to="/homegroups" className={({ isActive }) => isActive ? 'active' : ''}>Homegroups</NavLink></li>
           <li><NavLink to="/events" className={({ isActive }) => isActive ? 'active' : ''}>Events</NavLink></li>
           <li><NavLink to="/sermons" className={({ isActive }) => isActive ? 'active' : ''}>Sermons</NavLink></li>
           <li><NavLink to="/resources" className={({ isActive }) => isActive ? 'active' : ''}>Resources</NavLink></li>

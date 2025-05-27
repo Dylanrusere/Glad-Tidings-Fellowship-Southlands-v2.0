@@ -225,7 +225,8 @@
     position: absolute;
     width: 30%;
     z-index: -1;
-    opacity: 0.45;
+    margin: 10% 0 0 15%;
+    opacity: 0.15;
 
     @media(max-width:600px){
         width: 50%;
@@ -332,10 +333,9 @@
 .lines{
     position: absolute;
     width: 15%;
-    margin-top: -2%;
-    margin-left: 2%;
+    margin: 8% 0 0 15%;
     z-index: -1;
-    opacity: 0.45;
+    opacity: 0.15;
 
     @media(max-width:600px){
         width: 20%;
@@ -411,6 +411,10 @@
     width: 100%;
     border-radius: 20px;
     border-bottom-right-radius: 150px;
+}
+
+.disciples_par{
+    text-align: justify;
 }
 
 /* ----------------About Page---------------------- */
@@ -798,7 +802,6 @@
   .video_background {
     width: 100%;
     height: auto;
-    border-radius: 10px;
     display: block;
   }
   
@@ -942,6 +945,7 @@
 
 .top_events{
     height: 18vh;
+    background-color: #000066;
 
     @media(max-width:1000px){
         height: 15vh;
@@ -951,6 +955,8 @@
         height: 13vh;
     }
 }
+
+
 
 /* ------------------------------Resources--------------------------- */
 .searchbar{
@@ -985,8 +991,25 @@
     color: #000066;
 }
 
+.resources_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  .top_sermons{
+    height: 18vh;
+    background-color: #fff;
 
+    @media(max-width:1000px){
+        height: 15vh;
+    }
 
+    @media(max-width:500px){
+        height: 13vh;
+    }
+}
 /* --------------------------Overall Styles---------------------------- */
 .overall_headings{
     margin: 0;

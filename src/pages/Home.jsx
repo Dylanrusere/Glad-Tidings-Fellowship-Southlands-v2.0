@@ -5,7 +5,6 @@ import { FaCalendarAlt, FaPlayCircle, FaArrowUp } from 'react-icons/fa';
 import events from '../assets/videos/events.mp4';
 import welcome from '../assets/images/GT-Logo-blue.png';
 import pastor_lee from '../assets/images/pastor_mucheka.jpg';
-import AllEvents from '../components/AllEvents';
 import lines from '../assets/icons/ancient-scroll.png';
 import yearsImg from '../assets/icons/years.png';
 import disciples from '../assets/images/gt-founding-fathers.jpeg';
@@ -15,6 +14,7 @@ import { Ministries } from '../components/Ministries';
 import { NewsComp } from '../components/NewsComp';
 import { ContactComp } from '../components/ContactComp';
 import { Footer } from '../components/Footer';
+import UpcomingEvents from '../components/UpcomingEvents';
 
 export const Home = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -123,7 +123,7 @@ export const Home = () => {
               </div>
           </div>
           <div id="upcoming_events_home">
-            <AllEvents showUpcomingOnly={true} />
+            <UpcomingEvents />
           </div>
       
           {/* Brief History */}

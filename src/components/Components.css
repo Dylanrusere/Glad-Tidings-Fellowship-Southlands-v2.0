@@ -130,9 +130,14 @@
     margin-top: 10px;
   }
 
-  @media(max-width:650px){
+  @media(max-width:600px){
     margin-left: 15px;
     margin-top: 0;
+  }
+
+  @media(max-width:335px){
+    margin-left: 0;
+    margin-top: 10px;
   }
 }
 
@@ -305,7 +310,7 @@
     }
   }
   
-  .latest_sermons_card {
+  .overall_card {
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
@@ -328,7 +333,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Partial gradient overlay */
+    height: 100%;
     background: linear-gradient(
       to top,
       rgba(255, 255, 255, 0.8),
@@ -360,8 +365,13 @@
     margin-top: 8px;
 
     span{
-        margin-right: 5px;
+      margin-right: 5px;
     }
+  }
+
+  .card_phrase{
+    color: #777;
+    margin: 2% 0;
   }
 
   .card_date{
@@ -371,7 +381,7 @@
     }
   }
 
-  .latest_sermons_card{
+  .overall_card{
 
     @media(max-width:900px){
         padding-bottom: 30px;
@@ -382,15 +392,16 @@
     }
   }
   
-  .latest_sermons_card:hover .card_overlay {
+  .overall_card:hover .card_overlay {
     transform: translateY(0);
   }
   
-  .latest_sermons_card:hover .card_content_container {
+  .overall_card:hover .card_content_container {
     transform: translateY(-10px);
   }
 
   .card_button {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1185,6 +1196,78 @@ textarea{
 
 .program_description {
   color: #666;
+}
+
+/* ------------------------resources Card---------------- */
+.card_brief {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.card_date {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.card_buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.download_btn {
+  background: #000066;
+  color: #fff;
+}
+
+.download_btn:hover {
+  background: transparent;
+  color: #000066;
+}
+
+/* Modal */
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100000;
+}
+
+.resources_modal_content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  width: 90%;
+  position: relative;
+}
+
+.close_btn {
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: #000066;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 1000px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.close_btn:hover{
+  background: transparent;
+  border: 1px solid #000066;
+  color: #000066;
 }
 
 
