@@ -107,7 +107,8 @@ const UpcomingEvents = () => {
       const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
       const minutes = Math.floor((diff / (1000 * 60)) % 60);
       const seconds = Math.floor((diff / 1000) % 60);
-      return `Starts in ${days}d ${hours}h ${minutes}m ${seconds}s`;
+      return `Starts in ${days}d ${hours}h ${minutes}m ${seconds}s 
+      🟡 Upcoming`;
     } else if (now >= event.startDate && now <= event.endDate) {
       return "🟢 Ongoing";
     } else {

@@ -6,12 +6,12 @@ export const ContactComp = () => {
     <div className="contact_comp_section">
       <div className="overall_contact_container">
         <div className="contact_head_container">
-          <p className="contact_get" data-aos="fade-right" data-aos-duration="1000">
+          <p className="contact_get overall_headings" data-aos="fade-right" data-aos-duration="1000">
             Get In Touch
           </p>
           <p className="contact_brief" data-aos="fade-right" data-aos-duration="2000">
-          We would love to hear from you! Whether you have questions about our ministries, upcoming events, or simply need someone to pray with, our doors—and hearts—are always open.
-          <br />Reach out today and let's walk this faith journey together.
+            We would love to hear from you! Whether you have questions about our ministries, upcoming events, or simply need someone to pray with, our doors—and hearts—are always open.
+            <br />Reach out today and let's walk this faith journey together.
           </p>
         </div>
       </div>
@@ -19,7 +19,7 @@ export const ContactComp = () => {
       <div className="big_contact_container">
         <div className="contact_container">
           <div className="contact_form">
-            <p className="send_msg" data-aos="fade-right" data-aos-duration="1000">
+            <p className="send_msg overall_headings" data-aos="fade-right" data-aos-duration="1000">
               Send A Message
             </p>
             <form>
@@ -80,19 +80,19 @@ export const ContactComp = () => {
           </div>
 
           <div className="contact_details">
-            <div className="contact_info_head">Contact Information</div>
+            <div className="contact_info_head overall_headings">Contact Information</div>
             <p className="location" data-aos="slide-up" data-aos-duration="1000">
-              <i className="fa-solid fa-location-dot"></i> 7417 Southlands Park
+              <i className="fa-solid fa-location-dot"></i> <a href="">7417 Southlands Park</a>
             </p>
             <p className="phone_number" data-aos="slide-up" data-aos-duration="1500">
               <i className="fa-solid fa-phone"></i> +(263) 86 0009 889 12
             </p>
             <p className="email_address" data-aos="slide-up" data-aos-duration="2000">
               <i className="fa-solid fa-envelope"></i>{' '}
-              <a href="mailto:info@luminacomms.co.zw">info@gtfsouthlands.org</a>
+              <a href="mailto:info@gtfsouthlands.org">info@gtfsouthlands.org</a>
             </p>
             <p className="worling_hours" data-aos="slide-up" data-aos-duration="2500">
-              <i className="fa-solid fa-clock"></i> Sun - Sat: 24hours
+              <i className="fa-solid fa-clock"></i> Open 24hours
             </p>
           </div>
         </div>

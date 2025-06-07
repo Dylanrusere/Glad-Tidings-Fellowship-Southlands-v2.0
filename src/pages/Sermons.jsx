@@ -96,7 +96,7 @@ export const Sermons = () => {
       </div>
 
       {/* Heading and Search Bar */}
-      <div className="ministry_heading">
+      <div className="ministry_heading overall_container">
         <p className="ministry_theme">Raising Children in the Ways of the Lord</p>
         <p className="ministry_tagline">Where Faith, Fun, and Foundations Begin.</p>
         <div className="searchBarContainer">

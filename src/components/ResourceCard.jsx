@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaCalendarAlt, FaDownload, FaInfoCircle } from 'react-icons/fa';
 
 const ResourceCard = ({ resource }) => {
-  const { resourcesImg, title, brief, updatedAt, fullDescription, downloadLink } = resource;
+  const { resourcesImg, title, brief, source, ledBy, updatedAt, fullDescription, downloadLink } = resource;
   const [showModal, setShowModal] = useState(false);
 
   return (
@@ -20,6 +20,8 @@ const ResourceCard = ({ resource }) => {
         <div className="card_content_container">
           <h3 className="card_heading">{title}</h3>
           <p className="card_brief">{brief}</p>
+          <p className="card_brief">- {source}</p>
+          <p className="card_ledBy">{ledBy}</p>
           <p className="card_date">
             <FaCalendarAlt /> {updatedAt}
           </p>
@@ -39,7 +41,7 @@ const ResourceCard = ({ resource }) => {
       {showModal && (
         <div className="modal_overlay" onClick={() => setShowModal(false)}>
           <div className="resources_modal_content" onClick={(e) => e.stopPropagation()}>
-            <h2>{title}</h2>
+            <h3>{title}</h3>
             <p>{fullDescription}</p>
             <button className="close_btn" onClick={() => setShowModal(false)}>Close</button>
           </div>

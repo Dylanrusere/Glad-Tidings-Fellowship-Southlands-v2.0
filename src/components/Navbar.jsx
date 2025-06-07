@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { FaEnvelope, FaWhatsapp, FaInstagram, FaFacebook, FaYoutube } from 'react-icons/fa';
+import { FaTiktok, FaWhatsapp, FaInstagram, FaFacebook, FaYoutube } from 'react-icons/fa';
 import './Navbar.css';
 import logo from '../assets/images/GTLogo.png';
 
@@ -17,11 +17,11 @@ export const Navbar = () => {
       {/* Top Menu with Icons and Button */}
       <div className="top_menu">
         <div className="top_menu-icons">
+          <Link to="https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V"><FaWhatsapp /></Link>
           <Link><FaFacebook /></Link>
           <Link><FaInstagram /></Link>
-          <Link to="https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V"><FaWhatsapp /></Link>
           <Link to="https://youtube.com/@GladTidingsFellowshipSouthland"><FaYoutube /></Link>
-          <Link><FaEnvelope /></Link>
+          <Link><FaTiktok /></Link>
         </div>
         <Link className="top_menu-button">Give</Link>
       </div>

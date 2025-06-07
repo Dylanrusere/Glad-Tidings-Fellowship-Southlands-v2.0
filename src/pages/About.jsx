@@ -1,20 +1,19 @@
-import {React, useState, useEffect} from 'react';
+import { React, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import "./Pages.css";
 import { FaArrowUp } from 'react-icons/fa';
 import welcome from '../assets/images/GT-Logo-blue.png';
+import youtubeThumbnail from '../assets/images/home-3.jpg'
 import pastor_lee from '../assets/images/pastor_mucheka.jpg';
-import mrs_kamwetsa from '../assets/images/mrs_kamwetsa.jpg';
-import mrs_matambo from '../assets/images/mrs_matambo.jpg';
-import mrs__ngorima from '../assets/images/mrs_ngorima.jpg';
-import mrs_chingodza from '../assets/images/mrs_chingodza.jpg';
 import join_us from '../assets/images/eventsCovers/Night of Worship.jpg';
 import { NewsComp } from '../components/NewsComp';
 import { ContactComp } from '../components/ContactComp';
 import { Footer } from '../components/Footer';
 
 export const About = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [showYoutube, setShowYoutube] = useState(false)
+  const handlePlay = () => setShowYoutube(true)
+
   const [scrollProgress, setScrollProgress] = useState(0);
   const [showIcon, setShowIcon] = useState(false);
 
@@ -24,7 +23,7 @@ export const About = () => {
     const scrollPercent = (scrollTop / docHeight) * 100;
 
     setScrollProgress(scrollPercent);
-    setShowIcon(scrollTop > 100); 
+    setShowIcon(scrollTop > 100);
   };
 
   const scrollToTop = () => {
@@ -39,15 +38,15 @@ export const About = () => {
   }, []);
   return (
     <div className='about_page'>
-          <div
-              className="scroll-to-top"
-              onClick={scrollToTop} // Calls the scrollToTop function
-              style={{
-                background: `conic-gradient(#000066 ${scrollProgress}%, #00006693 ${scrollProgress}%)`
-              }}
-              >
-              <FaArrowUp className="arrow-icon" />
-          </div>
+      <div
+        className="scroll-to-top"
+        onClick={scrollToTop} // Calls the scrollToTop function
+        style={{
+          background: `conic-gradient(#000066 ${scrollProgress}%, #00006693 ${scrollProgress}%)`
+        }}
+      >
+        <FaArrowUp className="arrow-icon" />
+      </div>
 
       <div className="about_page_hero">
         <div className="about_page_overlay">
@@ -56,7 +55,7 @@ export const About = () => {
       </div>
 
       {/* Our Assembly History */}
-      <section id="assembly_history">  
+      <section id="assembly_history">
         <img className='welcome_bg about_bg_img' src={welcome} alt="" />
         <div className="overall_container">
           <div className="welcome_head_container welcome_about_container">
@@ -77,7 +76,7 @@ export const About = () => {
             <div className="our_mission_grid">
               <div className="mission_container">
                 <p className="great_commission">go ye therefore...we are going</p>
-                <Link to="/greatcommission"  className="card_button ministries_btn">
+                <Link to="/greatcommission" className="card_button ministries_btn">
                   Great Commission
                 </Link>
               </div>
@@ -94,163 +93,64 @@ export const About = () => {
 
       {/* Our Journey */}
       <section id="our_journey">
-      <div className="overall_container">
-        <div className="journey_container">
-          <p className="overall_headings journey_heading our_mission_head">Our Journey</p>
-          <p className="journey_par">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quidem nisi accusamus sequi tempora,
-            odit rerum enim eius possimus quibusdam alias voluptatibus ab corporis blanditiis? Aliquam qui corporis animi voluptatum!
-          </p>
-        </div>
-        <div className="journey_grid_container">
-          <div className="about_video_container">
-            {!isPlaying ? (
-              <div className="video_thumbnail" onClick={() => setIsPlaying(true)}>
-                <div className="pulse_button">
-                  <div className="play_icon">▶</div>
-                </div>
-              </div>
-            ) : (
-              <iframe
-                className="youtube_iframe"
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/watch?v=r41Gyjw2rbQ"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            )}
-          </div>
-          <div className="pic_history">
-            {/* Add content here */}
-          </div>
-        </div>
-      </div>
-    </section>
-
-      {/* Our Leadership */}
-      <section id="our_leadership">
         <div className="overall_container">
-          <div className="leadership_container">
-            <p className="overall_headings leadership_heading our_mission_head">Our Leadership</p>
-            <p className="leadership_par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quidem nisi accusamus sequi tempora, odit rerum enim eius possimus quibusdam alias voluptatibus ab corporis blanditiis? Aliquam qui corporis animi voluptatum!</p>
-
-            {/* Men`s Fellowship */}
-            <div className="leaders_overall_container">
-
-              <p className="leaders_heading">Men`s Fellowship Leaders</p>
-              
-                <div className="overall_container">
-                  <div className="leaders_grid_container">
-                    <div className="leader_img_container">
-                      <img className='leader_img' src={pastor_lee} alt="Pastor L. Mucheka" />
-                      <p className="leader_name">Pastor L. Mucheka</p>
-                    </div>
-                    
-                    <div className="leader_img_container">
-                      <img className='leader_img' src={pastor_lee} alt="Mr M. Mudarikwa" />
-                      <p className="leader_name">Mr M. Mudarikwa</p>
-                    </div>
-                    
-                    <div className="leader_img_container">
-                      <img className='leader_img' src={pastor_lee} alt="Mr Mugwara" />
-                      <p className="leader_name">Mr Mugwara</p>
-                    </div>
+          <div className="journey_container">
+            <p className="overall_headings journey_heading our_mission_head">Our Journey</p>
+            <p className="journey_par">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quidem nisi accusamus sequi tempora,
+              odit rerum enim eius possimus quibusdam alias voluptatibus ab corporis blanditiis? Aliquam qui corporis animi voluptatum!
+            </p>
+          </div>
+          <div className="journey_grid_container">
+            <div className="youtube_video_wrapper">
+              {!showYoutube ? (
+                <div className="youtube_thumbnail" onClick={handlePlay}>
+                  <img src={youtubeThumbnail} alt="YouTube Thumbnail" className="thumbnail_img" />
+                  <div className="play_button_pulse">
+                    <div className="play_button">&#9658;</div>
                   </div>
-
-                  {/* Ladies Fellowship */}
-                  <p className="leaders_heading">Ladies` Fellowship Leaders</p>
-                  
-                      <div className="leaders_grid_container">
-                        <div className="leader_img_container">
-                          <img className='leader_img' src={mrs_kamwetsa} alt="Mrs Mucheka" />
-                          <p className="leader_name">Mrs Mucheka</p>
-                        </div>
-                        
-                        <div className="leader_img_container">
-                          <img className='leader_img' src={mrs_kamwetsa} alt="Mrs Matipa" />
-                          <p className="leader_name">Mrs Kamwetsa</p>
-                        </div>
-                        
-                        <div className="leader_img_container">
-                          <img className='leader_img' src={mrs_matambo} alt="Mrs Matambo" />
-                          <p className="leader_name">Mrs Matambo</p>
-                        </div>
-                        
-                        <div className="leader_img_container">
-                          <img className='leader_img' src={mrs__ngorima} alt="Mrs Ngorima" />
-                          <p className="leader_name">Mrs Ngorima</p>
-                        </div>
-                        
-                        <div className="leader_img_container">
-                          <img className='leader_img' src={mrs_chingodza} alt="Mrs Chingodza" />
-                          <p className="leader_name">Mrs Chingodza</p>
-                        </div>
-                      </div>
-                    
-                  {/* Youth Ministry */}
-                  <p className="leaders_heading up_headings">Youth Ministry</p>
-                  
-                      <div className="leaders_grid_container">
-                        <div className="leader_img_container">
-                          <img className='leader_img' src={pastor_lee} alt="Bro Dylan" />
-                          <p className="leader_name">Brother Dylan</p>
-                        </div>
-                        
-                        <div className="leader_img_container">
-                          <img className='leader_img' src={pastor_lee} alt="Bro Blessed" />
-                          <p className="leader_name">Brother Blessed</p>
-                        </div>
-                        
-                        <div className="leader_img_container">
-                          <img className='leader_img' src={pastor_lee} alt="Bro Trust" />
-                          <p className="leader_name">Brother Trust</p>
-                        </div>
-                        
-                        <div className="leader_img_container">
-                          <img className='leader_img' src={mrs_kamwetsa} alt="Sis Audrey" />
-                          <p className="leader_name">Sister Audrey</p>
-                        </div>
-                        
-                        <div className="leader_img_container">
-                          <img className='leader_img' src={mrs_kamwetsa} alt="Sis Maka" />
-                          <p className="leader_name">Sister Makanaka</p>
-                        </div>
-                      </div>
                 </div>
-                
-
+              ) : (
+                <iframe
+                  className="youtube_video"
+                  src="https://www.youtube.com/embed/DyFtU9uGxtw"
+                  title="YouTube Video"
+                  frameBorder="0"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                />
+              )}
             </div>
 
+            <div className="pic_history">
+              {/* Add content here */}
+            </div>
           </div>
         </div>
       </section>
 
+      {/* Join Us Every Sunday */}
+      <section id='join_us_everysunday'>
+        <div className="overall_container">
+          <div className="join_us_flex">
+            <div className="join_us_right_container">
+              <p className="join_us_head">Join Us Every Sunday</p>
+              <p className="join_us_par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus dolor neque. Doloremque distinctio fugit qui dolores, quae suscipit voluptatum repellat saepe id voluptate adipisci laborum magnam laboriosam, eum sequi.</p>
 
-        {/* Join Us Every Sunday */}
-        <section id='join_us_everysunday'>
-          <div className="overall_container">
-            <div className="join_us_flex">
-              <div className="join_us_right_container">
-                <p className="join_us_head">Join Us Every Sunday</p>
-                <p className="join_us_par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus dolor neque. Doloremque distinctio fugit qui dolores, quae suscipit voluptatum repellat saepe id voluptate adipisci laborum magnam laboriosam, eum sequi.</p>
-                
-                <Link to="https://maps.app.goo.gl/BD9CNsuk57hFAyz5A"  className="card_button ministries_btn">
-                  Need Directions
-                </Link>
-              </div>
-              <div className="join_us_left_container">
-                <img src={join_us} alt="Join Us" />
-              </div>
+              <Link to="https://maps.app.goo.gl/BD9CNsuk57hFAyz5A" className="card_button ministries_btn">
+                Need Directions
+              </Link>
+            </div>
+            <div className="join_us_left_container">
+              <img src={join_us} alt="Join Us" />
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <NewsComp/>
-        <ContactComp/>
-        <Footer/>
+      <NewsComp />
+      <ContactComp />
+      <Footer />
 
     </div>
   )

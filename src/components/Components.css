@@ -8,7 +8,11 @@
 }
 
 .overall_container{
-    margin: 0 5%;
+  padding: 3rem 3rem 0 3rem;
+
+  @media(max-width:600px){
+    padding: 3rem 1.5rem 0 1.5rem;
+  }
 }
 
 .bg_upcoming_events{
@@ -709,17 +713,13 @@
 }
 
 /* -------------------------------Resources------------------------ */
-.resources_comp_section{
-  margin: 5% 0;
-}
-
 .resources_comp{
   color: #000066;
 }
 
 /* --------------------------------News Comp----------------------------- */
 .news_comp_section{
-  margin: 5% 0;
+  padding: 3rem 0;
 }
 
 .news_comp{
@@ -728,7 +728,11 @@
 
 /* --------------------------------Contact---------------------------- */
 .contact_comp_section{
-  margin: 5% 0;
+  padding: 3rem 0;
+
+  @media(max-width:400px){
+    padding: 0;
+  }
 }
 
 .contact_comp{
@@ -738,7 +742,7 @@
 /* Contact */
 .overall_contact_container{
   background-color: #000066;
-  padding: 5% 0 15% 0;
+  padding: 3rem 1rem;
 }
 
 form input, textarea, button{
@@ -769,14 +773,10 @@ form input, textarea, button{
 }
 
 .big_contact_container{
-  margin: -10% 10% 5% 10%;
+  margin: -2% 10% 5% 10%;
 
-  @media(max-width:730px){
-      margin: -10% 5% 10% 5%;
-  }
-
-  @media(max-width:350px){
-      margin: -10% 0 10% 0;
+  @media(max-width:400px){
+    margin: 0;
   }
 }
 
@@ -784,7 +784,7 @@ form input, textarea, button{
   width: 100%;
   background-color: #ffffff;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.459);
-  padding: 30px 20px 30px 40px;
+  padding: 5% ;
 
   button{
       cursor: pointer;
@@ -893,13 +893,24 @@ textarea{
 
 .location{
   margin-top: 5%;
+
+  a{
+    color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.location{
+  a:hover{
+      font-weight: 600;
+  }
 }
 
 .email_address{
   a{
       text-decoration: none;
       color: #fff;
-      transition: 0.5s ease-in-out;
+      transition: 0.3s ease-in-out;
   }
 }
 
@@ -1054,7 +1065,7 @@ textarea{
 /* Vision & Goals Styles */
 .vision_goals_container {
   text-align: center;
-  margin: 5% 0;
+  
 }
 
 .vision_section_title {
@@ -1205,6 +1216,12 @@ textarea{
   margin-bottom: 10px;
 }
 
+.card_ledBy{
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
 .card_date {
   font-size: 0.85rem;
   color: #777;
@@ -1249,12 +1266,18 @@ textarea{
   padding: 20px;
   border-radius: 10px;
   max-width: 700px;
+  height: 50vh;
   width: 90%;
   position: relative;
 }
 
+.resources_modal_content h3{
+  font-family: 'chillax';
+  font-size: 20px;
+}
+
 .close_btn {
-  margin-top: 20px;
+  margin-top: 30%;
   padding: 8px 20px;
   background: #000066;
   color: white;

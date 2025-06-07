@@ -1,9 +1,9 @@
 import React from 'react';
 import './Components.css';
 import logo from '../assets/images/footer_logo.png';
-import {  FaMapMarkerAlt, FaClock } from 'react-icons/fa';
+import {  FaMapMarkerAlt, FaClock, FaTiktok } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { FaEnvelope, FaWhatsapp, FaInstagram, FaFacebook, FaYoutube, FaPhone } from 'react-icons/fa';
+import { FaEnvelope, FaWhatsapp, FaInstagram, FaFacebook, FaYoutube } from 'react-icons/fa';
 
 export const Footer = () => {
   return (
@@ -12,20 +12,20 @@ export const Footer = () => {
             <div className="social_media_link none">
                 <img src={logo} alt="footer_logo" className='footer_logo' />
                 <div className="footer_social_media_links">
+                            <Link to="https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V">
+                            <FaWhatsapp />
+                            </Link>
                             <Link>
                             <FaFacebook />
                             </Link>
                             <Link>
                             <FaInstagram />
                             </Link>
-                            <Link to="https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V">
-                            <FaWhatsapp />
-                            </Link>
                             <Link to="https://youtube.com/@GladTidingsFellowshipSouthland">
                             <FaYoutube />
                             </Link>
                             <Link>
-                            <FaEnvelope />
+                            <FaTiktok />
                             </Link>
                 </div>
             </div>
@@ -41,20 +41,20 @@ export const Footer = () => {
             <div className="social_media_link to_be_none">
                 <img src={logo} alt="footer_logo" className='footer_logo' />
                 <div className="footer_social_media_links">
+                            <Link to="https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V">
+                            <FaWhatsapp />
+                            </Link>
                             <Link>
                             <FaFacebook />
                             </Link>
                             <Link>
                             <FaInstagram />
                             </Link>
-                            <Link to="https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V">
-                            <FaWhatsapp />
-                            </Link>
                             <Link to="https://youtube.com/@GladTidingsFellowshipSouthland">
                             <FaYoutube />
                             </Link>
-                            <Link to="mailto:gtfsouthlands.media@gmail.com">
-                            <FaEnvelope />
+                            <Link to="">
+                            <FaTiktok />
                             </Link>
                 </div>
             </div>
@@ -63,15 +63,15 @@ export const Footer = () => {
                 <div className="footer_quick_links_links">
                     <a href='a' className="footer_quick_link">Get In Touch</a>
                     <a href='a' className="footer_quick_link">Visit Us!</a>
-                    <a href='a' className="footer_quick_link">Sermons</a>
+                    <a href='./sermons' className="footer_quick_link">Sermons</a>
                     <a href='a' className="footer_quick_link">Submit A Prayer Request</a>
                 </div>
             </div>
         </div>
         <div className="bottom_footer_container">
+            <p className='copright'>© 2025 Glad Tidings Fellowship Southlands</p>
             <p className='all_rights'>All Rights Reserved</p>
-            <p className='copright'>Copyright 2025</p>
-            <p className="it_team">Southlands Glad Tidings Media & IT Team</p>
+            <a className="it_team" href=''>Designed & Developed by Southlands Glad Tidings Media & IT Team</a>
         </div>
     </div>
   )

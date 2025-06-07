@@ -11,6 +11,8 @@ const ResourcesDirectory = [
     resourcesImg: tenNov,
     title: "Understanding Faith",
     brief: "A short guide on building strong faith.",
+    source: "Kingdoms",
+    ledBy: "Pastor Mucheka",
     fullDescription: "This resource dives deep into how to grow your faith through the Word of God...",
     updatedAt: "May 18, 2025",
     downloadLink: "/downloads/understanding-faith.pdf"
@@ -19,23 +21,29 @@ const ResourcesDirectory = [
     resourcesImg: tenNov,
     title: "Walking in Salvation",
     brief: "Explains what salvation truly means.",
+    source: "Devotions",
+    ledBy: "Mr Mugwara",
     fullDescription: "Discover what it means to walk in your salvation and God's grace...",
     updatedAt: "May 15, 2025",
     downloadLink: "/downloads/walking-in-salvation.pdf"
   },
   {
     resourcesImg: tenNov,
-    title: "Walking in Salvation",
-    brief: "Explains what salvation truly means.",
+    title: "Giving",
+    brief: "Explains to truly Give to God.",
+    source: "Kingdoms",
+    ledBy: "Pastor Mucheka",
     fullDescription: "Discover what it means to walk in your salvation and God's grace...",
     updatedAt: "May 15, 2025",
     downloadLink: "/downloads/walking-in-salvation.pdf"
   },
   {
     resourcesImg: tenNov,
-    title: "Walking in Salvation",
-    brief: "Explains what salvation truly means.",
-    fullDescription: "Discover what it means to walk in your salvation and God's grace...",
+    title: "Praise & Worship - 1",
+    brief: "Explains what true Worship means.",
+    source: "Devotions",
+    ledBy: "Mrs Kamwetsa",
+    fullDescription: "Discover what it means to worship God...",
     updatedAt: "May 15, 2025",
     downloadLink: "/downloads/walking-in-salvation.pdf"
   },
@@ -72,16 +80,16 @@ export const Resources = () => {
   );
 
   return (
-    <div>   
-              <div
-                  className="scroll-to-top"
-                  onClick={scrollToTop} // Calls the scrollToTop function
-                  style={{
-                    background: `conic-gradient(#000066 ${scrollProgress}%, #00006693 ${scrollProgress}%)`
-                  }}
-                  >
-                  <FaArrowUp className="arrow-icon" />
-              </div>
+    <div>
+      <div
+        className="scroll-to-top"
+        onClick={scrollToTop} // Calls the scrollToTop function
+        style={{
+          background: `conic-gradient(#000066 ${scrollProgress}%, #00006693 ${scrollProgress}%)`
+        }}
+      >
+        <FaArrowUp className="arrow-icon" />
+      </div>
 
       <div className="about_page_hero">
         <div className="about_page_overlay">
@@ -89,7 +97,7 @@ export const Resources = () => {
         </div>
       </div>
 
-      <div className="ministry_heading">
+      <div className="ministry_heading overall_container">
         <p className="ministry_theme">Raising Children in the Ways of the Lord</p>
         <p className="ministry_tagline">Where Faith, Fun, and Foundations Begin.</p>
         <div className="searchBarContainer">
@@ -114,7 +122,7 @@ export const Resources = () => {
 
       <div className="top_sermons"></div>
 
-      <Footer/>
+      <Footer />
 
     </div>
   );

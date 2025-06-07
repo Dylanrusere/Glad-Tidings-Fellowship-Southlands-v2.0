@@ -12,7 +12,7 @@ export const LatestSermons = () => {
       imageSrc: tenNov,
       heading: "The Lord has not forgetten you - Part 2",
       preacher: "Pastor L. Mucheka",
-      date: "Sun, 15 December 2024",
+      date: "Sun, 15 March 2025",
       link: "https://youtube.com/GladTidingsFellowshipSouthland",
     },
     {
@@ -20,7 +20,7 @@ export const LatestSermons = () => {
       imageSrc: tenNov,
       heading: "The Lord has not forgetten you",
       preacher: "Pastor L. Mucheka",
-      date: "Sun, 08 December 2024",
+      date: "Sun, 08 March 2025",
       link: "https://youtube.com/GladTidingsFellowshipSouthland",
     },
     {
@@ -28,7 +28,7 @@ export const LatestSermons = () => {
       imageSrc: tenNov,
       heading: "Children",
       preacher: "Children`s Church",
-      date: "Sun, 01 December 2024",
+      date: "Sun, 01 March 2025",
       link: "https://youtube.com/GladTidingsFellowshipSouthland",
     },
 

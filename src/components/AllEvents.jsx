@@ -92,8 +92,15 @@ const AllEvents = ({ showUpcomingOnly = false }) => {
 
   const getEventStatus = (event) => {
     const now = new Date();
-    if (now < event.startDate) return "🟡 Upcoming";
-    if (now >= event.startDate && now <= event.endDate) return "🟢 Ongoing";
+    if (now < event.startDate) {
+      const diff = event.startDate - now;
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+      return `Starts in ${days}d ${hours}h ${minutes}m ${seconds}s 
+      🟡 Upcoming`;
+    }else if (now >= event.startDate && now <= event.endDate) return "🟢 Ongoing";
     return "🔴 Past Event";
   };
 
