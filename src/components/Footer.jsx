@@ -15,10 +15,10 @@ export const Footer = () => {
                             <Link to="https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V">
                             <FaWhatsapp />
                             </Link>
-                            <Link>
+                            <Link to="https://www.facebook.com/share/1CEabtwQB9">
                             <FaFacebook />
                             </Link>
-                            <Link>
+                            <Link to="https://www.instagram.com/southlandsgladtidings">
                             <FaInstagram />
                             </Link>
                             <Link to="https://youtube.com/@GladTidingsFellowshipSouthland">
@@ -44,10 +44,10 @@ export const Footer = () => {
                             <Link to="https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V">
                             <FaWhatsapp />
                             </Link>
-                            <Link>
+                            <Link to="https://www.facebook.com/share/1CEabtwQB9">
                             <FaFacebook />
                             </Link>
-                            <Link>
+                            <Link to="https://www.instagram.com/southlandsgladtidings">
                             <FaInstagram />
                             </Link>
                             <Link to="https://youtube.com/@GladTidingsFellowshipSouthland">
