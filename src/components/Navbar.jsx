@@ -6,6 +6,7 @@ import logo from '../assets/images/GTLogo.png';
 
 export const Navbar = () => {
   const [showMinistries, setShowMinistries] = useState(false);
+  const [showMedia, setShowMedia] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -55,6 +56,19 @@ export const Navbar = () => {
           <li><NavLink to="/events" className={({ isActive }) => isActive ? 'active' : ''}>Events</NavLink></li>
           <li><NavLink to="/sermons" className={({ isActive }) => isActive ? 'active' : ''}>Sermons</NavLink></li>
           <li><NavLink to="/resources" className={({ isActive }) => isActive ? 'active' : ''}>Resources</NavLink></li>
+          <li
+            onMouseEnter={() => setShowMedia(true)}
+            onMouseLeave={() => setShowMedia(false)}
+            className="dropdown"
+          >
+            Media <span className="toggle-icon">{showMedia ? '-' : '+'}</span>
+            {showMedia && (
+              <ul className="dropdown-menu">
+                <li><NavLink to="/mediateam">Our Team</NavLink></li>
+                <li><NavLink to="/oursocials">Our Socials</NavLink></li>
+              </ul>
+            )}
+          </li>
           <li><NavLink to="/gallery" className={({ isActive }) => isActive ? 'active' : ''}>Gallery</NavLink></li>
           <li><NavLink to="/news" className={({ isActive }) => isActive ? 'active' : ''}>News & Updates</NavLink></li>
           <li><NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''}>Contact</NavLink></li>

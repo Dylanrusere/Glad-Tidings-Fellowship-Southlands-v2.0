@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { Home, About, Children, Contact, Choir, Events, Gallery, Homegroups, Ladies, Men, Resources, Sermons, Youth, News, GreatCommission } from "./pages";
+import { Home, About, Children, Contact, Choir, Events, Gallery, Homegroups, Ladies, Men, Resources, Sermons, Youth, News, GreatCommission, MediaTeam, OurSocials } from "./pages";
 import { Navbar } from "./components/Navbar";
 
 function App() {
@@ -18,7 +18,9 @@ function App() {
         <Route path="/homegroups" element={<Homegroups />} />
         <Route path="/ladies" element={<Ladies />} />
         <Route path="/men" element={<Men />} />
+        <Route path="/mediateam" element={<MediaTeam />} />
         <Route path="/news" element={<News />} />
+        <Route path="/oursocials" element={<OurSocials />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/sermons" element={<Sermons />} />
         <Route path="/youth" element={<Youth />} />

@@ -1214,6 +1214,29 @@ body {
     }
 }
 
+/* ---------------------------Media Team-------------------- */
+.media_team_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3%;
+
+    @media(max-width:600px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.media_team_img_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.media_team_img {
+    width: 80%;
+    border-radius: 15px;
+    border-bottom-right-radius: 20%;
+}
+
 /* --------------------------Overall Styles---------------------------- */
 .overall_headings {
     margin: 0;
