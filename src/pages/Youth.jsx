@@ -106,70 +106,65 @@ export const Youth = () => {
         title="Our Vision & Goals"
         goals={[
           {
-            icon: "/icons/bible.png",
-            title: "Biblical Teaching",
-            description: "Teach Biblical truths in fun and memorable ways.",
+            icon: "/icons/faith.png",
+            title: "Faith Development",
+            description: "Equip youth to build a strong, personal relationship with Christ.",
           },
           {
-            icon: "/icons/heart.png",
-            title: "Spiritual Growth",
-            description: "Help children develop a personal relationship with Jesus.",
+            icon: "/icons/community.png",
+            title: "Community Building",
+            description: "Create a supportive and welcoming environment for all youth.",
           },
           {
-            icon: "/icons/shield.png",
-            title: "Safe Space",
-            description: "Ensure every child feels safe, valued, and loved.",
+            icon: "/icons/leadership.png",
+            title: "Leadership Training",
+            description: "Empower young people to lead in church and community.",
           },
           {
-            icon: "/icons/family.png",
-            title: "Parental Involvement",
-            description: "Equip parents to lead their child’s faith journey.",
+            icon: "/icons/service.png",
+            title: "Active Service",
+            description: "Encourage youth to serve and make a positive impact around them.",
           },
           {
-            icon: "/icons/star.png",
-            title: "Bold Faith",
-            description: "Raise children who live out their faith confidently.",
+            icon: "/icons/growth.png",
+            title: "Personal Growth",
+            description: "Promote holistic growth spiritually, mentally, and socially.",
           },
         ]}
       />
 
-      {/* Program */}
       <ProgramsSection
         title="Programs & Activities"
-        intro="We run engaging, spirit-led programs designed to help children grow in faith, character, and community."
+        intro="Our youth ministry offers dynamic and engaging programs designed to inspire growth, leadership, and fellowship."
         programs={[
           {
-            icon: '/icons/bible-class.png',
-            name: 'Bible Classes',
-            description: 'Interactive Bible storytelling and age-based teachings every Sunday.',
+            icon: '/icons/bible-study.png',
+            name: 'Youth Bible Study',
+            description: 'Weekly interactive sessions focused on relevant, real-life biblical teaching.',
           },
           {
-            icon: '/icons/worship.png',
-            name: 'Kids Worship',
-            description: 'Joyful worship sessions with singing, dancing, and instruments.',
-          },
-          {
-            icon: '/icons/art.png',
-            name: 'Creative Arts & Crafts',
-            description: 'Crafts and art projects that tie into the weekly Bible lesson.',
-          },
-          {
-            icon: '/icons/camp.png',
-            name: 'Holiday Bible School',
-            description: 'Annual themed event with games, teaching, snacks, and fun.',
+            icon: '/icons/fellowship.png',
+            name: 'Fellowship Nights',
+            description: 'Fun and faith-filled evenings to build friendships and encourage one another.',
           },
           {
             icon: '/icons/mission.png',
-            name: 'Mini Outreach Projects',
-            description: 'Simple missions like visiting children’s homes or collecting items for the needy.',
+            name: 'Outreach & Missions',
+            description: 'Youth-led community service projects and mission trips to serve others.',
           },
           {
-            icon: '/icons/fun.png',
-            name: 'Fun Day & Talent Shows',
-            description: 'A time to play, share talents, and grow in confidence and fellowship.',
+            icon: '/icons/workshop.png',
+            name: 'Life Skills Workshops',
+            description: 'Workshops on leadership, career guidance, and personal development.',
+          },
+          {
+            icon: '/icons/retreat.png',
+            name: 'Annual Youth Retreat',
+            description: 'A time for spiritual renewal, worship, and bonding away from everyday distractions.',
           },
         ]}
       />
+
 
       {/* Children`s Church Ministry */}
       <div className="overall_container">
@@ -177,31 +172,31 @@ export const Youth = () => {
           <p className="leaders_heading up_headings">Meet Our Leaders</p>
 
           <div className="leaders_grid_container childrens_grid">
-              <div className="leader_img_container">
-                <img className='leader_img' src={pastor_lee} alt="Bro Dylan" />
-                <p className="leader_name">Brother Dylan</p>
-              </div>
+            <div className="leader_img_container">
+              <img className='leader_img' src={pastor_lee} alt="Bro Dylan" />
+              <p className="leader_name">Brother Dylan</p>
+            </div>
 
-              <div className="leader_img_container">
-                <img className='leader_img' src={pastor_lee} alt="Bro Blessed" />
-                <p className="leader_name">Brother Blessed</p>
-              </div>
+            <div className="leader_img_container">
+              <img className='leader_img' src={pastor_lee} alt="Bro Blessed" />
+              <p className="leader_name">Brother Blessed</p>
+            </div>
 
-              <div className="leader_img_container">
-                <img className='leader_img' src={pastor_lee} alt="Bro Trust" />
-                <p className="leader_name">Brother Trust</p>
-              </div>
+            <div className="leader_img_container">
+              <img className='leader_img' src={pastor_lee} alt="Bro Trust" />
+              <p className="leader_name">Brother Trust</p>
+            </div>
 
-              <div className="leader_img_container">
-                <img className='leader_img' src={mrs_kamwetsa} alt="Sis Audrey" />
-                <p className="leader_name">Sister Audrey</p>
-              </div>
+            <div className="leader_img_container">
+              <img className='leader_img' src={mrs_kamwetsa} alt="Sis Audrey" />
+              <p className="leader_name">Sister Audrey</p>
+            </div>
 
-              <div className="leader_img_container">
-                <img className='leader_img' src={mrs_kamwetsa} alt="Sis Maka" />
-                <p className="leader_name">Sister Makanaka</p>
-              </div>
-              
+            <div className="leader_img_container">
+              <img className='leader_img' src={mrs_kamwetsa} alt="Sis Maka" />
+              <p className="leader_name">Sister Makanaka</p>
+            </div>
+
           </div>
         </div>
       </div>

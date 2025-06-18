@@ -14,7 +14,7 @@ const ResourcesDirectory = [
     source: "Kingdoms",
     ledBy: "Pastor Mucheka",
     fullDescription: "This resource dives deep into how to grow your faith through the Word of God...",
-    updatedAt: "May 18, 2025",
+    updatedAt: "June 18, 2025",
     downloadLink: "/downloads/understanding-faith.pdf"
   },
   {
@@ -98,8 +98,8 @@ export const Resources = () => {
       </div>
 
       <div className="ministry_heading overall_container">
-        <p className="ministry_theme">Raising Children in the Ways of the Lord</p>
-        <p className="ministry_tagline">Where Faith, Fun, and Foundations Begin.</p>
+        <p className="ministry_theme">Our Resources Archive</p>
+        <p className="ministry_tagline">This is the page where you can find all the resources that can help you grow as a Disciple of Christ.</p>
         <div className="searchBarContainer">
           <input
             type="text"

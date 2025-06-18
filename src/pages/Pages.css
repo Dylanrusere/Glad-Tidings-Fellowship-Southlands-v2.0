@@ -925,7 +925,7 @@ body {
     font-size: 1.1rem;
     color: #555;
     margin-bottom: 2rem;
-    max-width: 700px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1009,6 +1009,29 @@ body {
 .homegroups_tag {
     color: #000066a6;
 }
+
+.map_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .map_card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .map_card h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
 
 /* ------------------------------Events------------------------------ */
 .video_container {
@@ -1235,6 +1258,33 @@ body {
     width: 80%;
     border-radius: 15px;
     border-bottom-right-radius: 20%;
+}
+
+.cta_media_crew {
+    background: url(../assets//images/home-3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cta_media_crew_overlay {
+    text-align: center;
+    color: #fff;
+    padding: 3rem 1rem;
+    margin-top: 3rem;
+    background-color: #00006677;
+}
+
+.cta_media_crew p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta_media_crew h3 {
+    font-size: 25px;
+    margin-bottom: 1rem;
+    font-family: 'chillax';
+    font-weight: 600;
 }
 
 /* --------------------------Overall Styles---------------------------- */

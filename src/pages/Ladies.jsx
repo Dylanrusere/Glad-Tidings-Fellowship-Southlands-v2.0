@@ -64,8 +64,8 @@ export const Ladies = () => {
 
       {/* Head */}
       <div className="ministry_heading overall_container">
-        <p className="ministry_theme">Raising Children in the Ways of the Lord</p>
-        <p className="ministry_tagline">Where Faith, Fun, and Foundations Begin.</p>
+        <p className="ministry_theme">Women of Purpose, Power & Grace</p>
+        <p className="ministry_tagline">Nurturing faith, fostering sisterhood, and empowering every woman to shine</p>
       </div>
 
       {/* About Ministry */}
@@ -73,11 +73,7 @@ export const Ladies = () => {
         <div className="about_ministry_container">
           <div className="about_ministry_text">
             <p>
-              The Children’s Church Ministry exists to introduce young hearts to the love of Jesus Christ
-              in a safe, fun, and engaging environment. Our mission is to plant seeds of faith early on,
-              equipping children to grow into spiritually strong individuals who know God personally. We
-              cater for children aged 3 to 12 years, with age-appropriate classes, Bible lessons, songs,
-              crafts, and interactive activities every Sunday and during special events.
+              The Ladies’ Fellowship is a vibrant community where women from all walks of life come together to grow spiritually, support one another, and serve with love. Through inspiring Bible studies, uplifting fellowship, and impactful outreach, we nurture hearts and minds to reflect the beauty and strength found in Christ. Join us as we encourage each other to walk boldly in God’s purpose and embrace the power and grace He has given us.
             </p>
           </div>
 
@@ -109,28 +105,28 @@ export const Ladies = () => {
         goals={[
           {
             icon: "/icons/bible.png",
-            title: "Biblical Teaching",
-            description: "Teach Biblical truths in fun and memorable ways.",
+            title: "Spiritual Growth",
+            description: "To nurture deep and lasting relationships with Christ through regular Bible study, prayer, and worship.",
           },
           {
             icon: "/icons/heart.png",
-            title: "Spiritual Growth",
-            description: "Help children develop a personal relationship with Jesus.",
+            title: "Empowerment",
+            description: "To equip women with the knowledge, confidence, and skills needed to impact their homes, workplaces, and communities.",
           },
           {
             icon: "/icons/shield.png",
-            title: "Safe Space",
-            description: "Ensure every child feels safe, valued, and loved.",
+            title: "Unity & Sisterhoo",
+            description: "To build a loving, supportive community where every woman feels valued, heard, and encouraged.",
           },
           {
             icon: "/icons/family.png",
-            title: "Parental Involvement",
-            description: "Equip parents to lead their child’s faith journey.",
+            title: "Service",
+            description: "To inspire and mobilize women to serve others both within the church and in the wider community",
           },
           {
             icon: "/icons/star.png",
-            title: "Bold Faith",
-            description: "Raise children who live out their faith confidently.",
+            title: "Leadership Development",
+            description: "To identify and train women to take on leadership roles in the church and beyond.",
           },
         ]}
       />
@@ -138,40 +134,36 @@ export const Ladies = () => {
       {/* Program */}
       <ProgramsSection
         title="Programs & Activities"
-        intro="We run engaging, spirit-led programs designed to help children grow in faith, character, and community."
+        intro="We run engaging, spirit-led programs designed to empower women in faith, fellowship, and service."
         programs={[
           {
-            icon: '/icons/bible-class.png',
-            name: 'Bible Classes',
-            description: 'Interactive Bible storytelling and age-based teachings every Sunday.',
+            icon: '/icons/bible-study.png',
+            name: 'Weekly Bible Study & Prayer Meetings',
+            description: 'Deepen your faith through focused study and powerful prayer gatherings.',
           },
           {
-            icon: '/icons/worship.png',
-            name: 'Kids Worship',
-            description: 'Joyful worship sessions with singing, dancing, and instruments.',
+            icon: '/icons/breakfast.png',
+            name: 'Monthly Fellowship Breakfasts',
+            description: 'Connect, encourage, and build friendships over a shared meal and inspiring talks.',
           },
           {
-            icon: '/icons/art.png',
-            name: 'Creative Arts & Crafts',
-            description: 'Crafts and art projects that tie into the weekly Bible lesson.',
+            icon: '/icons/outreach.png',
+            name: 'Community Outreach Projects',
+            description: 'Participate in initiatives like feeding programs, charity drives, and mentorship for young girls.',
           },
           {
-            icon: '/icons/camp.png',
-            name: 'Holiday Bible School',
-            description: 'Annual themed event with games, teaching, snacks, and fun.',
+            icon: '/icons/workshop.png',
+            name: 'Workshops & Seminars',
+            description: 'Attend sessions on personal development, financial stewardship, health, and wellness.',
           },
           {
-            icon: '/icons/mission.png',
-            name: 'Mini Outreach Projects',
-            description: 'Simple missions like visiting children’s homes or collecting items for the needy.',
-          },
-          {
-            icon: '/icons/fun.png',
-            name: 'Fun Day & Talent Shows',
-            description: 'A time to play, share talents, and grow in confidence and fellowship.',
+            icon: '/icons/retreat.png',
+            name: 'Annual Women’s Retreat',
+            description: 'A time of spiritual renewal, teaching, worship, and bonding away from the hustle of daily life.',
           },
         ]}
       />
+
 
       {/* Children`s Church Ministry */}
       <div className="overall_container">

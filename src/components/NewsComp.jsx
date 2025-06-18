@@ -7,7 +7,7 @@ export const NewsComp = () => {
       <div className="overall_container">
         <p className="overall_headings news_comp">News & Updates</p>
         <p className="news_comp_par">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur nemo dolorem laudantium, eum culpa quia enim commodi facilis corrupti. Voluptas assumenda ullam iusto, ipsum esse ab illum quibusdam veniam ratione.
+        Stay connected with everything happening at Glad Tidings Fellowship Southlands. From upcoming events and special services to ministry highlights and church announcements — this is your go-to space for the latest updates. We believe in keeping our church family informed, inspired, and involved. Be sure to check back regularly so you don’t miss out on what God is doing in our midst!
         </p>
       </div>
     </div>

@@ -62,7 +62,7 @@ export const Men = () => {
       {/* Head */}
       <div className="ministry_heading overall_container">
         <p className="ministry_theme">Raising Mighty Men of Valour</p>
-        <p className="ministry_tagline">Where Faith, Fun, and Foundations Begin.</p>
+        <p className="ministry_tagline">Empowering men to lead with courage, faith, and honor.</p>
       </div>
 
       {/* About Ministry */}
@@ -70,11 +70,7 @@ export const Men = () => {
         <div className="about_ministry_container">
           <div className="about_ministry_text">
             <p>
-              The Children’s Church Ministry exists to introduce young hearts to the love of Jesus Christ
-              in a safe, fun, and engaging environment. Our mission is to plant seeds of faith early on,
-              equipping children to grow into spiritually strong individuals who know God personally. We
-              cater for children aged 3 to 12 years, with age-appropriate classes, Bible lessons, songs,
-              crafts, and interactive activities every Sunday and during special events.
+              Men’s Fellowship exists to build strong, godly men who lead with integrity, serve with humility, and walk boldly in faith. We are committed to raising men of valour—men who stand firm in God’s Word, take responsibility in their families and communities, and sharpen one another through prayer, fellowship, and the Word. Through gatherings, mentorship, and discipleship, we are shaping men to live with purpose, courage, and Christ-like character in every area of life.
             </p>
           </div>
 
@@ -106,69 +102,65 @@ export const Men = () => {
         goals={[
           {
             icon: "/icons/bible.png",
-            title: "Biblical Teaching",
-            description: "Teach Biblical truths in fun and memorable ways.",
-          },
-          {
-            icon: "/icons/heart.png",
             title: "Spiritual Growth",
-            description: "Help children develop a personal relationship with Jesus.",
+            description: "To build strong, godly men rooted firmly in God’s Word.",
           },
           {
             icon: "/icons/shield.png",
-            title: "Safe Space",
-            description: "Ensure every child feels safe, valued, and loved.",
+            title: "Leadership & Integrity",
+            description: "Raise men who lead with courage, humility, and integrity.",
           },
           {
-            icon: "/icons/family.png",
-            title: "Parental Involvement",
-            description: "Equip parents to lead their child’s faith journey.",
+            icon: "/icons/community.png",
+            title: "Brotherhood & Support",
+            description: "Foster a supportive community where men sharpen and encourage one another.",
           },
           {
-            icon: "/icons/star.png",
-            title: "Bold Faith",
-            description: "Raise children who live out their faith confidently.",
+            icon: "/icons/service.png",
+            title: "Service",
+            description: "Mobilize men to serve their families, church, and communities with humility.",
+          },
+          {
+            icon: "/icons/mentor.png",
+            title: "Mentorship & Discipleship",
+            description: "Equip men to mentor others and grow in Christlike character.",
           },
         ]}
       />
 
-      {/* Program */}
+      {/* Programs */}
       <ProgramsSection
         title="Programs & Activities"
-        intro="We run engaging, spirit-led programs designed to help children grow in faith, character, and community."
+        intro="We run dynamic programs designed to strengthen faith, leadership, and brotherhood among men."
         programs={[
           {
-            icon: '/icons/bible-class.png',
-            name: 'Bible Classes',
-            description: 'Interactive Bible storytelling and age-based teachings every Sunday.',
+            icon: '/icons/bible-study.png',
+            name: 'Men’s Bible Study & Prayer Meetings',
+            description: 'Weekly gatherings for focused Bible study, prayer, and spiritual growth.',
           },
           {
-            icon: '/icons/worship.png',
-            name: 'Kids Worship',
-            description: 'Joyful worship sessions with singing, dancing, and instruments.',
+            icon: '/icons/fellowship.png',
+            name: 'Monthly Fellowship & Mentorship',
+            description: 'Building strong relationships and mentoring younger men in faith and life.',
           },
           {
-            icon: '/icons/art.png',
-            name: 'Creative Arts & Crafts',
-            description: 'Crafts and art projects that tie into the weekly Bible lesson.',
+            icon: '/icons/service.png',
+            name: 'Community Service Projects',
+            description: 'Hands-on projects serving our church and local community.',
           },
           {
-            icon: '/icons/camp.png',
-            name: 'Holiday Bible School',
-            description: 'Annual themed event with games, teaching, snacks, and fun.',
+            icon: '/icons/leadership.png',
+            name: 'Leadership Workshops',
+            description: 'Training sessions to develop godly leadership skills and character.',
           },
           {
-            icon: '/icons/mission.png',
-            name: 'Mini Outreach Projects',
-            description: 'Simple missions like visiting children’s homes or collecting items for the needy.',
-          },
-          {
-            icon: '/icons/fun.png',
-            name: 'Fun Day & Talent Shows',
-            description: 'A time to play, share talents, and grow in confidence and fellowship.',
+            icon: '/icons/retreat.png',
+            name: 'Annual Men’s Retreat',
+            description: 'A time for spiritual renewal, teaching, and fellowship away from daily life.',
           },
         ]}
       />
+
 
       {/* Children`s Church Ministry */}
       <div className="overall_container">
@@ -176,20 +168,20 @@ export const Men = () => {
           <p className="leaders_heading up_headings">Meet Our Leaders</p>
 
           <div className="leaders_grid_container childrens_grid">
-                  <div className="leader_img_container">
-                    <img className='leader_img' src={pastor_lee} alt="Pastor L. Mucheka" />
-                    <p className="leader_name">Pastor L. Mucheka</p>
-                  </div>
+            <div className="leader_img_container">
+              <img className='leader_img' src={pastor_lee} alt="Pastor L. Mucheka" />
+              <p className="leader_name">Pastor L. Mucheka</p>
+            </div>
 
-                  <div className="leader_img_container">
-                    <img className='leader_img' src={pastor_lee} alt="Mr M. Mudarikwa" />
-                    <p className="leader_name">Mr M. Mudarikwa</p>
-                  </div>
+            <div className="leader_img_container">
+              <img className='leader_img' src={pastor_lee} alt="Mr M. Mudarikwa" />
+              <p className="leader_name">Mr M. Mudarikwa</p>
+            </div>
 
-                  <div className="leader_img_container">
-                    <img className='leader_img' src={pastor_lee} alt="Mr Mugwara" />
-                    <p className="leader_name">Mr Mugwara</p>
-                  </div>
+            <div className="leader_img_container">
+              <img className='leader_img' src={pastor_lee} alt="Mr Mugwara" />
+              <p className="leader_name">Mr Mugwara</p>
+            </div>
           </div>
         </div>
       </div>

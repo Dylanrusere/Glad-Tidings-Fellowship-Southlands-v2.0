@@ -36,27 +36,27 @@ export const Sermons = () => {
     {
       id: 1,
       imageSrc: tenNov,
-      heading: 'The Lord has not forgotten you - Part 2',
-      preacher: 'Pastor L. Mucheka',
-      date: 'Sun, 15 December 2024',
+      heading: "On this rock l will build my church",
+      preacher: "Pastor L. Mucheka",
+      date: "Sun, 16 June 2025",
       link: 'https://youtube.com/GladTidingsFellowshipSouthland',
       notesLink: '/downloads/notes-part2.pdf'
     },
     {
       id: 2,
       imageSrc: tenNov,
-      heading: 'The Lord has not forgotten you',
-      preacher: 'Pastor L. Mucheka',
-      date: 'Sun, 08 December 2024',
+      heading: "Do no be afraid/discouraged",
+      preacher: "Mr Kamwetsa",
+      date: "Sun, 08 June 2025",
       link: 'https://youtube.com/GladTidingsFellowshipSouthland',
       notesLink: '/downloads/notes-part2.pdf'
     },
     {
       id: 3,
       imageSrc: tenNov,
-      heading: 'Children',
-      preacher: 'Children\'s Church',
-      date: 'Sun, 01 December 2024',
+      heading: "Children",
+      preacher: "Children`s Church",
+      date: "Sun, 01 June 2025",
       link: 'https://youtube.com/GladTidingsFellowshipSouthland',
       notesLink: '/downloads/notes-part2.pdf'
     },
@@ -97,8 +97,8 @@ export const Sermons = () => {
 
       {/* Heading and Search Bar */}
       <div className="ministry_heading overall_container">
-        <p className="ministry_theme">Raising Children in the Ways of the Lord</p>
-        <p className="ministry_tagline">Where Faith, Fun, and Foundations Begin.</p>
+        <p className="ministry_theme">This our Sermons Archive</p>
+        <p className="ministry_tagline">This where you can find all our Sermons and the notes for every Sermon.</p>
         <div className="searchBarContainer">
           <input
             type="text"

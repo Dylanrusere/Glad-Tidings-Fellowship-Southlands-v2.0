@@ -61,8 +61,13 @@ export const About = () => {
           <div className="welcome_head_container welcome_about_container">
             <p className="overall_headings welcome_head about_welcome">Welcome to Southlands Glad Tidings <br /> Fellowship Assembly</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur obcaecati incidunt quos, minus enim optio? Consequatur facilis expedita laudantium atque quos facere, ea cumque ab! Repellendus animi voluptatem eveniet aperiam!
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, eaque officia consequuntur culpa atque eum maiores quasi sed voluptatibus in suscipit! Eligendi quisquam voluptate voluptatibus iste eum earum ducimus itaque.
+            <p>We’re so glad you’re here!
+
+At Glad Tidings Fellowship Southlands, we are a Christ-centered, Spirit-led, and people-loving church family. Whether you’re exploring faith, looking for a home church, or just browsing through — you are welcome here.
+
+Our desire is to see lives transformed by the power of God’s Word, empowered by the Holy Spirit, and connected in a vibrant, growing community. We believe in worship that touches heaven, teaching that builds strong believers, and fellowship that makes you feel like family.
+
+Take a moment to explore our site, learn about our ministries, join us for worship, or connect with us online. Whether you're near or far, there's a place for you at GTF Southlands.
             </p>
           </div>
 
@@ -97,8 +102,7 @@ export const About = () => {
           <div className="journey_container">
             <p className="overall_headings journey_heading our_mission_head">Our Journey</p>
             <p className="journey_par">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quidem nisi accusamus sequi tempora,
-              odit rerum enim eius possimus quibusdam alias voluptatibus ab corporis blanditiis? Aliquam qui corporis animi voluptatum!
+            Our journey began in 2013, right here in Southlands, with a small group of passionate believers and a big vision — to share the love of Christ and build a strong, Spirit-filled community. From humble beginnings, Glad Tidings Fellowship Southlands has grown into a vibrant family of faith, rooted in the Word, empowered by the Spirit, and committed to transforming lives for God's glory. And this is just the beginning.
             </p>
           </div>
           <div className="journey_grid_container">
@@ -135,7 +139,7 @@ export const About = () => {
           <div className="join_us_flex">
             <div className="join_us_right_container">
               <p className="join_us_head">Join Us Every Sunday</p>
-              <p className="join_us_par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus dolor neque. Doloremque distinctio fugit qui dolores, quae suscipit voluptatum repellat saepe id voluptate adipisci laborum magnam laboriosam, eum sequi.</p>
+              <p className="join_us_par">We invite you to join us every Sunday for a powerful time of worship, Word, and fellowship. Whether you're a first-time visitor or part of the family, there's a seat for you. Come and experience God's presence, connect with others, and grow in your faith at Glad Tidings Fellowship Southlands. We can't wait to welcome you!</p>
 
               <Link to="https://maps.app.goo.gl/BD9CNsuk57hFAyz5A" className="card_button ministries_btn">
                 Need Directions

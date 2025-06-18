@@ -167,7 +167,7 @@ export const Choir = () => {
       <div className="our_team_container">
         <div className="overall_container">
           <p className="our_team_head">Our Team</p>
-          <p className="our_team_par">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At explicabo itaque enim, delectus quaerat vero quas eaque dolor sunt. Deleniti ab repellendus architecto minus ipsa harum magnam illum dignissimos porro.</p>
+          <p className="our_team_par">The GTF Southlands Choir is more than just a group of singers — we are a united team of worshippers dedicated to leading the church into the presence of God through music. With hearts full of praise and voices lifted in harmony, we serve to glorify God and inspire others to worship. Each member plays a vital role, and together, we are one voice declaring His goodness.</p>
         </div>
       </div>
 
