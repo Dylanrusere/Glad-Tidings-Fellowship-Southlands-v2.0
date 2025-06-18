@@ -1321,6 +1321,7 @@ body {
 /* -------------------------Our Socials--------------------- */
 .section_heading {
     font-size: 2rem;
+    font-family: 'chillax';
     text-align: center;
     margin-top: 3rem;
     margin-bottom: 1rem;
@@ -1343,6 +1344,10 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
     color: inherit;
     text-decoration: none;
+
+    h3{
+        color: #000066;
+    }
 }
 
 .social_card:hover {
