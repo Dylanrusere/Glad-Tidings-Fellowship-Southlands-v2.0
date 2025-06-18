@@ -71,7 +71,7 @@ export const Footer = () => {
         <div className="bottom_footer_container">
             <p className='copright'>© 2025 Glad Tidings Fellowship Southlands</p>
             <p className='all_rights'>All Rights Reserved</p>
-            <a className="it_team" href=''>Designed & Developed by Southlands Glad Tidings Media & IT Team</a>
+            <a className="it_team" href='/mediateam'>Designed & Developed by Southlands Glad Tidings Media & IT Team</a>
         </div>
     </div>
   )
