@@ -50,14 +50,20 @@ export const Contact = () => {
       </div>
 
       <div className="google_map_location">
-        {/* <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15202.484442414137!2d30.5385461411731!3d-17.71535008053946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19311fea451727b7%3A0x89e5c28bdaf6fc3f!2sDarwendale!5e0!3m2!1sen!2szw!4v1727853937994!5m2!1sen!2szw"
-          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe> */}
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.3994420189!2d31.01827207467219!3d-17.960143780002078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931989b433c7043%3A0x59c7c7c6f9304f33!2sGlad%20Tidings%20Fellowship%20Southlands!5e0!3m2!1sen!2szw!4v1750236490395!5m2!1sen!2szw"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
 
-      <ContactComp/>
-      <Footer/>
+
+      <ContactComp />
+      <Footer />
 
     </div>
   )

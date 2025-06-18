@@ -61,26 +61,22 @@ export const Homegroups = () => {
       <div className="overall_container">
         <div className="homegroup_text">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione at odit qui excepturi tenetur
-            nihil itaque soluta id quis quidem iste placeat ducimus dolore accusantium earum, harum ipsum
-            officiis rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa soluta non nulla
-            nisi fugiat repudiandae debitis. Accusamus ad modi, voluptas aliquam labore expedita veniam
-            officiis aperiam pariatur error reprehenderit nihil.
+          Homegroups are the heartbeat of our church community—small gatherings of believers meeting regularly in homes across Southlands to grow in faith, build meaningful relationships, and support one another in love. They create a space for deeper Bible study, authentic fellowship, and personal discipleship beyond the Sunday service. Through Homegroups, the church becomes more connected, spiritually nourished, and empowered to live out God’s Word in everyday life.
           </p>
         </div>
       </div>
 
       {/* Locations */}
       <div className="overall_container homegroups_map_section">
-        <h2 className="ministry_theme text-center mb-4">Our Homegroup Locations in Southlands</h2>
+        <p className="ministry_theme">Our Homegroup Locations in Southlands</p>
         <div className="map_grid">
           {[
-            { name: "Homegroup 1", place: "Mai Chikowore", url: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d462.6629040230863!2d31.019969610221946!3d-17.960230072536135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2szw!4v1750163176358!5m2!1sen!2szw" },
-            { name: "Southlands 2", place: "273 Southlands Dr, Harare", url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.8991581618015!2d30.95504861477626!3d-17.828743587808077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931bc!2sSouthlands%20Homegroup%202!5e0!3m2!1sen!2szw!4v1684482749621!5m2!1sen!2szw" },
-            { name: "Southlands 3", place: "Southlands Primary School", url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.8991581618015!2d30.95704861477626!3d-17.827143587808077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931bc!2sSouthlands%20Primary!5e0!3m2!1sen!2szw!4v1684482749622!5m2!1sen!2szw" },
-            { name: "Southlands 4", place: "9 Riverside Lane, Southlands", url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.8991581618015!2d30.95804861477626!3d-17.826743587808077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931bc!2sRiverside%20Homegroup!5e0!3m2!1sen!2szw!4v1684482749623!5m2!1sen!2szw" },
-            { name: "Southlands 5", place: "Cornerstone Crescent", url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.8991581618015!2d30.95904861477626!3d-17.827543587808077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931bc!2sCornerstone%20Homegroup!5e0!3m2!1sen!2szw!4v1684482749624!5m2!1sen!2szw" },
-            { name: "Southlands 6", place: "Faith Road, Southlands", url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.8991581618015!2d30.96004861477626!3d-17.827343587808077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931bc!2sFaith%20Road%20Group!5e0!3m2!1sen!2szw!4v1684482749625!5m2!1sen!2szw" },
+            { name: "Homegroup 1", place: "", url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.3994420189!2d31.01827207467219!3d-17.960143780002078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931989b433c7043%3A0x59c7c7c6f9304f33!2sGlad%20Tidings%20Fellowship%20Southlands!5e0!3m2!1sen!2szw!4v1750236490395!5m2!1sen!2szw" },
+            { name: "Homegroup 2", place: "", url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.3994420189!2d31.01827207467219!3d-17.960143780002078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931989b433c7043%3A0x59c7c7c6f9304f33!2sGlad%20Tidings%20Fellowship%20Southlands!5e0!3m2!1sen!2szw!4v1750236490395!5m2!1sen!2szw" },
+            { name: "Homegroup 3", place: "", url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.3994420189!2d31.01827207467219!3d-17.960143780002078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931989b433c7043%3A0x59c7c7c6f9304f33!2sGlad%20Tidings%20Fellowship%20Southlands!5e0!3m2!1sen!2szw!4v1750236490395!5m2!1sen!2szw" },
+            { name: "Homegroup 4", place: "", url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.3994420189!2d31.01827207467219!3d-17.960143780002078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931989b433c7043%3A0x59c7c7c6f9304f33!2sGlad%20Tidings%20Fellowship%20Southlands!5e0!3m2!1sen!2szw!4v1750236490395!5m2!1sen!2szw" },
+            { name: "Homegroup 5", place: "", url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.3994420189!2d31.01827207467219!3d-17.960143780002078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931989b433c7043%3A0x59c7c7c6f9304f33!2sGlad%20Tidings%20Fellowship%20Southlands!5e0!3m2!1sen!2szw!4v1750236490395!5m2!1sen!2szw" },
+            { name: "Homegroup 6", place: "", url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.3994420189!2d31.01827207467219!3d-17.960143780002078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931989b433c7043%3A0x59c7c7c6f9304f33!2sGlad%20Tidings%20Fellowship%20Southlands!5e0!3m2!1sen!2szw!4v1750236490395!5m2!1sen!2szw" },
           ].map((location, index) => (
             <div className="map_card" key={index}>
               <h4>{location.name}</h4>

@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import choirVideo from '../assets/videos/weekly_programs.mp4'
 import { FaArrowUp } from 'react-icons/fa';
 import choirThumb from '../assets/images/home-3.jpg'
@@ -7,6 +10,8 @@ import ProgramsSection from '../components/ProgramsSection'
 import { NewsComp } from '../components/NewsComp'
 import { ContactComp } from '../components/ContactComp'
 import { Footer } from '../components/Footer'
+// Team Images
+import mrsKamwetsa from '../assets/images/choirTeam/mrs_kamwetsa.jpg'
 
 export const Choir = () => {
   const [showVideo, setShowVideo] = useState(false)
@@ -172,6 +177,67 @@ export const Choir = () => {
       </div>
 
       {/* Carousel */}
+      <div className="overall_container choir_carousel">
+        <Slider
+          dots={true}
+          infinite={true}
+          speed={500}
+          slidesToShow={3}
+          slidesToScroll={1}
+          autoplay={true}
+          autoplaySpeed={3000}
+          responsive={[
+            {
+              breakpoint: 1024,
+              settings: { slidesToShow: 2 }
+            },
+            {
+              breakpoint: 600,
+              settings: { slidesToShow: 1 }
+            }
+          ]}
+        >
+          {[
+            {
+              name: "Mrs Mucheka",
+              role: "Lead Vocalist",
+              image: mrsKamwetsa
+            },
+            {
+              name: "Brother Dylan",
+              role: "Keyboardist",
+              image: mrsKamwetsa
+            },
+            {
+              name: "Brother Learnmore",
+              role: "Bassist",
+              image: mrsKamwetsa
+            },
+            {
+              name: "Brother Tinashe",
+              role: "Drummer",
+              image: mrsKamwetsa
+            },
+            {
+              name: "Sister Tawana",
+              role: "Alto",
+              image: mrsKamwetsa
+            },
+            {
+              name: "Sister Makanak",
+              role: "Suprano",
+              image: mrsKamwetsa
+            },
+          ].map((member, index) => (
+            <div key={index} className="team_card">
+              <img src={member.image} alt={member.name} className="team_img" />
+              <h4 className="team_name">{member.name}</h4>
+              <p className="team_role">{member.role}</p>
+            </div>
+          ))}
+        </Slider>
+      </div>
+
 
       {/* Call-to-Action */}
       <div className="cta_section">

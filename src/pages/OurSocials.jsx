@@ -49,8 +49,59 @@ export const OurSocials = () => {
         </div>
       </div>
 
-      {/* <ContactComp />
-      <Footer /> */}
+      <div className="socials_section overall_container">
+        <h2 className="section_heading">Connect With Us</h2>
+        <div className="socials_grid">
+          {[
+            {
+              name: "Facebook",
+              icon: "facebook",
+              url: "https://www.facebook.com/share/1CEabtwQB9",
+              description: "Follow us for livestreams, photos, and updates.",
+            },
+            {
+              name: "YouTube",
+              icon: "youtube",
+              url: "https://www.youtube.com/@GladTidingsFellowshipSouthland",
+              description: "Watch sermons, teachings, and worship moments.",
+            },
+            {
+              name: "Instagram",
+              icon: "instagram",
+              url: "https://instagram.com/southlandsgladtidings",
+              description: "Get a glimpse of church life through images & reels.",
+            },
+            // {
+            //   name: "TikTok",
+            //   icon: "tiktok",
+            //   url: "https://tiktok.com/@yourhandle",
+            //   description: "Watch fun and spiritual short videos.",
+            // },
+            {
+              name: "WhatsApp",
+              icon: "whatsapp",
+              url: "https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V",
+              description: "Join our WhatsApp community or reach out to us.",
+            },
+          ].map((social, i) => (
+            <a
+              href={social.url}
+              className="social_card"
+              key={i}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className={`fab fa-${social.icon} social_icon`}></i>
+              <h3>{social.name}</h3>
+              <p>{social.description}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+
+
+      <ContactComp />
+      <Footer />
 
     </div>
   )

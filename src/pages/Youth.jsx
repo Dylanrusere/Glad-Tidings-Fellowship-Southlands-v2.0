@@ -71,11 +71,7 @@ export const Youth = () => {
         <div className="about_ministry_container">
           <div className="about_ministry_text">
             <p>
-              The Children’s Church Ministry exists to introduce young hearts to the love of Jesus Christ
-              in a safe, fun, and engaging environment. Our mission is to plant seeds of faith early on,
-              equipping children to grow into spiritually strong individuals who know God personally. We
-              cater for children aged 3 to 12 years, with age-appropriate classes, Bible lessons, songs,
-              crafts, and interactive activities every Sunday and during special events.
+            Youth Ministry is a vibrant community where young people discover their identity in Christ and grow into confident leaders. We provide a safe space for youth to explore faith, build lasting friendships, and develop their God-given gifts. Through dynamic teaching, engaging activities, and purposeful outreach, we aim to empower every young person to live boldly, serve passionately, and impact the world for God’s glory.
             </p>
           </div>
 
