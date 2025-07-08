@@ -1,10 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 import { Home, About, Children, Contact, Choir, Events, Gallery, Homegroups, Ladies, Men, Resources, Sermons, Youth, News, GreatCommission, MediaTeam, OurSocials } from "./pages";
 import { Navbar } from "./components/Navbar";
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <div className="App">
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
