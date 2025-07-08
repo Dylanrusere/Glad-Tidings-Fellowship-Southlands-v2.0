@@ -920,6 +920,19 @@ textarea{
   }
 }
 
+.success_message {
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+}
+
+.error_message {
+  margin-top: 10px;
+  color: red;
+  font-weight: bold;
+}
+
+
 /* -----------Footer---------- */
 .footer_container{
   background-color: #000066;
