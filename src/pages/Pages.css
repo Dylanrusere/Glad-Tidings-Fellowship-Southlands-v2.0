@@ -911,7 +911,7 @@ body {
 
 /* ------------------------------Choir------------------------------ */
 .our_team_container {
-    padding: 3rem 0;
+    padding: 3rem 0 0 0;
     text-align: center;
 }
 
@@ -926,7 +926,6 @@ body {
 .our_team_par {
     font-size: 1.1rem;
     color: #555;
-    margin-bottom: 2rem;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
