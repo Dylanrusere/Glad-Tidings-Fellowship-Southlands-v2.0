@@ -66,13 +66,13 @@
   border-radius: 1000px;
   cursor: pointer;
   font-weight: bold;
-  transition:  0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 
-  @media(max-width:700px){
+  @media(max-width:700px) {
     padding: 0.2% 3%;
   }
 
-  @media(max-width:330px){
+  @media(max-width:330px) {
     padding: 0.2% 4%;
     font-size: 15px;
   }
@@ -165,7 +165,8 @@
   transition: all 0.3s ease;
 }
 
-.bar2, .bar3 {
+.bar2,
+.bar3 {
   margin-top: 4px;
 }
 
@@ -196,6 +197,11 @@
   .navbar-links.active {
     display: flex;
   }
+
+  .navbar-links a.active {
+    font-weight: bold;
+  }
+
 
   .navbar {
     flex-direction: column;

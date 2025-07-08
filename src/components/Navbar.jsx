@@ -13,6 +13,10 @@ export const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const handleNavLinkClick = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <div className='fixed-header'>
       {/* Top Menu with Icons and Button */}
@@ -34,8 +38,8 @@ export const Navbar = () => {
         </div>
 
         <ul className={`navbar-links ${menuOpen ? 'active' : ''}`}>
-          <li><NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>Home</NavLink></li>
-          <li><NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''}>About Us</NavLink></li>
+          <li><NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleNavLinkClick}>Home</NavLink></li>
+          <li><NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleNavLinkClick}>About Us</NavLink></li>
           <li
             onMouseEnter={() => setShowMinistries(true)}
             onMouseLeave={() => setShowMinistries(false)}
@@ -44,18 +48,18 @@ export const Navbar = () => {
             Ministries <span className="toggle-icon">{showMinistries ? '-' : '+'}</span>
             {showMinistries && (
               <ul className="dropdown-menu">
-                <li><NavLink to="/children">Children's Church Ministry</NavLink></li>
-                <li><NavLink to="/choir">Choir</NavLink></li>
-                <li><NavLink to="/ladies">Ladies' Fellowship</NavLink></li>
-                <li><NavLink to="/men">Men's Fellowship</NavLink></li>
-                <li><NavLink to="/youth">Youth Ministry</NavLink></li>
+                <li><NavLink to="/children" onClick={handleNavLinkClick}>Children's Church Ministry</NavLink></li>
+                <li><NavLink to="/choir" onClick={handleNavLinkClick}>Choir</NavLink></li>
+                <li><NavLink to="/ladies" onClick={handleNavLinkClick}>Ladies' Fellowship</NavLink></li>
+                <li><NavLink to="/men" onClick={handleNavLinkClick}>Men's Fellowship</NavLink></li>
+                <li><NavLink to="/youth" onClick={handleNavLinkClick}>Youth Ministry</NavLink></li>
               </ul>
             )}
           </li>
-          <li><NavLink to="/homegroups" className={({ isActive }) => isActive ? 'active' : ''}>Homegroups</NavLink></li>
-          <li><NavLink to="/events" className={({ isActive }) => isActive ? 'active' : ''}>Events</NavLink></li>
-          <li><NavLink to="/sermons" className={({ isActive }) => isActive ? 'active' : ''}>Sermons</NavLink></li>
-          <li><NavLink to="/resources" className={({ isActive }) => isActive ? 'active' : ''}>Resources</NavLink></li>
+          <li><NavLink to="/homegroups" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleNavLinkClick}>Homegroups</NavLink></li>
+          <li><NavLink to="/events" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleNavLinkClick}>Events</NavLink></li>
+          <li><NavLink to="/sermons" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleNavLinkClick}>Sermons</NavLink></li>
+          <li><NavLink to="/resources" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleNavLinkClick}>Resources</NavLink></li>
           <li
             onMouseEnter={() => setShowMedia(true)}
             onMouseLeave={() => setShowMedia(false)}
@@ -64,14 +68,14 @@ export const Navbar = () => {
             Media <span className="toggle-icon">{showMedia ? '-' : '+'}</span>
             {showMedia && (
               <ul className="dropdown-menu">
-                <li><NavLink to="/mediateam">Our Team</NavLink></li>
-                <li><NavLink to="/oursocials">Our Socials</NavLink></li>
+                <li><NavLink to="/mediateam" onClick={handleNavLinkClick}>Our Team</NavLink></li>
+                <li><NavLink to="/oursocials" onClick={handleNavLinkClick}>Our Socials</NavLink></li>
               </ul>
             )}
           </li>
-          <li><NavLink to="/gallery" className={({ isActive }) => isActive ? 'active' : ''}>Gallery</NavLink></li>
-          <li><NavLink to="/news" className={({ isActive }) => isActive ? 'active' : ''}>News & Updates</NavLink></li>
-          <li><NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''}>Contact</NavLink></li>
+          <li><NavLink to="/gallery" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleNavLinkClick}>Gallery</NavLink></li>
+          <li><NavLink to="/news" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleNavLinkClick}>News & Updates</NavLink></li>
+          <li><NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleNavLinkClick}>Contact</NavLink></li>
         </ul>
 
         {/* Hamburger Icon */}
