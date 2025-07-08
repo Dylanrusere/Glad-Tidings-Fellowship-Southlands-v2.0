@@ -1344,7 +1344,7 @@ body {
     color: inherit;
     text-decoration: none;
 
-    h3{
+    h3 {
         color: #000066;
     }
 }
@@ -1364,6 +1364,216 @@ body {
 .google_map_location {
     width: 100%;
     height: 50vh;
+}
+
+/* News Section Styles */
+/* General Layout & Background Video */
+.video_container {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    /* Adjust height as needed */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video_background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+
+.events_head_container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.page_headings.events_head {
+    font-size: clamp(2.5em, 6vw, 4em);
+    /* Responsive font size */
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+/* Overall Container for Content */
+.overall_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Ministry Heading */
+.ministry_heading {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+.ministry_theme {
+    font-size: clamp(1.5em, 3vw, 2.2em);
+    color: #000066;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+/* News Section */
+.news-section {
+    padding: 40px 0;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.news-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid transparent;
+    /* Default border */
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.news-content {
+    padding: 20px;
+    flex-grow: 1;
+    /* Allows content to take available space */
+    display: flex;
+    flex-direction: column;
+}
+
+.news-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.news-date {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.news-excerpt {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    /* Allows excerpt to push button to bottom */
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000066;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+    /* Align button to the start (left) */
+}
+
+.read-more-btn:hover {
+    background-color: #00004d;
+}
+
+/* News Status Badge */
+.news-status {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #fff;
+    z-index: 10;
+}
+
+.news-status.past {
+    background-color: #6c757d;
+    /* Gray */
+}
+
+.news-status.current {
+    background-color: #000066;
+    /* Your primary blue */
+}
+
+.news-status.ongoing {
+    background-color: #ff7f00;
+    /* Orange */
+}
+
+.news-status.future {
+    background-color: #28a745;
+    /* Green */
+}
+
+/* Scroll to Top Button Styles */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    /* Below modal, above general content */
+    transition: opacity 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.arrow-icon {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+/* Responsive adjustments for News Section */
+@media (max-width: 768px) {
+    .news-grid {
+        grid-template-columns: 1fr;
+        /* Single column on smaller screens */
+    }
 }
 
 /* --------------------------Overall Styles---------------------------- */
@@ -1388,6 +1598,6 @@ body {
     }
 }
 
-.choir_carousel{
+.choir_carousel {
     margin-top: 0;
 }
