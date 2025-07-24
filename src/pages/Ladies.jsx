@@ -81,6 +81,7 @@ export const Ladies = () => {
             {!showYoutube ? (
               <div className="youtube_thumbnail" onClick={handlePlay}>
                 <img src={youtubeThumbnail} alt="YouTube Thumbnail" className="thumbnail_img" />
+                <div className="thumbnail_overlay"></div>
                 <div className="play_button_pulse">
                   <div className="play_button">&#9658;</div>
                 </div>

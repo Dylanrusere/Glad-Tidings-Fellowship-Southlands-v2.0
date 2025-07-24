@@ -1,15 +1,38 @@
 const galleryImages = [
-    require('../assets/images/gallery/youth-1.jpg'),
-    require('../assets/images/gallery/youth-1.jpg'),
-    require('../assets/images/gallery/youth-1.jpg'),
-    require('../assets/images/gallery/youth-1.jpg'),
-    require('../assets/images/gallery/youth-1.jpg'),
-    require('../assets/images/gallery/youth-1.jpg'),
-    require('../assets/images/gallery/youth-1.jpg'),
-    require('../assets/images/gallery/youth-1.jpg'),
-    require('../assets/images/gallery/youth-1.jpg'),
-    // Add more as you go...
-  ];
-  
-  export default galleryImages;
-  
+  require('../assets/images/IMG-20250713-WA0011.jpg'),
+  require('../assets/images/IMG-20250713-WA0015.jpg'),
+  require('../assets/images/IMG-20250708-WA0080.jpg'),
+  require('../assets/images/IMG-20250708-WA0128.jpg'),
+  require('../assets/images/IMG-20250708-WA0082.jpg'),
+  require('../assets/images/IMG-20250708-WA0147.jpg'),
+  require('../assets/images/IMG-20250708-WA0104.jpg'),
+  require('../assets/images/IMG-20250708-WA0105.jpg'),
+  require('../assets/images/IMG-20250708-WA0124.jpg'),
+  require('../assets/images/IMG-20250708-WA0155.jpg'),
+  require('../assets/images/IMG-20250708-WA0139.jpg'),
+  require('../assets/images/IMG-20250708-WA0136.jpg'),
+  require('../assets/images/IMG-20250708-WA0129.jpg'),
+  require('../assets/images/IMG-20250708-WA0127.jpg'),
+  require('../assets/images/IMG-20250708-WA0143.jpg'),
+  require('../assets/images/IMG-20250708-WA0122.jpg'),
+  require('../assets/images/IMG-20250708-WA0116.jpg'),
+  require('../assets/images/IMG-20250708-WA0118.jpg'),
+  require('../assets/images/IMG-20250708-WA0115.jpg'),
+  require('../assets/images/IMG-20250708-WA0117.jpg'),
+  require('../assets/images/IMG-20250708-WA0108.jpg'),
+  require('../assets/images/IMG-20250708-WA0139.jpg'),
+  require('../assets/images/IMG-20250708-WA0148.jpg'),
+  require('../assets/images/IMG-20250708-WA0145.jpg'),
+  require('../assets/images/IMG-20250708-WA0144.jpg'),
+  require('../assets/images/IMG-20250708-WA0152.jpg'),
+  require('../assets/images/IMG-20250708-WA0141.jpg'),
+  require('../assets/images/IMG-20250708-WA0152.jpg'),
+  require('../assets/images/IMG-20250708-WA0109.jpg'),
+  require('../assets/images/IMG-20250708-WA0106.jpg'),
+  require('../assets/images/IMG-20250708-WA0105.jpg'),
+  require('../assets/images/IMG-20250708-WA0102.jpg'),
+  require('../assets/images/IMG-20250708-WA0099.jpg'),
+  require('../assets/images/IMG-20250708-WA0109.jpg'),
+];
+
+export default galleryImages;

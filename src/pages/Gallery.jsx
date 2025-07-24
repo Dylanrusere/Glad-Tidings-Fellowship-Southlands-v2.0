@@ -52,6 +52,12 @@ export const Gallery = () => {
         </div>
       </div>
 
+      
+
+      <div className="ministry_heading overall_container">
+        <p className="ministry_tagline">Explore our Gallery Section</p>
+      </div>
+
       {/* Gallery Grid */}
       <div className="gallery_container overall_container">
         {galleryImages.slice(0, visibleImages).map((img, index) => (

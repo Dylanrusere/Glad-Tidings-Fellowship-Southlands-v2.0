@@ -57,10 +57,10 @@ export const Home = () => {
               <source src={events} type="video/mp4" />
             </video>
             <div className="home_head_container">
-              <div className="overall_container">
+              <div className="overall_home_container">
                 <TypingEffect
-                  text={['Southlands Glad Tidings', 'The center of Praise,', 'The center of Worship,',
-                    'The center of Prayer,', 'The center of Devotion']}
+                  text={['Southlands Glad Tidings', 'The House of Praise,', 'The House of Worship,',
+                    'The House of Prayer,', 'The House of Devotion']}
                   speed={100}
                   eraseSpeed={50}
                   eraseDelay={2000}

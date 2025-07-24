@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FaArrowUp } from 'react-icons/fa';
-import childrens_bg from '../assets/videos/weekly_programs.mp4'
-import youtubeThumbnail from '../assets/images/home-3.jpg'
+import youth_bg from '../assets/videos/youth_bg.mp4'
+import youtubeThumbnail from '../assets/images/IMG-20250708-WA0115.jpg'
 import VisionGoalsSection from '../components/VisionGoalsSection'
 import ProgramsSection from '../components/ProgramsSection'
 import mrs_kamwetsa from '../assets/images/mrs_kamwetsa.jpg';
@@ -52,7 +52,7 @@ export const Youth = () => {
 
       <div className="video_container">
         <video className='video_background' autoPlay loop muted>
-          <source src={childrens_bg} type="video/mp4" />
+          <source src={youth_bg} type="video/mp4" />
         </video>
 
         <div className="events_head_container">
@@ -79,6 +79,7 @@ export const Youth = () => {
             {!showYoutube ? (
               <div className="youtube_thumbnail" onClick={handlePlay}>
                 <img src={youtubeThumbnail} alt="YouTube Thumbnail" className="thumbnail_img" />
+                <div className="thumbnail_overlay"></div>
                 <div className="play_button_pulse">
                   <div className="play_button">&#9658;</div>
                 </div>

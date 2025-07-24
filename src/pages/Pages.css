@@ -10,18 +10,17 @@
 .home_hero {
     width: 100%;
     height: 100vh;
-    background-image: url(../assets/images/homebg.png);
     background-position: center;
     background-size: cover;
 }
 
-.overall_container {
+/* .overall_container {
     padding: 3rem 2rem 0 2rem;
 
     @media(max-width:600px) {
         padding: 3rem 1.5rem 0 1.5rem;
     }
-}
+} */
 
 .home_video_container {
     position: relative;
@@ -48,6 +47,10 @@
     height: 100vh;
     display: flex;
     align-items: center;
+}
+
+.overall_home_container{
+    padding: 0 5%;
 }
 
 .home_head {
@@ -832,6 +835,20 @@ body {
     cursor: pointer;
 }
 
+.thumbnail_overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: #00006650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .thumbnail_img {
     width: 100%;
     height: 100%;
@@ -1074,6 +1091,8 @@ body {
     font-size: 1.1rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
+    font-family: 'chillax';
+    color: #000066;
 }
 
 
@@ -1377,13 +1396,6 @@ body {
 .ministry_heading {
     text-align: center;
     padding: 50px 20px 30px;
-}
-
-.ministry_theme {
-    font-size: clamp(1.5em, 3vw, 2.2em);
-    color: #000066;
-    font-weight: 700;
-    line-height: 1.4;
 }
 
 /* News Section */

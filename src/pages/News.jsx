@@ -44,27 +44,27 @@ export const News = () => {
   const newsItems = [
     {
       id: 1,
-      title: 'Week of Prayer & Fasting',
-      date: 'July 6, 2025',
-      status: 'ongoing', // Manually set status for clarity as of today
-      image: prayer_fasting,
-      excerpt: ' As a response to God`s word on Sunday July 6, 2025, we dedicated ourselves to a powerful week of prayer and fasting, from July 6th to July 12th, 2025',
-    },
-    {
-      id: 2,
-      title: 'New Sermon Series: "Wait & See What I Will Do to Pharaoh"',
-      date: 'July 6, 2025', // Past event
-      status: 'current', // Manually set status
-      image: july06,
-      excerpt: 'On Sunday, July 6, 2025, Pastor Mucheka began a compelling new sermon series titled "Wait & See What I Will Do to Pharaoh," drawn from the book of Exodus.',
-    },
-    {
-      id: 3,
       title: 'Emmanuel & Lovejoy\'s Wedding',
       date: 'June 20, 2025', // Future event
       status: 'future', // Manually set status
       image: laah,
       excerpt: 'We are overjoyed to announce the upcoming wedding of Brother Emmanuel and Sister Lovejoy on Saturday, July 19, 2025, at the Living Rock in Waterfalls! This marks a historic moment as it will be our first white wedding held at our church.',
+    },
+    {
+      id: 2,
+      title: 'Week of Prayer & Fasting',
+      date: 'July 6, 2025',
+      status: 'past', // Manually set status for clarity as of today
+      image: prayer_fasting,
+      excerpt: ' As a response to God`s word on Sunday July 6, 2025, we dedicated ourselves to a powerful week of prayer and fasting, from July 6th to July 12th, 2025',
+    },
+    {
+      id: 3,
+      title: 'New Sermon Series: "Wait & See What I Will Do to Pharaoh"',
+      date: 'July 6, 2025', // Past event
+      status: 'past', // Manually set status
+      image: july06,
+      excerpt: 'On Sunday, July 6, 2025, Pastor Mucheka began a compelling new sermon series titled "Wait & See What I Will Do to Pharaoh," drawn from the book of Exodus.',
     }
   ];
 

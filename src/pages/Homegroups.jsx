@@ -49,7 +49,7 @@ export const Homegroups = () => {
 
       <div className="ministry_heading overall_container homegroup_top_div">
         <p className="ministry_tagline">The topic that we currently discussing at our designated Homegroups:</p>
-        <p className="ministry_theme">Faith</p>
+        <p className="ministry_theme">The Doctrine of the Holy Spirit</p>
         <a href="" className='homegroup_btn'>Learn More</a>
       </div>
 

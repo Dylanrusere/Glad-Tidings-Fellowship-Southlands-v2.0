@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import choirVideo from '../assets/videos/weekly_programs.mp4';
 import { FaArrowUp } from 'react-icons/fa';
-import choirThumb from '../assets/images/home-3.jpg';
+import choirThumb from '../assets/images/Screenshot_20250714-182956_Gallery.jpg';
 
 import VisionGoalsSection from '../components/VisionGoalsSection';
 import ProgramsSection from '../components/ProgramsSection';
@@ -109,6 +109,7 @@ export const Choir = () => {
             {!showVideo ? (
               <div className="youtube_thumbnail" onClick={handlePlay}>
                 <img src={choirThumb} alt="Choir Video" className="thumbnail_img" />
+                <div className="thumbnail_overlay"></div>
                 <div className="play_button_pulse">
                   <div className="play_button">&#9658;</div>
                 </div>

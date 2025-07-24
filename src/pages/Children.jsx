@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FaArrowUp } from 'react-icons/fa';
 import childrens_bg from '../assets/childrens_church_ministry/childrens_bg.mp4'
-import youtubeThumbnail from '../assets/images/home-3.jpg'
+import youtubeThumbnail from '../assets/images/IMG-20250708-WA0146.jpg'
 import VisionGoalsSection from '../components/VisionGoalsSection'
 import ProgramsSection from '../components/ProgramsSection'
 import mrs_kamwetsa from '../assets/images/mrs_kamwetsa.jpg';
@@ -83,6 +83,7 @@ export const Children = () => {
             {!showYoutube ? (
               <div className="youtube_thumbnail" onClick={handlePlay}>
                 <img src={youtubeThumbnail} alt="YouTube Thumbnail" className="thumbnail_img" />
+                <div className="thumbnail_overlay"></div>
                 <div className="play_button_pulse">
                   <div className="play_button">&#9658;</div>
                 </div>
