@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import "./Pages.css";
 import { FaArrowUp } from 'react-icons/fa';
 import welcome from '../assets/images/GT-Logo-blue.png';
-import youtubeThumbnail from '../assets/images/home-3.jpg'
+import youtubeThumbnail from '../assets/images/our-journey-thumb.jpg'
 import pastor_lee from '../assets/images/pastor_mucheka.jpg';
 import join_us from '../assets/images/eventsCovers/Night of Worship.jpg';
 import { NewsComp } from '../components/NewsComp';
@@ -63,11 +63,11 @@ export const About = () => {
 
             <p>We’re so glad you’re here!
 
-At Glad Tidings Fellowship Southlands, we are a Christ-centered, Spirit-led, and people-loving church family. Whether you’re exploring faith, looking for a home church, or just browsing through — you are welcome here.
+              At Glad Tidings Fellowship Southlands, we are a Christ-centered, Spirit-led, and people-loving church family. Whether you’re exploring faith, looking for a home church, or just browsing through — you are welcome here.
 
-Our desire is to see lives transformed by the power of God’s Word, empowered by the Holy Spirit, and connected in a vibrant, growing community. We believe in worship that touches heaven, teaching that builds strong believers, and fellowship that makes you feel like family.
+              Our desire is to see lives transformed by the power of God’s Word, empowered by the Holy Spirit, and connected in a vibrant, growing community. We believe in worship that touches heaven, teaching that builds strong believers, and fellowship that makes you feel like family.
 
-Take a moment to explore our site, learn about our ministries, join us for worship, or connect with us online. Whether you're near or far, there's a place for you at GTF Southlands.
+              Take a moment to explore our site, learn about our ministries, join us for worship, or connect with us online. Whether you're near or far, there's a place for you at GTF Southlands.
             </p>
           </div>
 
@@ -102,7 +102,7 @@ Take a moment to explore our site, learn about our ministries, join us for worsh
           <div className="journey_container">
             <p className="overall_headings journey_heading our_mission_head">Our Journey</p>
             <p className="journey_par">
-            Our journey began in 2013, right here in Southlands, with a small group of passionate believers and a big vision — to share the love of Christ and build a strong, Spirit-filled community. From humble beginnings, Glad Tidings Fellowship Southlands has grown into a vibrant family of faith, rooted in the Word, empowered by the Spirit, and committed to transforming lives for God's glory. And this is just the beginning.
+              Our journey began in 2013, right here in Southlands, with a small group of passionate believers and a big vision — to share the love of Christ and build a strong, Spirit-filled community. From humble beginnings, Glad Tidings Fellowship Southlands has grown into a vibrant family of faith, rooted in the Word, empowered by the Spirit, and committed to transforming lives for God's glory. And this is just the beginning.
             </p>
           </div>
           <div className="journey_grid_container">
@@ -117,7 +117,7 @@ Take a moment to explore our site, learn about our ministries, join us for worsh
               ) : (
                 <iframe
                   className="youtube_video"
-                  src="https://www.youtube.com/embed/DyFtU9uGxtw"
+                  src="https://youtu.be/cMYyrcal83g"
                   title="YouTube Video"
                   frameBorder="0"
                   allow="autoplay; encrypted-media"

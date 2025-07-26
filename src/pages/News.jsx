@@ -6,6 +6,7 @@ import { Footer } from '../components/Footer';
 import prayer_fasting from '../assets/images/newsCover/JulyWeekOfPrayer.png';
 import july06 from '../assets/images/sermonsCovers/sundaySermon 06.07.25.png';
 import laah from '../assets/images/newsCover/manu.jpg';
+import wedding from '../assets/images/newsCover/wedding.jpg';
 // The NewsModal component is no longer needed, so we remove it.
 // If it was in a separate file, you can delete that file too.
 
@@ -45,13 +46,21 @@ export const News = () => {
     {
       id: 1,
       title: 'Emmanuel & Lovejoy\'s Wedding',
+      date: 'July 19, 2025', // Future event
+      status: 'past', // Manually set status
+      image: wedding,
+      excerpt: 'Emmanuel and Lovejoy’s wedding was a beautiful and spirit-filled celebration held at The Living Rock in Waterfalls. It was a historic and joyous occasion marked by heartfelt vows, worship, vibrant fellowship, and a powerful message. The atmosphere was filled with love and gratitude, leaving lasting memories for all who attended.',
+    },
+    {
+      id: 2,
+      title: 'Emmanuel & Lovejoy\'s Wedding',
       date: 'June 20, 2025', // Future event
-      status: 'future', // Manually set status
+      status: 'past', // Manually set status
       image: laah,
       excerpt: 'We are overjoyed to announce the upcoming wedding of Brother Emmanuel and Sister Lovejoy on Saturday, July 19, 2025, at the Living Rock in Waterfalls! This marks a historic moment as it will be our first white wedding held at our church.',
     },
     {
-      id: 2,
+      id: 3,
       title: 'Week of Prayer & Fasting',
       date: 'July 6, 2025',
       status: 'past', // Manually set status for clarity as of today

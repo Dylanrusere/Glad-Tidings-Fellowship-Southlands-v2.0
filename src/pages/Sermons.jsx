@@ -38,16 +38,16 @@ export const Sermons = () => {
       imageSrc: tenNov,
       heading: "On this rock l will build my church",
       preacher: "Pastor L. Mucheka",
-      date: "Sun, 16 June 2025",
+      date: "Sun, 20 July 2025",
       link: 'https://youtube.com/GladTidingsFellowshipSouthland',
       notesLink: '/downloads/notes-part2.pdf'
     },
     {
       id: 2,
       imageSrc: tenNov,
-      heading: "Do no be afraid/discouraged",
-      preacher: "Mr Kamwetsa",
-      date: "Sun, 08 June 2025",
+      heading: "Dry will you live again",
+      preacher: "Brother Blessed",
+      date: "Sun, 13 July 2025",
       link: 'https://youtube.com/GladTidingsFellowshipSouthland',
       notesLink: '/downloads/notes-part2.pdf'
     },
@@ -56,7 +56,16 @@ export const Sermons = () => {
       imageSrc: tenNov,
       heading: "Children",
       preacher: "Children`s Church",
-      date: "Sun, 01 June 2025",
+      date: "Sun, 06 July 2025",
+      link: 'https://youtube.com/GladTidingsFellowshipSouthland',
+      notesLink: '/downloads/notes-part2.pdf'
+    },
+    {
+      id: 3,
+      imageSrc: tenNov,
+      heading: "Children",
+      preacher: "Children`s Church",
+      date: "Sun, 06 July 2025",
       link: 'https://youtube.com/GladTidingsFellowshipSouthland',
       notesLink: '/downloads/notes-part2.pdf'
     },
