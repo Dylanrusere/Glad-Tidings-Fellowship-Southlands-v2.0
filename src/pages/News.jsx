@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaArrowUp } from 'react-icons/fa';
-import homegroups_bg from '../assets/videos/weekly_programs.mp4';
+import news_bg from '../assets/videos/news.mp4';
 import { ContactComp } from '../components/ContactComp';
 import { Footer } from '../components/Footer';
 import prayer_fasting from '../assets/images/newsCover/JulyWeekOfPrayer.png';
@@ -129,7 +129,7 @@ export const News = () => {
 
       <div className="video_container">
         <video className='video_background' autoPlay loop muted>
-          <source src={homegroups_bg} type="video/mp4" />
+          <source src={news_bg} type="video/mp4" />
         </video>
 
         <div className="events_head_container">
