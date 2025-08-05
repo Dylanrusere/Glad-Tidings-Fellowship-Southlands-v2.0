@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { Home, About, Children, Contact, Choir, Events, Gallery, Homegroups, Ladies, Men, Resources, Sermons, Youth, News, GreatCommission, MediaTeam, OurSocials } from "./pages";
+import { Home, About, Children, Contact, Choir, Events, Gallery, Homegroups, Ladies, Men, NewsArticle, Resources, Sermons, Youth, News, GreatCommission, MediaTeam, OurSocials } from "./pages";
 import { Navbar } from "./components/Navbar";
 import ScrollToTop from './components/ScrollToTop';
 
@@ -22,6 +22,8 @@ function App() {
         <Route path="/men" element={<Men />} />
         <Route path="/mediateam" element={<MediaTeam />} />
         <Route path="/news" element={<News />} />
+        {/* This is the new dynamic route for individual news articles */}
+        <Route path="/news/:newsId" element={<NewsArticle />} />
         <Route path="/oursocials" element={<OurSocials />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/sermons" element={<Sermons />} />

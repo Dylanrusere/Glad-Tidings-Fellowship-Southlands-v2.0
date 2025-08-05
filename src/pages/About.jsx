@@ -117,10 +117,10 @@ export const About = () => {
               ) : (
                 <iframe
                   className="youtube_video"
-                  src="https://youtu.be/cMYyrcal83g"
+                  src="https://www.youtube.com/embed/cMYyrcal83g"
                   title="YouTube Video"
                   frameBorder="0"
-                  allow="autoplay; encrypted-media"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 />
               )}

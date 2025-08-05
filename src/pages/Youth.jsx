@@ -10,6 +10,19 @@ import { NewsComp } from '../components/NewsComp'
 import { ContactComp } from '../components/ContactComp'
 import { Footer } from '../components/Footer'
 
+// ICONS
+import bible from '../assets/icons/bible.png'
+import fellowship from '../assets/icons/counseling.png'
+import faith from '../assets/icons/faith.png'
+import community from '../assets/icons/community.png'
+import growth from '../assets/icons/growth_2.png'
+import training from '../assets/icons/training.png'
+import camp from '../assets/icons/camp.png'
+import service from '../assets/icons/pray_1.png'
+import leadership from '../assets/icons/leadership.png'
+import outreach from '../assets/icons/outreach.png'
+
+
 export const Youth = () => {
   const [showYoutube, setShowYoutube] = useState(false)
   const handlePlay = () => {
@@ -103,27 +116,27 @@ export const Youth = () => {
         title="Our Vision & Goals"
         goals={[
           {
-            icon: "/icons/faith.png",
+            icon: faith,
             title: "Faith Development",
             description: "Equip youth to build a strong, personal relationship with Christ.",
           },
           {
-            icon: "/icons/community.png",
+            icon: community,
             title: "Community Building",
             description: "Create a supportive and welcoming environment for all youth.",
           },
           {
-            icon: "/icons/leadership.png",
+            icon: leadership,
             title: "Leadership Training",
             description: "Empower young people to lead in church and community.",
           },
           {
-            icon: "/icons/service.png",
+            icon: service,
             title: "Active Service",
             description: "Encourage youth to serve and make a positive impact around them.",
           },
           {
-            icon: "/icons/growth.png",
+            icon: growth,
             title: "Personal Growth",
             description: "Promote holistic growth spiritually, mentally, and socially.",
           },
@@ -135,27 +148,27 @@ export const Youth = () => {
         intro="Our youth ministry offers dynamic and engaging programs designed to inspire growth, leadership, and fellowship."
         programs={[
           {
-            icon: '/icons/bible-study.png',
+            icon: bible,
             name: 'Youth Bible Study',
             description: 'Weekly interactive sessions focused on relevant, real-life biblical teaching.',
           },
           {
-            icon: '/icons/fellowship.png',
+            icon: fellowship,
             name: 'Fellowship Nights',
             description: 'Fun and faith-filled evenings to build friendships and encourage one another.',
           },
           {
-            icon: '/icons/mission.png',
+            icon: outreach,
             name: 'Outreach & Missions',
             description: 'Youth-led community service projects and mission trips to serve others.',
           },
           {
-            icon: '/icons/workshop.png',
+            icon: training,
             name: 'Life Skills Workshops',
             description: 'Workshops on leadership, career guidance, and personal development.',
           },
           {
-            icon: '/icons/retreat.png',
+            icon: camp,
             name: 'Annual Youth Retreat',
             description: 'A time for spiritual renewal, worship, and bonding away from everyday distractions.',
           },

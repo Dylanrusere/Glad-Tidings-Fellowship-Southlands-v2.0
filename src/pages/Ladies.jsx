@@ -12,6 +12,19 @@ import { NewsComp } from '../components/NewsComp'
 import { ContactComp } from '../components/ContactComp'
 import { Footer } from '../components/Footer'
 
+
+// ICONS
+import bible_2 from '../assets/icons/bible_1.png'
+import fellowship from '../assets/icons/counseling.png'
+import training from '../assets/icons/training.png'
+import growth from '../assets/icons/growth_2.png'
+import empowerment from '../assets/icons/empowerment.png'
+import camp from '../assets/icons/camp.png'
+import unity from '../assets/icons/unity.png'
+import service from '../assets/icons/pray_1.png'
+import leadership from '../assets/icons/leadership.png'
+import outreach from '../assets/icons/outreach.png'
+
 export const Ladies = () => {
   const [showYoutube, setShowYoutube] = useState(false)
   const handlePlay = () => {
@@ -105,27 +118,27 @@ export const Ladies = () => {
         title="Our Vision & Goals"
         goals={[
           {
-            icon: "/icons/bible.png",
+            icon: growth,
             title: "Spiritual Growth",
             description: "To nurture deep and lasting relationships with Christ through regular Bible study, prayer, and worship.",
           },
           {
-            icon: "/icons/heart.png",
+            icon: empowerment,
             title: "Empowerment",
             description: "To equip women with the knowledge, confidence, and skills needed to impact their homes, workplaces, and communities.",
           },
           {
-            icon: "/icons/shield.png",
+            icon: unity,
             title: "Unity & Sisterhoo",
             description: "To build a loving, supportive community where every woman feels valued, heard, and encouraged.",
           },
           {
-            icon: "/icons/family.png",
+            icon: service,
             title: "Service",
             description: "To inspire and mobilize women to serve others both within the church and in the wider community",
           },
           {
-            icon: "/icons/star.png",
+            icon: leadership,
             title: "Leadership Development",
             description: "To identify and train women to take on leadership roles in the church and beyond.",
           },
@@ -138,27 +151,27 @@ export const Ladies = () => {
         intro="We run engaging, spirit-led programs designed to empower women in faith, fellowship, and service."
         programs={[
           {
-            icon: '/icons/bible-study.png',
+            icon: bible_2,
             name: 'Weekly Bible Study & Prayer Meetings',
             description: 'Deepen your faith through focused study and powerful prayer gatherings.',
           },
           {
-            icon: '/icons/breakfast.png',
+            icon: fellowship,
             name: 'Monthly Fellowship Breakfasts',
             description: 'Connect, encourage, and build friendships over a shared meal and inspiring talks.',
           },
           {
-            icon: '/icons/outreach.png',
+            icon: outreach,
             name: 'Community Outreach Projects',
             description: 'Participate in initiatives like feeding programs, charity drives, and mentorship for young girls.',
           },
           {
-            icon: '/icons/workshop.png',
+            icon: training,
             name: 'Workshops & Seminars',
             description: 'Attend sessions on personal development, financial stewardship, health, and wellness.',
           },
           {
-            icon: '/icons/retreat.png',
+            icon: camp,
             name: 'Annual Women’s Retreat',
             description: 'A time of spiritual renewal, teaching, worship, and bonding away from the hustle of daily life.',
           },

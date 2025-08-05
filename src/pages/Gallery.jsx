@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { FaArrowUp } from 'react-icons/fa';
-import homegroups_bg from '../assets/videos/weekly_programs.mp4';
 import galleryImages from '../assets/galleryImages'; // Array of image URLs you'll create
 
 export const Gallery = () => {
@@ -29,6 +28,26 @@ export const Gallery = () => {
 
   const loadMore = () => setVisibleImages(prev => prev + 6);
 
+  // Shuffle and pick 5 random images from galleryImages
+  const getRandomImages = (imagesArray, count) => {
+    const shuffled = [...imagesArray].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+  };
+
+  const [carouselImages] = useState(getRandomImages(galleryImages, 5)); // Random 5 images
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        (prevIndex + 1) % carouselImages.length
+      );
+    }, 5000); // every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [carouselImages]);
+
+
   return (
     <div>
       {/* Scroll to top button */}
@@ -42,17 +61,21 @@ export const Gallery = () => {
         <FaArrowUp className="arrow-icon" />
       </div>
 
-      {/* Hero Video */}
-      <div className="video_container gallery_page">
-        <video className="video_background" autoPlay loop muted>
-          <source src={homegroups_bg} type="video/mp4" />
-        </video>
-        <div className="events_head_container">
-          <p className="page_headings events_head">gallery</p>
+      {/* Hero Image Carousel */}
+      <div className="carousel_hero_container">
+        <div
+          className="carousel_background"
+          style={{
+            backgroundImage: `url(${carouselImages[currentImageIndex]})`,
+          }}
+        >
+          <div className="blue_overlay" />
+          <div className="events_head_container">
+            <p className="page_headings events_head">gallery</p>
+          </div>
         </div>
       </div>
 
-      
 
       <div className="ministry_heading overall_container">
         <p className="ministry_tagline">Explore our Gallery Section</p>

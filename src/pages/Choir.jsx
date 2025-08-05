@@ -13,6 +13,18 @@ import { NewsComp } from '../components/NewsComp';
 import { ContactComp } from '../components/ContactComp';
 import { Footer } from '../components/Footer';
 
+// ICONS
+import fun from '../assets/icons/fun.png'
+import outreach from '../assets/icons/outreach.png'
+import excellence from '../assets/icons/growth_2.png'
+import training from '../assets/icons/training.png'
+import worship from '../assets/icons/ministering.png'
+import growth from '../assets/icons/growth.png'
+import ministering from '../assets/icons/ministering.png'
+import rehearsals from '../assets/icons/rehearsal.png'
+import worshiping from '../assets/icons/pray_1.png'
+import special_events from '../assets/icons/special_event.png'
+
 // Team Images
 import mrsKamwetsa from '../assets/images/choirTeam/mrs_kamwetsa.jpg';
 
@@ -132,11 +144,11 @@ export const Choir = () => {
       <VisionGoalsSection
         title="To lead people into a deeper encounter with God through spirit-filled worship music."
         goals={[
-          { icon: "/icons/bible.png", title: "Excellence", description: "To cultivate a culture of excellence in music ministry." },
-          { icon: "/icons/heart.png", title: "Training", description: "To train and mentor upcoming worship leaders and instrumentalists." },
-          { icon: "/icons/shield.png", title: "Worship Moments", description: "To enhance corporate worship during church services and events." },
-          { icon: "/icons/family.png", title: "Growth", description: "To foster unity, discipline, and spiritual growth among choir members." },
-          { icon: "/icons/star.png", title: "Ministering", description: "To use music as a tool for evangelism and edification." },
+          { icon: excellence, title: "Excellence", description: "To cultivate a culture of excellence in music ministry." },
+          { icon: training, title: "Training", description: "To train and mentor upcoming worship leaders and instrumentalists." },
+          { icon: worship, title: "Worship Moments", description: "To enhance corporate worship during church services and events." },
+          { icon: growth, title: "Growth", description: "To foster unity, discipline, and spiritual growth among choir members." },
+          { icon: ministering, title: "Ministering", description: "To use music as a tool for evangelism and edification." },
         ]}
       />
 
@@ -145,11 +157,11 @@ export const Choir = () => {
         title="Programs & Activities"
         intro="Our choir ministry is active and engaged in a range of musical and spiritual activities:"
         programs={[
-          { icon: '/icons/rehearsal.png', name: 'Weekly Rehearsals', description: 'Regular choir practices focused on vocal training and spiritual preparation.' },
-          { icon: '/icons/worship.png', name: 'Sunday Worship', description: 'Leading worship every Sunday and on special services.' },
-          { icon: '/icons/event.png', name: 'Special Events', description: 'Performances during church conferences, weddings, and community outreach.' },
-          { icon: '/icons/workshop.png', name: 'Workshops', description: 'Training sessions on vocal technique, worship leading, and music theory.' },
-          { icon: '/icons/outreach.png', name: 'Choir Retreats & Outreach', description: 'Spiritual retreats and musical outreach to other churches or communities.' },
+          { icon: rehearsals, name: 'Weekly Rehearsals', description: 'Regular choir practices focused on vocal training and spiritual preparation.' },
+          { icon: worshiping, name: 'Sunday Worship', description: 'Leading worship every Sunday and on special services.' },
+          { icon: special_events, name: 'Special Events', description: 'Performances during church conferences, weddings, and community outreach.' },
+          { icon: training, name: 'Workshops', description: 'Training sessions on vocal technique, worship leading, and music theory.' },
+          { icon: outreach, name: 'Choir Retreats & Outreach', description: 'Spiritual retreats and musical outreach to other churches or communities.' },
         ]}
       />
 

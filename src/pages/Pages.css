@@ -49,7 +49,7 @@
     align-items: center;
 }
 
-.overall_home_container{
+.overall_home_container {
     padding: 0 5%;
 }
 
@@ -833,7 +833,7 @@ body {
     cursor: pointer;
 }
 
-.thumbnail_overlay{
+.thumbnail_overlay {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1211,6 +1211,44 @@ body {
     }
 }
 
+/* -----------------Gallery---------------- */
+.carousel_hero_container {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.carousel_background {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: background-image 1s ease-in-out;
+}
+
+.blue_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 102, 0.5);
+    /* Blue overlay */
+    z-index: 1;
+}
+
+.events_head_container {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .gallery_container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -1441,9 +1479,10 @@ body {
 
 .news-title {
     font-size: 1.5em;
-    color: #333;
+    color: #000066;
     margin-bottom: 10px;
     font-weight: 700;
+    font-family: 'chillaxmedium';
 }
 
 .news-date {
@@ -1542,6 +1581,162 @@ body {
         /* Single column on smaller screens */
     }
 }
+
+/* ---news article--- */
+/* src/pages/NewsArticle.css */
+
+/* --- Page Layout --- */
+.news-article-page {
+    padding-top: 10rem; /* Adjust to clear your navbar */
+    padding-bottom: 4rem;
+    color: #333;
+  }
+  
+  .news-article-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #000066;
+    text-align: center;
+  }
+  
+  .news-article-date {
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .news-article-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .news-article-main-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .news-article-full-content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    white-space: pre-wrap; /* Preserves formatting from the `fullContent` string */
+  }
+  
+  /* --- Gallery Section --- */
+  .news-media-gallery {
+    margin-top: 4rem;
+    border-top: 1px solid #ddd;
+    padding-top: 2rem;
+  }
+  
+  .gallery-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000066;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .media-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .media-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .media-thumbnail,
+  .video-thumbnail {
+    width: 100%;
+    height: 200px; /* Fixed height for consistent grid layout */
+    object-fit: cover;
+    display: block;
+  }
+  
+  .video-thumbnail-container {
+    position: relative;
+  }
+  
+  .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* --- Modal Styling --- */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+  }
+  
+  .modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    background: transparent;
+    border-radius: 8px;
+  }
+  
+  .modal-content img,
+  .modal-content video {
+    max-width: 100%;
+    max-height: 80vh;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  @media (max-width: 768px) {
+    .news-article-title {
+      font-size: 2rem;
+    }
+    .news-article-main-image {
+      width: 100%;
+      border-radius: 0;
+    }
+  }
 
 /* --------------------------Overall Styles---------------------------- */
 .overall_headings {

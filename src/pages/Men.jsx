@@ -9,6 +9,16 @@ import { NewsComp } from '../components/NewsComp'
 import { ContactComp } from '../components/ContactComp'
 import { Footer } from '../components/Footer'
 
+// ICONS
+import bible from '../assets/icons/bible.png'
+import bible_2 from '../assets/icons/bible_1.png'
+import fellowship from '../assets/icons/counseling.png'
+import community from '../assets/icons/community.png'
+import brotherhood from '../assets/icons/brotherhood.png'
+import service from '../assets/icons/pray_1.png'
+import leadership from '../assets/icons/leadership.png'
+import outreach from '../assets/icons/outreach.png'
+
 export const Men = () => {
   const [showYoutube, setShowYoutube] = useState(false)
   const handlePlay = () => {
@@ -102,27 +112,27 @@ export const Men = () => {
         title="Our Vision & Goals"
         goals={[
           {
-            icon: "/icons/bible.png",
+            icon: bible_2,
             title: "Spiritual Growth",
             description: "To build strong, godly men rooted firmly in God’s Word.",
           },
           {
-            icon: "/icons/shield.png",
+            icon: leadership,
             title: "Leadership & Integrity",
             description: "Raise men who lead with courage, humility, and integrity.",
           },
           {
-            icon: "/icons/community.png",
+            icon: brotherhood,
             title: "Brotherhood & Support",
             description: "Foster a supportive community where men sharpen and encourage one another.",
           },
           {
-            icon: "/icons/service.png",
+            icon: service,
             title: "Service",
             description: "Mobilize men to serve their families, church, and communities with humility.",
           },
           {
-            icon: "/icons/mentor.png",
+            icon: fellowship,
             title: "Mentorship & Discipleship",
             description: "Equip men to mentor others and grow in Christlike character.",
           },
@@ -135,27 +145,27 @@ export const Men = () => {
         intro="We run dynamic programs designed to strengthen faith, leadership, and brotherhood among men."
         programs={[
           {
-            icon: '/icons/bible-study.png',
+            icon: bible,
             name: 'Men’s Bible Study & Prayer Meetings',
             description: 'Weekly gatherings for focused Bible study, prayer, and spiritual growth.',
           },
           {
-            icon: '/icons/fellowship.png',
+            icon: fellowship,
             name: 'Monthly Fellowship & Mentorship',
             description: 'Building strong relationships and mentoring younger men in faith and life.',
           },
           {
-            icon: '/icons/service.png',
+            icon: community,
             name: 'Community Service Projects',
             description: 'Hands-on projects serving our church and local community.',
           },
           {
-            icon: '/icons/leadership.png',
+            icon: leadership,
             name: 'Leadership Workshops',
             description: 'Training sessions to develop godly leadership skills and character.',
           },
           {
-            icon: '/icons/retreat.png',
+            icon: outreach,
             name: 'Annual Men’s Retreat',
             description: 'A time for spiritual renewal, teaching, and fellowship away from daily life.',
           },

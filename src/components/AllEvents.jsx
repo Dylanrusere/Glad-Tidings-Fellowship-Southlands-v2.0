@@ -11,40 +11,6 @@ import './Components.css';
 const AllEvents = ({ showUpcomingOnly = false }) => {
   const [events] = useState([
     {
-      id: 1,
-      name: "A Night Of Worship",
-      startDate: new Date("2025-03-28T21:00:00"),
-      endDate: new Date("2025-03-29T05:00:00"),
-      venue: "Glad Tidings Fellowship Southlands",
-      image: nightOfWorship,
-      organizers: "Glad Tidings Fellowship",
-      whatsappNumber: "263783002822",
-      location: "https://googlemaps.comasd",
-    },
-    {
-      id: 2,
-      name: "Annual Ladies Fellowship Conference",
-      startDate: new Date("2025-04-17T13:00:00"),
-      endDate: new Date("2025-04-20T13:00:00"),
-      venue: "Washington Hills Secondary",
-      image: ladiesConf,
-      organizers: "Ladies Ministry",
-      whatsappNumber: "263783002822",
-      location: "https://googlemaps.com",
-    },
-    {
-      id: 4,
-      name: "Biannual Mens Fellowship Conference",
-      startDate: new Date("2025-05-26T08:00:00"),
-      endDate: new Date("2025-05-26T15:00:00"),
-      venue: "Glad Tidings Fellowship Goshen Centre, Mufakose",
-      image: mensConf,
-      organizers: "Mens Fellowship",
-      whatsappNumber: "263783002822",
-      location: "https://g.co/kgs/oorRXJS",
-    },
-    {
-      id: 5,
       name: "Couples Meeting",
       startDate: new Date("2025-08-30T10:00:00"),
       endDate: new Date("2025-08-30T15:00:00"),
@@ -55,7 +21,6 @@ const AllEvents = ({ showUpcomingOnly = false }) => {
       location: "https://maps.app.goo.gl/BD9CNsuk57hFAyz5A",
     },
     {
-      id: 6,
       name: "2025 August Annual Conference",
       startDate: new Date("2025-08-09T08:00:00"),
       endDate: new Date("2025-08-11T15:00:00"),
@@ -63,10 +28,9 @@ const AllEvents = ({ showUpcomingOnly = false }) => {
       image: augConf,
       organizers: "Glad Tidings Fellowship",
       whatsappNumber: "263779273527",
-      location: "https://maps.app.goo.gl/BD9CNsuk57hFAyz5A",
+      location: "https://maps.app.goo.gl/GrVahbe5PoaLYsbP6",
     },
     {
-      id: 3,
       name: "Annual Youth Camp",
       startDate: new Date("2025-12-22T13:00:00"),
       endDate: new Date("2025-12-26T15:00:00"),
@@ -76,14 +40,57 @@ const AllEvents = ({ showUpcomingOnly = false }) => {
       whatsappNumber: "263783002822",
       location: "https://googlemaps.com",
     },
+    {
+      name: "A Night Of Worship",
+      startDate: new Date("2025-03-28T21:00:00"),
+      endDate: new Date("2025-03-29T05:00:00"),
+      venue: "Glad Tidings Fellowship Southlands",
+      image: nightOfWorship,
+      organizers: "Glad Tidings Fellowship",
+      whatsappNumber: "263783002822",
+      location: "https://googlemaps.comasd",
+    },
+    {
+      name: "Annual Ladies Fellowship Conference",
+      startDate: new Date("2025-04-17T13:00:00"),
+      endDate: new Date("2025-04-20T13:00:00"),
+      venue: "Washington Hills Secondary",
+      image: ladiesConf,
+      organizers: "Ladies Ministry",
+      whatsappNumber: "263783002822",
+      location: "https://googlemaps.com",
+    },
+    {
+      name: "Biannual Mens Fellowship Conference",
+      startDate: new Date("2025-05-26T08:00:00"),
+      endDate: new Date("2025-05-26T15:00:00"),
+      venue: "Glad Tidings Fellowship Goshen Centre, Mufakose",
+      image: mensConf,
+      organizers: "Mens Fellowship",
+      whatsappNumber: "263783002822",
+      location: "https://g.co/kgs/oorRXJS",
+    },
   ]);
 
   const now = new Date();
-  const filteredEvents = showUpcomingOnly
-    ? events.filter(event => event.startDate > now)
-    : events;
 
-  const sortedEvents = [...events].sort((a, b) => b.startDate - a.startDate);
+  // Separate events by status
+  const upcomingAndOngoingEvents = events.filter(
+    (event) => event.endDate >= now
+  );
+
+  const pastEvents = events.filter(
+    (event) => event.endDate < now
+  );
+
+  // Sort both arrays by start date
+  upcomingAndOngoingEvents.sort((a, b) => a.startDate - b.startDate);
+  pastEvents.sort((a, b) => b.startDate - a.startDate); // latest past event first
+
+  const sortedEvents = showUpcomingOnly
+    ? upcomingAndOngoingEvents
+    : [...upcomingAndOngoingEvents, ...pastEvents];
+
 
   const [selectedEvent, setSelectedEvent] = useState(null);
   const [isRSVPModalOpen, setRSVPModalOpen] = useState(false);

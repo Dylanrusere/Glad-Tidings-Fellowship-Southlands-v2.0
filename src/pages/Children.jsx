@@ -10,6 +10,19 @@ import { NewsComp } from '../components/NewsComp'
 import { ContactComp } from '../components/ContactComp'
 import { Footer } from '../components/Footer'
 
+// ICONS
+import safe_zone from '../assets/icons/safe-zone.png'
+import bible from '../assets/icons/bible.png'
+import bible_2 from '../assets/icons/bible_1.png'
+import parental from '../assets/icons/parental.png'
+import faith from '../assets/icons/faith.png'
+import kids from '../assets/icons/kids.png'
+import growth from '../assets/icons/growth_2.png'
+import art from '../assets/icons/art.png'
+import camp from '../assets/icons/camp.png'
+import fun from '../assets/icons/fun.png'
+import outreach from '../assets/icons/outreach.png'
+
 export const Children = () => {
   const [showYoutube, setShowYoutube] = useState(false)
   const handlePlay = () => {
@@ -107,27 +120,27 @@ export const Children = () => {
         title="Our Vision & Goals"
         goals={[
           {
-            icon: "/icons/bible.png",
+            icon: bible,
             title: "Biblical Teaching",
             description: "Teach Biblical truths in fun and memorable ways.",
           },
           {
-            icon: "/icons/heart.png",
+            icon: growth,
             title: "Spiritual Growth",
             description: "Help children develop a personal relationship with Jesus.",
           },
           {
-            icon: "/icons/shield.png",
+            icon: safe_zone,
             title: "Safe Space",
             description: "Ensure every child feels safe, valued, and loved.",
           },
           {
-            icon: "/icons/family.png",
+            icon: parental,
             title: "Parental Involvement",
             description: "Equip parents to lead their child’s faith journey.",
           },
           {
-            icon: "/icons/star.png",
+            icon: faith,
             title: "Bold Faith",
             description: "Raise children who live out their faith confidently.",
           },
@@ -140,32 +153,32 @@ export const Children = () => {
         intro="We run engaging, spirit-led programs designed to help children grow in faith, character, and community."
         programs={[
           {
-            icon: '/icons/bible-class.png',
+            icon: bible_2,
             name: 'Bible Classes',
             description: 'Interactive Bible storytelling and age-based teachings every Sunday.',
           },
           {
-            icon: '/icons/worship.png',
+            icon: kids,
             name: 'Kids Worship',
             description: 'Joyful worship sessions with singing, dancing, and instruments.',
           },
           {
-            icon: '/icons/art.png',
+            icon: art,
             name: 'Creative Arts & Crafts',
             description: 'Crafts and art projects that tie into the weekly Bible lesson.',
           },
           {
-            icon: '/icons/camp.png',
+            icon: camp,
             name: 'Holiday Bible School',
             description: 'Annual themed event with games, teaching, snacks, and fun.',
           },
           {
-            icon: '/icons/mission.png',
+            icon: outreach,
             name: 'Mini Outreach Projects',
             description: 'Simple missions like visiting children’s homes or collecting items for the needy.',
           },
           {
-            icon: '/icons/fun.png',
+            icon: fun,
             name: 'Fun Day & Talent Shows',
             description: 'A time to play, share talents, and grow in confidence and fellowship.',
           },
@@ -197,9 +210,9 @@ export const Children = () => {
       </div>
 
       {/* Testimonials */}
-      <div className="childrens_testimonials_container">
+      {/* <div className="childrens_testimonials_container">
         <p className="leaders_heading">Parents Testimonials</p>
-      </div>
+      </div> */}
 
       <NewsComp />
       <ContactComp />
