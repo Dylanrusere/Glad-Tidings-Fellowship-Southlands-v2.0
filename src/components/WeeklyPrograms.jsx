@@ -36,6 +36,12 @@ export const WeeklyPrograms = () => {
           location: 'Local Church',
           link: 'https://maps.app.goo.gl/BD9CNsuk57hFAyz5A',
         },
+        {
+          name: 'Band Practise',
+          time: '1530hrs - 1800hrs',
+          location: 'Local Church',
+          link: 'https://maps.app.goo.gl/BD9CNsuk57hFAyz5A',
+        },
       ],
     },
     {

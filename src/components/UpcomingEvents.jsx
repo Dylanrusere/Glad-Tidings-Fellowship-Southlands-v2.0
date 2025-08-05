@@ -4,6 +4,8 @@ import nightOfWorship from "../assets/images/eventsCovers/Night of Worship.jpg";
 import ladiesConf from "../assets/images/eventsCovers/2025 ladies fellwoship conf.jpg";
 import mensConf from '../assets/images/eventsCovers/2025 Men`s Conference - 2.png'
 import youthConf from '../assets/images/eventsCovers/2025 Annual Youth Conference.jpg'
+import couples from '../assets/images/eventsCovers/August Couples Meeting.jpg'
+import augConf from '../assets/images/eventsCovers/2025 August Conference.jpg'
 import './Components.css';
 
 const UpcomingEvents = () => {
@@ -32,6 +34,17 @@ const UpcomingEvents = () => {
     },
     {
       id: 3,
+      name: "Biannual Mens Fellowship Conference",
+      startDate: new Date("2025-05-26T08:00:00"),
+      endDate: new Date("2025-05-26T15:00:00"),
+      venue: "Glad Tidings Fellowship Goshen Centre, Mufakose",
+      image: mensConf,
+      organizers: "Mens Fellowship",
+      whatsappNumber: "263783002822",
+      location: "https://g.co/kgs/oorRXJS",
+    },
+    {
+      id: 4,
       name: "Annual Youth Camp",
       startDate: new Date("2025-12-22T13:00:00"),
       endDate: new Date("2025-12-26T15:00:00"),
@@ -42,16 +55,27 @@ const UpcomingEvents = () => {
       location: "https://googlemaps.com",
     },
     {
-      id: 4,
-      name: "Biannual Mens Fellowship Conference",
-      startDate: new Date("2025-05-26T08:00:00"),
-      endDate: new Date("2025-05-26T15:00:00"),
-      venue: "Glad Tidings Fellowship Goshen Centre, Mufakose",
-      image: mensConf,
-      organizers: "Mens Fellowship",
-      whatsappNumber: "263783002822",
-      location: "https://g.co/kgs/oorRXJS",
+      id: 5,
+      name: "Couples Meeting",
+      startDate: new Date("2025-08-30T10:00:00"),
+      endDate: new Date("2025-08-30T15:00:00"),
+      venue: "Southlands Glad Tidings Fellowship",
+      image: couples,
+      organizers: "Couples Ministry",
+      whatsappNumber: "263779273527",
+      location: "https://maps.app.goo.gl/BD9CNsuk57hFAyz5A",
     },
+    {
+      id: 6,
+      name: "2025 August Annual Conference",
+      startDate: new Date("2025-08-09T08:00:00"),
+      endDate: new Date("2025-08-11T15:00:00"),
+      venue: "Yamuranani Primary School, Mufakose",
+      image: augConf,
+      organizers: "Glad Tidings Fellowship",
+      whatsappNumber: "263779273527",
+      location: "https://maps.app.goo.gl/BD9CNsuk57hFAyz5A",
+    }
   ]);
 
   // Filter out events that ended more than 5 days ago

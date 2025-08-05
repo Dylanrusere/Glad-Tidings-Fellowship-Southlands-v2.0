@@ -4,6 +4,8 @@ import nightOfWorship from "../assets/images/eventsCovers/Night of Worship.jpg";
 import ladiesConf from "../assets/images/eventsCovers/2025 ladies fellwoship conf.jpg";
 import youthConf from "../assets/images/eventsCovers/2025 Annual Youth Conference.jpg";
 import mensConf from "../assets/images/eventsCovers/2025 Men`s Conference - 2.png"
+import couples from '../assets/images/eventsCovers/August Couples Meeting.jpg'
+import augConf from '../assets/images/eventsCovers/2025 August Conference.jpg'
 import './Components.css';
 
 const AllEvents = ({ showUpcomingOnly = false }) => {
@@ -31,17 +33,6 @@ const AllEvents = ({ showUpcomingOnly = false }) => {
       location: "https://googlemaps.com",
     },
     {
-      id: 3,
-      name: "Annual Youth Camp",
-      startDate: new Date("2025-12-22T13:00:00"),
-      endDate: new Date("2025-12-26T15:00:00"),
-      venue: "TBA",
-      image: youthConf,
-      organizers: "Youth Ministry",
-      whatsappNumber: "263783002822",
-      location: "https://googlemaps.com",
-    },
-    {
       id: 4,
       name: "Biannual Mens Fellowship Conference",
       startDate: new Date("2025-05-26T08:00:00"),
@@ -52,6 +43,39 @@ const AllEvents = ({ showUpcomingOnly = false }) => {
       whatsappNumber: "263783002822",
       location: "https://g.co/kgs/oorRXJS",
     },
+    {
+      id: 5,
+      name: "Couples Meeting",
+      startDate: new Date("2025-08-30T10:00:00"),
+      endDate: new Date("2025-08-30T15:00:00"),
+      venue: "Southlands Glad Tidings Fellowship",
+      image: couples,
+      organizers: "Couples Ministry",
+      whatsappNumber: "263779273527",
+      location: "https://maps.app.goo.gl/BD9CNsuk57hFAyz5A",
+    },
+    {
+      id: 6,
+      name: "2025 August Annual Conference",
+      startDate: new Date("2025-08-09T08:00:00"),
+      endDate: new Date("2025-08-11T15:00:00"),
+      venue: "Yamuranani Primary School, Mufakose",
+      image: augConf,
+      organizers: "Glad Tidings Fellowship",
+      whatsappNumber: "263779273527",
+      location: "https://maps.app.goo.gl/BD9CNsuk57hFAyz5A",
+    },
+    {
+      id: 3,
+      name: "Annual Youth Camp",
+      startDate: new Date("2025-12-22T13:00:00"),
+      endDate: new Date("2025-12-26T15:00:00"),
+      venue: "TBA",
+      image: youthConf,
+      organizers: "Youth Ministry",
+      whatsappNumber: "263783002822",
+      location: "https://googlemaps.com",
+    },
   ]);
 
   const now = new Date();
@@ -59,7 +83,7 @@ const AllEvents = ({ showUpcomingOnly = false }) => {
     ? events.filter(event => event.startDate > now)
     : events;
 
-    const sortedEvents = [...events].sort((a, b) => b.startDate - a.startDate);
+  const sortedEvents = [...events].sort((a, b) => b.startDate - a.startDate);
 
   const [selectedEvent, setSelectedEvent] = useState(null);
   const [isRSVPModalOpen, setRSVPModalOpen] = useState(false);
@@ -100,7 +124,7 @@ const AllEvents = ({ showUpcomingOnly = false }) => {
       const seconds = Math.floor((diff / 1000) % 60);
       return `Starts in ${days}d ${hours}h ${minutes}m ${seconds}s 
       🟡 Upcoming`;
-    }else if (now >= event.startDate && now <= event.endDate) return "🟢 Ongoing";
+    } else if (now >= event.startDate && now <= event.endDate) return "🟢 Ongoing";
     return "🔴 Past Event";
   };
 
