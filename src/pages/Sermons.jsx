@@ -3,6 +3,7 @@ import { FaArrowUp } from 'react-icons/fa';
 import { LatestSermonsCard } from '../components/Props/LatestSermonsCard';
 import tenNov from '../assets/images/sermonsCovers/11.11.24.png';
 import sermonsVideo from '../assets/videos/sermons.mp4';
+import restorationNotes from '../assets/images/20250223_081040.jpg'
 import { Footer } from '../components/Footer';
 
 export const Sermons = () => {
@@ -34,40 +35,36 @@ export const Sermons = () => {
 
   const sermonsData = [
     {
-      id: 1,
+      imageSrc: tenNov,
+      heading: "The Holy Spirit",
+      preacher: "Pastor L. Mucheka",
+      date: "Sun, 03 August 2025",
+      link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
+      notesLink: restorationNotes
+    },
+    {
+      imageSrc: tenNov,
+      heading: "On this rock l will build my church",
+      preacher: "Pastor L. Mucheka",
+      date: "Sun, 27 July 2025",
+      link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
+      notesLink: restorationNotes
+    },
+    {
       imageSrc: tenNov,
       heading: "On this rock l will build my church",
       preacher: "Pastor L. Mucheka",
       date: "Sun, 20 July 2025",
-      link: 'https://youtube.com/GladTidingsFellowshipSouthland',
-      notesLink: '/downloads/notes-part2.pdf'
+      link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
+      notesLink: restorationNotes
     },
     {
-      id: 2,
       imageSrc: tenNov,
-      heading: "Dry will you live again",
-      preacher: "Brother Blessed",
+      heading: "Restoration - Dry Bones you can live again",
+      preacher: "Brother Blessed Chikowore",
       date: "Sun, 13 July 2025",
-      link: 'https://youtube.com/GladTidingsFellowshipSouthland',
-      notesLink: '/downloads/notes-part2.pdf'
-    },
-    {
-      id: 3,
-      imageSrc: tenNov,
-      heading: "Children",
-      preacher: "Children`s Church",
-      date: "Sun, 06 July 2025",
-      link: 'https://youtube.com/GladTidingsFellowshipSouthland',
-      notesLink: '/downloads/notes-part2.pdf'
-    },
-    {
-      id: 3,
-      imageSrc: tenNov,
-      heading: "Children",
-      preacher: "Children`s Church",
-      date: "Sun, 06 July 2025",
-      link: 'https://youtube.com/GladTidingsFellowshipSouthland',
-      notesLink: '/downloads/notes-part2.pdf'
+      link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
+      notesLink: restorationNotes
     },
     // Add more sermons as needed
   ];

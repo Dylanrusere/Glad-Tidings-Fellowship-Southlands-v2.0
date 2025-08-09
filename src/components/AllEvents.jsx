@@ -57,7 +57,7 @@ const AllEvents = ({ showUpcomingOnly = false }) => {
       venue: "Washington Hills Secondary",
       image: ladiesConf,
       organizers: "Ladies Ministry",
-      whatsappNumber: "263783002822",
+      whatsappNumber: "263779273527",
       location: "https://googlemaps.com",
     },
     {
@@ -67,7 +67,7 @@ const AllEvents = ({ showUpcomingOnly = false }) => {
       venue: "Glad Tidings Fellowship Goshen Centre, Mufakose",
       image: mensConf,
       organizers: "Mens Fellowship",
-      whatsappNumber: "263783002822",
+      whatsappNumber: "263718595969",
       location: "https://g.co/kgs/oorRXJS",
     },
   ]);

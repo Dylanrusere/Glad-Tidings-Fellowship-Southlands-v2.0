@@ -9,42 +9,72 @@ import { Footer } from '../components/Footer';
 const ResourcesDirectory = [
   {
     resourcesImg: tenNov,
-    title: "Understanding Faith",
+    title: "The Culture of Success - Part 3 - What should we do to be blessed?",
     brief: "A short guide on building strong faith.",
-    source: "Kingdoms",
+    source: "Devotion",
     ledBy: "Pastor Mucheka",
     fullDescription: "This resource dives deep into how to grow your faith through the Word of God...",
-    updatedAt: "June 18, 2025",
+    updatedAt: "June 03, 2025",
     downloadLink: "/downloads/understanding-faith.pdf"
   },
   {
     resourcesImg: tenNov,
     title: "Walking in Salvation",
     brief: "Explains what salvation truly means.",
-    source: "Devotions",
-    ledBy: "Mr Mugwara",
-    fullDescription: "Discover what it means to walk in your salvation and God's grace...",
-    updatedAt: "May 15, 2025",
-    downloadLink: "/downloads/walking-in-salvation.pdf"
-  },
-  {
-    resourcesImg: tenNov,
-    title: "Giving",
-    brief: "Explains to truly Give to God.",
     source: "Kingdoms",
     ledBy: "Pastor Mucheka",
     fullDescription: "Discover what it means to walk in your salvation and God's grace...",
-    updatedAt: "May 15, 2025",
+    updatedAt: "July 31, 2025",
     downloadLink: "/downloads/walking-in-salvation.pdf"
   },
   {
     resourcesImg: tenNov,
-    title: "Praise & Worship - 1",
+    title: "The Culture of Success - Part 3",
+    brief: "Explains to truly Give to God.",
+    source: "Devotion",
+    ledBy: "Pastor Mucheka",
+    fullDescription: "Discover what it means to walk in your salvation and God's grace...",
+    updatedAt: "July 27, 2025",
+    downloadLink: "/downloads/walking-in-salvation.pdf"
+  },
+  {
+    resourcesImg: tenNov,
+    title: "Mallenium",
+    brief: "Explains what true Worship means.",
+    source: "Kingdoms",
+    ledBy: "Pastor Mucheka",
+    fullDescription: "Discover what it means to worship God...",
+    updatedAt: "July 24, 2025",
+    downloadLink: "/downloads/walking-in-salvation.pdf"
+  },
+  {
+    resourcesImg: tenNov,
+    title: "The Culture of Success - Part 2",
     brief: "Explains what true Worship means.",
     source: "Devotions",
-    ledBy: "Mrs Kamwetsa",
+    ledBy: "Pastor Mucheka",
     fullDescription: "Discover what it means to worship God...",
-    updatedAt: "May 15, 2025",
+    updatedAt: "July 20, 2025",
+    downloadLink: "/downloads/walking-in-salvation.pdf"
+  },
+  {
+    resourcesImg: tenNov,
+    title: "The",
+    brief: "Explains what true Worship means.",
+    source: "Kingdoms",
+    ledBy: "Pastor Mucheka",
+    fullDescription: "Discover what it means to worship God...",
+    updatedAt: "July 17, 2025",
+    downloadLink: "/downloads/walking-in-salvation.pdf"
+  },
+  {
+    resourcesImg: tenNov,
+    title: "The Culture of Success - Our Mindset",
+    brief: "Explains what true Worship means.",
+    source: "Devotions",
+    ledBy: "Pastor Mucheka",
+    fullDescription: "Discover what it means to worship God...",
+    updatedAt: "July 13, 2025",
     downloadLink: "/downloads/walking-in-salvation.pdf"
   },
 ];

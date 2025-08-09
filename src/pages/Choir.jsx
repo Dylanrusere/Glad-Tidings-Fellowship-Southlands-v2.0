@@ -2,13 +2,12 @@ import React, { useState, useEffect } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import choirVideo from '../assets/videos/weekly_programs.mp4';
 import { FaArrowUp } from 'react-icons/fa';
 import choirThumb from '../assets/images/Screenshot_20250714-182956_Gallery.jpg';
-
 import VisionGoalsSection from '../components/VisionGoalsSection';
 import ProgramsSection from '../components/ProgramsSection';
+import choir from '../assets/images/Screenshot_20250714-182943_Gallery.jpg'
 import { NewsComp } from '../components/NewsComp';
 import { ContactComp } from '../components/ContactComp';
 import { Footer } from '../components/Footer';
@@ -117,7 +116,7 @@ export const Choir = () => {
             </p>
           </div>
 
-          <div className="youtube_video_wrapper">
+          {/* <div className="youtube_video_wrapper">
             {!showVideo ? (
               <div className="youtube_thumbnail" onClick={handlePlay}>
                 <img src={choirThumb} alt="Choir Video" className="thumbnail_img" />
@@ -136,6 +135,9 @@ export const Choir = () => {
                 allowFullScreen
               />
             )}
+          </div> */}
+          <div className='join_us_left_container'>
+            <img src={choir} alt="" />
           </div>
         </div>
       </div>

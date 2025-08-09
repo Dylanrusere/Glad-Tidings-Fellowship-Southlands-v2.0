@@ -761,6 +761,7 @@ body {
 
     img {
         width: 100%;
+        border-radius: 10px;
     }
 }
 
@@ -780,11 +781,9 @@ body {
 }
 
 .about_ministry_container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    justify-content: center;
-    align-items: center;
 }
 
 .about_ministry_text {
@@ -798,8 +797,7 @@ body {
 
 @media (max-width: 768px) {
     .about_ministry_container {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
     }
 }
 

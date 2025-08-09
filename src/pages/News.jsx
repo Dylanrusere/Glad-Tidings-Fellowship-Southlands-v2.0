@@ -12,6 +12,7 @@ import prayer_fasting from '../assets/images/newsCover/JulyWeekOfPrayer.png';
 import july06 from '../assets/images/sermonsCovers/sundaySermon 06.07.25.png';
 import laah from '../assets/images/newsCover/manu.jpg';
 import wedding from '../assets/images/newsCover/wedding.jpg';
+import augConf from '../assets/images/eventsCovers/2025 August Conference.jpg'
 
 // Let's add more images to make the gallery richer
 import wedding_img_2 from '../assets/images/newsCover/wedding.jpg';
@@ -20,6 +21,27 @@ import prayer_video from '../assets/videos/news.mp4'; // Example video
 
 // The newsItems data is expanded with full content and more media
 export const newsItems = [
+    {
+        id: 'august-annual-conference-2025',
+        title: '2025 August Annual Conference is here!!!',
+        date: 'August 06, 2025',
+        status: 'future',
+        image: augConf,
+        excerpt: 'Get ready for the 2025 August Annual Conference at Yamuranai Primary School, Mufakose—a powerful time of worship, teaching, and spiritual renewal!',
+        fullContent: `
+          Mark your calendars! From August 6th to 10th, 2025, The Living Rock in Waterfalls will host our highly anticipated August Annual Conference.
+      
+          This year’s theme centers on spiritual awakening, revival, and deeper fellowship with God. Expect powerful sermons, impactful worship sessions, and workshops tailored for youth, women, and men. It will be a time of renewal, vision, and unity among believers.
+      
+          Come expectant and ready to receive. Invite friends and family—this is more than a conference, it’s a divine appointment!
+        `,
+        media: [
+          { type: 'image', src: wedding, alt: 'Believers gathered in worship (previous event)' },
+          { type: 'image', src: wedding_img_2, alt: 'Speaker addressing the congregation' },
+          { type: 'image', src: wedding_img_3, alt: 'Praise and worship session' },
+          { type: 'video', src: prayer_video, alt: 'A clip from a previous prayer session' },
+        ]
+      },
     {
       id: 'emmanuel-lovejoys-wedding',
       title: 'Emmanuel & Lovejoy\'s Wedding',

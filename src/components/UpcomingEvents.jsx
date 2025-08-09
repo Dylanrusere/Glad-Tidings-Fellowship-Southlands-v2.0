@@ -40,7 +40,7 @@ const UpcomingEvents = () => {
       venue: "Glad Tidings Fellowship Goshen Centre, Mufakose",
       image: mensConf,
       organizers: "Mens Fellowship",
-      whatsappNumber: "263783002822",
+      whatsappNumber: "263718595969",
       location: "https://g.co/kgs/oorRXJS",
     },
     {
@@ -73,7 +73,7 @@ const UpcomingEvents = () => {
       venue: "Yamuranani Primary School, Mufakose",
       image: augConf,
       organizers: "Glad Tidings Fellowship",
-      whatsappNumber: "263779273527",
+      whatsappNumber: "263718595969",
       location: "https://maps.app.goo.gl/BD9CNsuk57hFAyz5A",
     }
   ]);

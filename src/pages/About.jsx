@@ -146,7 +146,7 @@ export const About = () => {
               </Link>
             </div>
             <div className="join_us_left_container">
-              <img src={join_us} alt="Join Us" />
+              {/* <img src={join_us} alt="Join Us" /> */}
             </div>
           </div>
         </div>

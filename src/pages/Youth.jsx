@@ -6,6 +6,7 @@ import VisionGoalsSection from '../components/VisionGoalsSection'
 import ProgramsSection from '../components/ProgramsSection'
 import mrs_kamwetsa from '../assets/images/mrs_kamwetsa.jpg';
 import pastor_lee from '../assets/images/pastor_mucheka.jpg';
+import youth from '../assets/images/IMG-20250708-WA0115.jpg'
 import { NewsComp } from '../components/NewsComp'
 import { ContactComp } from '../components/ContactComp'
 import { Footer } from '../components/Footer'
@@ -88,7 +89,7 @@ export const Youth = () => {
             </p>
           </div>
 
-          <div className="youtube_video_wrapper">
+          {/* <div className="youtube_video_wrapper">
             {!showYoutube ? (
               <div className="youtube_thumbnail" onClick={handlePlay}>
                 <img src={youtubeThumbnail} alt="YouTube Thumbnail" className="thumbnail_img" />
@@ -107,6 +108,9 @@ export const Youth = () => {
                 allowFullScreen
               />
             )}
+          </div> */}
+          <div className='join_us_left_container'>
+            <img src={youth} alt="" />
           </div>
         </div>
       </div>

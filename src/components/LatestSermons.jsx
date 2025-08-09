@@ -12,14 +12,14 @@ export const LatestSermons = () => {
       heading: "LATEST Sermon", // Newest
       preacher: "Pastor New",
       date: "Sun, 03 August 2025",
-      link: "https://youtube.com/GladTidingsFellowshipSouthland",
+      link: "https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V",
     },
     {
       imageSrc: tenNov,
       heading: "On this Rock l will build my church",
       preacher: "Pastor L. Mucheka",
       date: "Sun, 27 July 2025",
-      link: "https://youtube.com/GladTidingsFellowshipSouthland",
+      link: "https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V",
     },
     {
       imageSrc: tenNov,

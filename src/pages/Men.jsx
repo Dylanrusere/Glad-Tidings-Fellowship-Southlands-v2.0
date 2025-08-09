@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FaArrowUp } from 'react-icons/fa';
 import ladies_bg from '../assets/videos/weekly_programs.mp4'
-import youtubeThumbnail from '../assets/images/home-3.jpg'
+import men from '../assets/images/home-3.jpg'
 import VisionGoalsSection from '../components/VisionGoalsSection'
 import ProgramsSection from '../components/ProgramsSection';
 import pastor_lee from '../assets/images/pastor_mucheka.jpg';
@@ -84,7 +84,7 @@ export const Men = () => {
             </p>
           </div>
 
-          <div className="youtube_video_wrapper">
+          {/* <div className="youtube_video_wrapper">
             {!showYoutube ? (
               <div className="youtube_thumbnail" onClick={handlePlay}>
                 <img src={youtubeThumbnail} alt="YouTube Thumbnail" className="thumbnail_img" />
@@ -103,6 +103,9 @@ export const Men = () => {
                 allowFullScreen
               />
             )}
+          </div> */}
+          <div className='join_us_left_container'>
+            <img src={men} alt="" />
           </div>
         </div>
       </div>

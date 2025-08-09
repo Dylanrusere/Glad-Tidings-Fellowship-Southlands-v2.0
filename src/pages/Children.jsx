@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { FaArrowUp } from 'react-icons/fa';
 import childrens_bg from '../assets/childrens_church_ministry/childrens_bg.mp4'
-import youtubeThumbnail from '../assets/images/IMG-20250708-WA0146.jpg'
 import VisionGoalsSection from '../components/VisionGoalsSection'
 import ProgramsSection from '../components/ProgramsSection'
 import mrs_kamwetsa from '../assets/images/mrs_kamwetsa.jpg';
 import mrs_matambo from '../assets/images/mrs_matambo.jpg';
+import children from '../assets/images/20250223_081040.jpg'
 import { NewsComp } from '../components/NewsComp'
 import { ContactComp } from '../components/ContactComp'
 import { Footer } from '../components/Footer'
@@ -92,7 +92,7 @@ export const Children = () => {
             </p>
           </div>
 
-          <div className="youtube_video_wrapper">
+          {/* <div className="youtube_video_wrapper">
             {!showYoutube ? (
               <div className="youtube_thumbnail" onClick={handlePlay}>
                 <img src={youtubeThumbnail} alt="YouTube Thumbnail" className="thumbnail_img" />
@@ -111,6 +111,9 @@ export const Children = () => {
                 allowFullScreen
               />
             )}
+          </div> */}
+          <div className='join_us_left_container'>
+            <img src={children} alt="" />
           </div>
         </div>
       </div>
