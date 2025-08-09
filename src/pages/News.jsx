@@ -17,15 +17,37 @@ import augConf from '../assets/images/eventsCovers/2025 August Conference.jpg'
 // Let's add more images to make the gallery richer
 import wedding_img_2 from '../assets/images/newsCover/wedding.jpg';
 import wedding_img_3 from '../assets/images/newsCover/wedding.jpg';
-import prayer_video from '../assets/videos/news.mp4'; // Example video
+import prayer_video from '../assets/videos/news.mp4';
+import augConfVideo from '../assets/videos/aug-conference.mp4';
+import augConfVideo2 from '../assets/videos/aug-conf-2.mp4';
 
 // The newsItems data is expanded with full content and more media
 export const newsItems = [
     {
         id: 'august-annual-conference-2025',
+        title: '2025 August Annual Conference is ON!!!',
+        date: 'August 09, 2025',
+        status: 'current',
+        image: augConf,
+        excerpt: 'The 2025 August Annual Conference at Yamuranai Primary School, Mufakose is happening now—a powerful time of worship, teaching, and spiritual renewal!',
+        fullContent: `
+          The 2025 August Annual Conference is in full swing! From August 6th to 10th, 2025, believers have gathered at The Living Rock in Waterfalls for this highly anticipated event.
+      
+          This year’s theme focuses on spiritual awakening, revival, and deeper fellowship with God. The atmosphere is charged with powerful sermons, impactful worship sessions, and workshops tailored for youth, women, and men. Lives are being renewed, visions are being ignited, and unity among believers is stronger than ever.
+      
+          If you haven’t joined yet, there’s still time—come and be part of this divine appointment!
+        `,
+        media: [
+          { type: 'image', src: augConf, alt: 'Believers gathered in worship during the conference' },
+          { type: 'image', src: augConfVideo, alt: 'Speaker addressing the congregation live' },
+          { type: 'image', src: augConfVideo2, alt: 'Praise and worship session in progress' },
+        ]
+      },      
+    {
+        id: 'august-annual-conference-2025',
         title: '2025 August Annual Conference is here!!!',
         date: 'August 06, 2025',
-        status: 'future',
+        status: 'past',
         image: augConf,
         excerpt: 'Get ready for the 2025 August Annual Conference at Yamuranai Primary School, Mufakose—a powerful time of worship, teaching, and spiritual renewal!',
         fullContent: `
