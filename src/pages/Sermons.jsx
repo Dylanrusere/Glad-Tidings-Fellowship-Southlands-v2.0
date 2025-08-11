@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { FaArrowUp } from 'react-icons/fa';
 import { LatestSermonsCard } from '../components/Props/LatestSermonsCard';
-import tenNov from '../assets/images/sermonsCovers/11.11.24.png';
+import tenNov from '../assets/sermonsNotes/sermons-cover.jpg';
 import sermonsVideo from '../assets/videos/sermons.mp4';
-import restorationNotes from '../assets/images/20250223_081040.jpg'
+import restorationNotes from '../assets/sermonsNotes/sermons-cover.jpg'
 import { Footer } from '../components/Footer';
 
 export const Sermons = () => {
