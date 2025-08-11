@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Pages.css';
 import { FaArrowUp } from 'react-icons/fa';
 import ResourceCard from '../components/ResourceCard';
-import tenNov from '../assets/images/sermonsCovers/11.11.24.png';
+import tenNov from '../assets/resourcesNotes/resources-cover.jpg';
 import { Footer } from '../components/Footer';
 
 
