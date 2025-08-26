@@ -3,14 +3,21 @@ import { LatestSermonsCard } from "../components/Props/LatestSermonsCard"; // Im
 import sermonOne from "../assets/images/home-1.jpg";
 import { Link } from "react-router-dom";
 import { FaFolder } from "react-icons/fa";
-import tenNov from "../assets/images/sermonsCovers/11.11.24.png";
+import tenNov from "../assets/sermonsNotes/sermons-cover.jpg";
 
 export const LatestSermons = () => {
   const sermons = [
     {
       imageSrc: tenNov,
-      heading: "LATEST Sermon", // Newest
-      preacher: "Pastor New",
+      heading: "O Ephraim, what shall l do unto thee? O Judah",
+      preacher: "Brother Blessed",
+      date: "Sun, 17 August 2025",
+      link: "https://youtube.com/GladTidingsFellowshipSouthland",
+    },
+    {
+      imageSrc: tenNov,
+      heading: "The Holy Spirit", // Newest
+      preacher: "Pastor Mucheka",
       date: "Sun, 03 August 2025",
       link: "https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V",
     },
@@ -20,13 +27,6 @@ export const LatestSermons = () => {
       preacher: "Pastor L. Mucheka",
       date: "Sun, 27 July 2025",
       link: "https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V",
-    },
-    {
-      imageSrc: tenNov,
-      heading: "Dry Bones will you live again?",
-      preacher: "Brother Blessed",
-      date: "Sun, 20 July 2025",
-      link: "https://youtube.com/GladTidingsFellowshipSouthland",
     },
     // ...older ones
   ];

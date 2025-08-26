@@ -8,6 +8,7 @@ import mrs_kamwetsa from '../assets/images/mrs_kamwetsa.jpg';
 import mrs_matambo from '../assets/images/mrs_matambo.jpg';
 import mrs_ngorima from '../assets/images/mrs_ngorima.jpg';
 import mrs_chingodza from '../assets/images/mrs_chingodza.jpg';
+import profilePic from '../assets/images/profilepic.png';
 import { NewsComp } from '../components/NewsComp'
 import { ContactComp } from '../components/ContactComp'
 import { Footer } from '../components/Footer'
@@ -189,12 +190,12 @@ export const Ladies = () => {
 
           <div className="leaders_grid_container childrens_grid">
             <div className="leader_img_container">
-              <img className='leader_img' src={mrs_kamwetsa} alt="Mrs Mucheka" />
+              <img className='leader_img' src={profilePic} alt="Mrs Mucheka" />
               <p className="leader_name">Mrs Mucheka</p>
             </div>
 
             <div className="leader_img_container">
-              <img className='leader_img' src={mrs_kamwetsa} alt="Mrs Matipa" />
+              <img className='leader_img' src={mrs_kamwetsa} alt="Mrs Kamwetsa" />
               <p className="leader_name">Mrs Kamwetsa</p>
             </div>
 

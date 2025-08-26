@@ -4,8 +4,7 @@ import youth_bg from '../assets/videos/youth_bg.mp4'
 import youtubeThumbnail from '../assets/images/IMG-20250708-WA0115.jpg'
 import VisionGoalsSection from '../components/VisionGoalsSection'
 import ProgramsSection from '../components/ProgramsSection'
-import mrs_kamwetsa from '../assets/images/mrs_kamwetsa.jpg';
-import pastor_lee from '../assets/images/pastor_mucheka.jpg';
+import profilePic from '../assets/images/profilepic.png';
 import youth from '../assets/images/IMG-20250708-WA0115.jpg'
 import { NewsComp } from '../components/NewsComp'
 import { ContactComp } from '../components/ContactComp'
@@ -187,27 +186,27 @@ export const Youth = () => {
 
           <div className="leaders_grid_container childrens_grid">
             <div className="leader_img_container">
-              <img className='leader_img' src={pastor_lee} alt="Bro Dylan" />
+              <img className='leader_img' src={profilePic} alt="Bro Dylan" />
               <p className="leader_name">Brother Dylan</p>
             </div>
 
             <div className="leader_img_container">
-              <img className='leader_img' src={pastor_lee} alt="Bro Blessed" />
+              <img className='leader_img' src={profilePic} alt="Bro Blessed" />
               <p className="leader_name">Brother Blessed</p>
             </div>
 
             <div className="leader_img_container">
-              <img className='leader_img' src={pastor_lee} alt="Bro Trust" />
+              <img className='leader_img' src={profilePic} alt="Bro Trust" />
               <p className="leader_name">Brother Trust</p>
             </div>
 
             <div className="leader_img_container">
-              <img className='leader_img' src={mrs_kamwetsa} alt="Sis Audrey" />
+              <img className='leader_img' src={profilePic} alt="Sis Audrey" />
               <p className="leader_name">Sister Audrey</p>
             </div>
 
             <div className="leader_img_container">
-              <img className='leader_img' src={mrs_kamwetsa} alt="Sis Maka" />
+              <img className='leader_img' src={profilePic} alt="Sis Maka" />
               <p className="leader_name">Sister Makanaka</p>
             </div>
 

@@ -24,10 +24,10 @@ import augConfVideo2 from '../assets/videos/aug-conf-2.mp4';
 // The newsItems data is expanded with full content and more media
 export const newsItems = [
     {
-        id: 'august-annual-conference-2025',
+        id: 'august-annual-conference-2025-is-ON',
         title: '2025 August Annual Conference is ON!!!',
         date: 'August 09, 2025',
-        status: 'current',
+        status: 'past',
         image: augConf,
         excerpt: 'The 2025 August Annual Conference at Yamuranai Primary School, Mufakose is happening now—a powerful time of worship, teaching, and spiritual renewal!',
         fullContent: `

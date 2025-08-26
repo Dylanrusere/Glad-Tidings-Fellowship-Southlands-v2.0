@@ -25,7 +25,8 @@ import worshiping from '../assets/icons/pray_1.png'
 import special_events from '../assets/icons/special_event.png'
 
 // Team Images
-import mrsKamwetsa from '../assets/images/choirTeam/mrs_kamwetsa.jpg';
+import profilePic from '../assets/images/profilepic.png';
+import mrs_matambo from '../assets/images/mrs_matambo.jpg';
 
 export const Choir = () => {
   const [showVideo, setShowVideo] = useState(false);
@@ -56,20 +57,20 @@ export const Choir = () => {
 
   // Vocal Team & Band Members
   const vocalTeamMembers = [
-    { name: "Mrs Mucheka", role: "Alto", image: mrsKamwetsa },
-    { name: "Mrs Matambo", role: "Tenor", image: mrsKamwetsa },
-    { name: "Mrs Musara", role: "Alto", image: mrsKamwetsa },
-    { name: "Brother Blessing", role: "Tenor", image: mrsKamwetsa },
-    { name: "Sister Tinotenda", role: "Alto", image: mrsKamwetsa },
-    { name: "Sister Tawana", role: "Alto", image: mrsKamwetsa },
-    { name: "Sister Makanaka", role: "Suprano", image: mrsKamwetsa },
+    { name: "Mrs Mucheka", role: "Alto", image: profilePic },
+    { name: "Mrs Matambo", role: "Tenor", image: mrs_matambo },
+    { name: "Mrs Musara", role: "Suprano", image: profilePic },
+    { name: "Brother Blessing", role: "Tenor", image: profilePic },
+    { name: "Sister Tinotenda", role: "Alto", image: profilePic },
+    { name: "Sister Tawana", role: "Alto", image: profilePic },
+    { name: "Sister Makanaka", role: "Suprano", image: profilePic },
   ];
 
   const bandMembers = [
-    { name: "Brother Dylan", role: "Keyboardist", image: mrsKamwetsa },
-    { name: "Brother Blessed", role: "Keyboardist", image: mrsKamwetsa },
-    { name: "Brother Learnmore", role: "Bassist", image: mrsKamwetsa },
-    { name: "Brother Tinashe", role: "Drummer", image: mrsKamwetsa },
+    { name: "Brother Dylan", role: "Keyboardist", image: profilePic },
+    { name: "Brother Blessed", role: "Keyboardist", image: profilePic },
+    { name: "Brother Learnmore", role: "Bassist", image: profilePic },
+    { name: "Brother Tinashe", role: "Drummer", image: profilePic },
   ];
 
   return (

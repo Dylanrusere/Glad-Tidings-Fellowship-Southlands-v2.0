@@ -5,6 +5,7 @@ import men from '../assets/images/home-3.jpg'
 import VisionGoalsSection from '../components/VisionGoalsSection'
 import ProgramsSection from '../components/ProgramsSection';
 import pastor_lee from '../assets/images/pastor_mucheka.jpg';
+import profilePic from '../assets/images/profilepic.png';
 import { NewsComp } from '../components/NewsComp'
 import { ContactComp } from '../components/ContactComp'
 import { Footer } from '../components/Footer'
@@ -188,12 +189,12 @@ export const Men = () => {
             </div>
 
             <div className="leader_img_container">
-              <img className='leader_img' src={pastor_lee} alt="Mr M. Mudarikwa" />
+              <img className='leader_img' src={profilePic} alt="Mr M. Mudarikwa" />
               <p className="leader_name">Mr M. Mudarikwa</p>
             </div>
 
             <div className="leader_img_container">
-              <img className='leader_img' src={pastor_lee} alt="Mr Mugwara" />
+              <img className='leader_img' src={profilePic} alt="Mr Mugwara" />
               <p className="leader_name">Mr Mugwara</p>
             </div>
           </div>

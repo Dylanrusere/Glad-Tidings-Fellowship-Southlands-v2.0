@@ -5,6 +5,7 @@ import VisionGoalsSection from '../components/VisionGoalsSection'
 import ProgramsSection from '../components/ProgramsSection'
 import mrs_kamwetsa from '../assets/images/mrs_kamwetsa.jpg';
 import mrs_matambo from '../assets/images/mrs_matambo.jpg';
+import profilePic from '../assets/images/profilepic.png';
 import children from '../assets/images/20250223_081040.jpg'
 import { NewsComp } from '../components/NewsComp'
 import { ContactComp } from '../components/ContactComp'
@@ -195,17 +196,17 @@ export const Children = () => {
 
           <div className="leaders_grid_container childrens_grid">
             <div className="leader_img_container">
-              <img className='leader_img' src={mrs_kamwetsa} alt="Mrs Mucheka" />
+              <img className='leader_img' src={profilePic} alt="Mrs Mucheka" />
               <p className="leader_name">Mrs Mucheka</p>
             </div>
 
             <div className="leader_img_container">
-              <img className='leader_img' src={mrs_kamwetsa} alt="Mrs Matipa" />
+              <img className='leader_img' src={mrs_kamwetsa} alt="Mrs Kamwetsa" />
               <p className="leader_name">Mrs Kamwetsa</p>
             </div>
 
             <div className="leader_img_container">
-              <img className='leader_img' src={mrs_matambo} alt="Mrs Matambo" />
+              <img className='leader_img' src={profilePic} alt="Mrs Mataula" />
               <p className="leader_name">Mrs Mataula</p>
             </div>
           </div>
