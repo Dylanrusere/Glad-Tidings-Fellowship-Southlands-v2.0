@@ -2,80 +2,100 @@ import React, { useState, useEffect } from 'react';
 import './Pages.css';
 import { FaArrowUp } from 'react-icons/fa';
 import ResourceCard from '../components/ResourceCard';
-import tenNov from '../assets/resourcesNotes/resources-cover.jpg';
+import resourcesCoverImg from '../assets/resourcesNotes/resources-cover.jpg';
 import { Footer } from '../components/Footer';
 
 
 const ResourcesDirectory = [
   {
-    resourcesImg: tenNov,
-    title: "The Culture of Success - Part 3 - What should we do to be blessed?",
-    brief: "A short guide on building strong faith.",
-    source: "Devotion",
-    ledBy: "Pastor Mucheka",
-    fullDescription: "This resource dives deep into how to grow your faith through the Word of God...",
-    updatedAt: "June 03, 2025",
-    downloadLink: "/downloads/understanding-faith.pdf"
+    resourcesImg: resourcesCoverImg,
+    title: "The Doctrine of The Holy Spirit",
+    brief: "A teaching of The Doctrine of The Holy Spirit",
+    source: "Homegroups",
+    ledBy: "Homegroup Leaders",
+    fullDescription: "This resource dives deep into The Doctrine of The Holy Spirit.",
+    updatedAt: "August - September",
+    downloadLink: "/downloads/culture-of-success(part7).pdf"
   },
   {
-    resourcesImg: tenNov,
-    title: "Walking in Salvation",
-    brief: "Explains what salvation truly means.",
-    source: "Kingdoms",
+    resourcesImg: resourcesCoverImg,
+    title: "The Culture of Success - Men should work & provide",
+    brief: "A continuation of the teaching on the Culture of Success.",
+    source: "Sunday Devotion",
     ledBy: "Pastor Mucheka",
-    fullDescription: "Discover what it means to walk in your salvation and God's grace...",
-    updatedAt: "July 31, 2025",
-    downloadLink: "/downloads/walking-in-salvation.pdf"
+    fullDescription: "This resource dives deep into the Culture of Success, through the Word of God...",
+    updatedAt: "August 31, 2025",
+    downloadLink: "/downloads/culture-of-success(part7).pdf"
   },
   {
-    resourcesImg: tenNov,
+    resourcesImg: resourcesCoverImg,
+    title: "The Culture of Success - How Do We Become Rich?",
+    brief: "A continuation of the teaching on how we can become rich as children of God.",
+    source: "Sunday Devotion",
+    ledBy: "Pastor Mucheka",
+    fullDescription: "This resource dives deep into how we can become rich as children of God, through the Word of God...",
+    updatedAt: "August 24, 2025",
+    downloadLink: "/downloads/culture-of-success(part6).pdf"
+  },
+  {
+    resourcesImg: resourcesCoverImg,
+    title: "The Culture of Success - Part 5",
+    brief: "A continuation of the teaching of the Culture of Success.",
+    source: "Sunday Devotion",
+    ledBy: "Pastor Mucheka",
+    fullDescription: "This resource dives deep into how to grow our Culture of Success through the Word of God...",
+    updatedAt: "August 17, 2025",
+    downloadLink: "/downloads/culture-of-success(part5).pdf"
+  },
+  {
+    resourcesImg: resourcesCoverImg,
+    title: "The Culture of Success - Part 4 - What should we do to be blessed?",
+    brief: "A continuation of the teaching of the Culture of Success.",
+    source: "Sunday Devotion",
+    ledBy: "Pastor Mucheka",
+    fullDescription: "This resource dives deep into how to grow our Culture of Success through the Word of God...",
+    updatedAt: "August 03, 2025",
+    downloadLink: "/downloads/culture-of-success(part4).pdf"
+  },
+  {
+    resourcesImg: resourcesCoverImg,
+    title: "The Doctrine of Christ",
+    brief: "Explains the true Doctrine of Christ.",
+    source: "Thursday Kingdoms",
+    ledBy: "Pastor Mucheka",
+    fullDescription: "Discover the true Doctrine of Jesus Christ, His Life, His Godlyhood and everything about Him, even what`s to come.",
+    updatedAt: "March - August, 2025",
+    downloadLink: "/downloads/doctrine-of-christ.pdf"
+  },
+  {
+    resourcesImg: resourcesCoverImg,
     title: "The Culture of Success - Part 3",
-    brief: "Explains to truly Give to God.",
-    source: "Devotion",
+    brief: "A continuation of the teaching of the Culture of Success.",
+    source: "Sunday Devotion",
     ledBy: "Pastor Mucheka",
-    fullDescription: "Discover what it means to walk in your salvation and God's grace...",
+    fullDescription: "A continuation of the teaching of the Culture of Success.",
     updatedAt: "July 27, 2025",
-    downloadLink: "/downloads/walking-in-salvation.pdf"
+    downloadLink: "/downloads/culture-of-success(part3).pdf"
   },
   {
-    resourcesImg: tenNov,
-    title: "Mallenium",
-    brief: "Explains what true Worship means.",
-    source: "Kingdoms",
-    ledBy: "Pastor Mucheka",
-    fullDescription: "Discover what it means to worship God...",
-    updatedAt: "July 24, 2025",
-    downloadLink: "/downloads/walking-in-salvation.pdf"
-  },
-  {
-    resourcesImg: tenNov,
+    resourcesImg: resourcesCoverImg,
     title: "The Culture of Success - Part 2",
-    brief: "Explains what true Worship means.",
-    source: "Devotions",
+    brief: "A continuation of the teaching of the Culture of Success, this is Part Two(2)",
+    source: "Sunday Devotion",
     ledBy: "Pastor Mucheka",
-    fullDescription: "Discover what it means to worship God...",
+    fullDescription: "A continuation of the teaching of the Culture of Success, this is Part Two(2)",
     updatedAt: "July 20, 2025",
-    downloadLink: "/downloads/walking-in-salvation.pdf"
+    downloadLink: "/downloads/culture-of-success(part2).pdf"
   },
   {
-    resourcesImg: tenNov,
-    title: "The",
-    brief: "Explains what true Worship means.",
-    source: "Kingdoms",
+    resourcesImg: resourcesCoverImg,
+    title: "The Culture of Success - Part 1 - Our Mindset",
+    brief: "A deep dive about the importance of our mindset as a Culture of Success.",
+    source: "Sunday Devotion",
     ledBy: "Pastor Mucheka",
-    fullDescription: "Discover what it means to worship God...",
-    updatedAt: "July 17, 2025",
-    downloadLink: "/downloads/walking-in-salvation.pdf"
-  },
-  {
-    resourcesImg: tenNov,
-    title: "The Culture of Success - Our Mindset",
-    brief: "Explains what true Worship means.",
-    source: "Devotions",
-    ledBy: "Pastor Mucheka",
-    fullDescription: "Discover what it means to worship God...",
+    fullDescription: "This is a teaching about the importance of our Mindset in order for us to have a good proper Culture of Success.",
     updatedAt: "July 13, 2025",
-    downloadLink: "/downloads/walking-in-salvation.pdf"
+    downloadLink: "/downloads/culture-of-success(part1).pdf"
   },
 ];
 

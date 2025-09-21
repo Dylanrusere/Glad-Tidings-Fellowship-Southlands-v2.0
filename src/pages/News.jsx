@@ -59,9 +59,6 @@ export const newsItems = [
         `,
         media: [
           { type: 'image', src: wedding, alt: 'Believers gathered in worship (previous event)' },
-          { type: 'image', src: wedding_img_2, alt: 'Speaker addressing the congregation' },
-          { type: 'image', src: wedding_img_3, alt: 'Praise and worship session' },
-          { type: 'video', src: prayer_video, alt: 'A clip from a previous prayer session' },
         ]
       },
     {
@@ -80,7 +77,6 @@ export const newsItems = [
         { type: 'image', src: wedding, alt: 'Emmanuel and Lovejoy at the altar' },
         { type: 'image', src: wedding_img_2, alt: 'The couple celebrating' },
         { type: 'image', src: wedding_img_3, alt: 'Wedding ceremony' },
-        { type: 'video', src: prayer_video, alt: 'A short clip of the prayer session' },
       ]
     },
     {

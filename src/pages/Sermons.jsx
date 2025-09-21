@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaArrowUp } from 'react-icons/fa';
 import { LatestSermonsCard } from '../components/Props/LatestSermonsCard';
-import tenNov from '../assets/sermonsNotes/sermons-cover.jpg';
+import sermonsCover from '../assets/sermonsNotes/sermons-cover.jpg';
 import sermonsVideo from '../assets/videos/sermons.mp4';
 import restorationNotes from '../assets/sermonsNotes/sermons-cover.jpg'
 import { Footer } from '../components/Footer';
@@ -35,7 +35,39 @@ export const Sermons = () => {
 
   const sermonsData = [
     {
-      imageSrc: tenNov,
+      imageSrc: sermonsCover,
+      heading: "Tithe - Teaching",
+      preacher: "Pastor L. Mucheka",
+      date: "Sun, 07 September 2025",
+      link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
+      notesLink: restorationNotes
+    },
+    {
+      imageSrc: sermonsCover,
+      heading: "The Spirit of Forgiveness",
+      preacher: "Pastor L. Mucheka",
+      date: "Sun, 31 August 2025",
+      link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
+      notesLink: restorationNotes
+    },
+    {
+      imageSrc: sermonsCover,
+      heading: "What are you giving God for him to work in your life?",
+      preacher: "Pastor L. Mucheka",
+      date: "Sun, 24 August 2025",
+      link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
+      notesLink: restorationNotes
+    },
+    {
+      imageSrc: sermonsCover,
+      heading: "The Holy Spirit",
+      preacher: "Pastor L. Mucheka",
+      date: "Sun, 17 August 2025",
+      link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
+      notesLink: restorationNotes
+    },
+    {
+      imageSrc: sermonsCover,
       heading: "The Holy Spirit",
       preacher: "Pastor L. Mucheka",
       date: "Sun, 03 August 2025",
@@ -43,7 +75,7 @@ export const Sermons = () => {
       notesLink: restorationNotes
     },
     {
-      imageSrc: tenNov,
+      imageSrc: sermonsCover,
       heading: "On this rock l will build my church",
       preacher: "Pastor L. Mucheka",
       date: "Sun, 27 July 2025",
@@ -51,7 +83,7 @@ export const Sermons = () => {
       notesLink: restorationNotes
     },
     {
-      imageSrc: tenNov,
+      imageSrc: sermonsCover,
       heading: "On this rock l will build my church",
       preacher: "Pastor L. Mucheka",
       date: "Sun, 20 July 2025",
@@ -59,14 +91,13 @@ export const Sermons = () => {
       notesLink: restorationNotes
     },
     {
-      imageSrc: tenNov,
+      imageSrc: sermonsCover,
       heading: "Restoration - Dry Bones you can live again",
       preacher: "Brother Blessed Chikowore",
       date: "Sun, 13 July 2025",
       link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
       notesLink: restorationNotes
-    },
-    // Add more sermons as needed
+    }
   ];
 
   // Sort sermons in reverse chronological order

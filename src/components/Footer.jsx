@@ -32,10 +32,10 @@ export const Footer = () => {
             <div className="footer_contact">
                 <p className="footer_heads">Contact</p>
                 <div className="footer_contact_links">
-                    <a href='a' className="footer_link"><span><FaMapMarkerAlt/></span> 7417 Southlands Park, Waterfalls, Hre</a>
-                    <a href='a' className="footer_link"><span><FaClock/></span> Service Time: 0800hrs</a>
-                    <a href='a' className="footer_link"><span><FaEnvelope/></span> Send Us a Message</a>
-                    <a href='a' className="footer_link"><span><i className="fa-solid fa-phone"></i></span> +263 77 000 0000</a>
+                    <a href='' className="footer_link"><span><FaMapMarkerAlt/></span> 7417 Southlands Park, Waterfalls, Hre</a>
+                    <a href='' className="footer_link"><span><FaClock/></span> Service Time: 0800hrs</a>
+                    <a href='' className="footer_link"><span><FaEnvelope/></span> Send Us a Message</a>
+                    <a href='' className="footer_link"><span><i className="fa-solid fa-phone"></i></span> +263 77 000 0000</a>
                 </div>
             </div>
             <div className="social_media_link to_be_none">

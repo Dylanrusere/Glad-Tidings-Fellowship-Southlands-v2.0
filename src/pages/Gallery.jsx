@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaArrowUp } from 'react-icons/fa';
 import galleryImages from '../assets/galleryImages'; // Array of image URLs you'll create
+import { Footer } from '../components/Footer';
 
 export const Gallery = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -106,6 +107,8 @@ export const Gallery = () => {
           <img src={selectedImage} alt="Enlarged" />
         </div>
       )}
+
+      <Footer />
     </div>
   );
 };

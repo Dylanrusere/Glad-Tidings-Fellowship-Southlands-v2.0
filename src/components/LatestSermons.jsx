@@ -3,32 +3,31 @@ import { LatestSermonsCard } from "../components/Props/LatestSermonsCard"; // Im
 import sermonOne from "../assets/images/home-1.jpg";
 import { Link } from "react-router-dom";
 import { FaFolder } from "react-icons/fa";
-import tenNov from "../assets/sermonsNotes/sermons-cover.jpg";
+import sermonsCover from "../assets/sermonsNotes/sermons-cover.jpg";
 
 export const LatestSermons = () => {
   const sermons = [
     {
-      imageSrc: tenNov,
-      heading: "O Ephraim, what shall l do unto thee? O Judah",
-      preacher: "Brother Blessed",
-      date: "Sun, 17 August 2025",
-      link: "https://youtube.com/GladTidingsFellowshipSouthland",
-    },
-    {
-      imageSrc: tenNov,
-      heading: "The Holy Spirit", // Newest
-      preacher: "Pastor Mucheka",
-      date: "Sun, 03 August 2025",
-      link: "https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V",
-    },
-    {
-      imageSrc: tenNov,
-      heading: "On this Rock l will build my church",
+      imageSrc: sermonsCover,
+      heading: "Tithe - teaching",
       preacher: "Pastor L. Mucheka",
-      date: "Sun, 27 July 2025",
-      link: "https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V",
+      date: "Sun, 07 September 2025",
+      link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V'
     },
-    // ...older ones
+    {
+      imageSrc: sermonsCover,
+      heading: "The Spirit of Forgiveness",
+      preacher: "Pastor L. Mucheka",
+      date: "Sun, 31 August 2025",
+      link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V'
+    },
+    {
+      imageSrc: sermonsCover,
+      heading: "What are you giving God for him to work in your life?",
+      preacher: "Pastor L. Mucheka",
+      date: "Sun, 24 August 2025",
+      link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V'
+    }
   ];
   
 

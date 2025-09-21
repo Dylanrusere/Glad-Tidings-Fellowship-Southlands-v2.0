@@ -60,13 +60,15 @@ export const NewsArticle = () => {
         <h1 className="news-article-title overall_headings">{article.title}</h1>
         <p className="news-article-date">{article.date}</p>
         
-        {/* Main image */}
-        <div className="news-article-image-container">
-          <img src={article.image} alt={article.title} className="news-article-main-image" />
+        <div className="news-article-big-container">
+          {/* Main image */}
+          <div className="news-article-image-container">
+            <img src={article.image} alt={article.title} className="news-article-main-image" />
+          </div>
+          
+          {/* Full content */}
+          <div className="news-article-full-content" dangerouslySetInnerHTML={{ __html: article.fullContent }}></div>
         </div>
-        
-        {/* Full content */}
-        <div className="news-article-full-content" dangerouslySetInnerHTML={{ __html: article.fullContent }}></div>
         
         {/* Images and Videos Gallery Section */}
         {article.media && article.media.length > 0 && (

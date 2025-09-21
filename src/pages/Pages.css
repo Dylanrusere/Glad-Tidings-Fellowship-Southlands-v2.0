@@ -1251,7 +1251,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 1rem;
-    padding: 2rem 0;
+    padding: 2rem;
 }
 
 .gallery_item {
@@ -1585,94 +1585,106 @@ body {
 
 /* --- Page Layout --- */
 .news-article-page {
-    padding-top: 10rem; /* Adjust to clear your navbar */
+    padding-top: 10rem;
+    /* Adjust to clear your navbar */
     padding-bottom: 4rem;
     color: #333;
-  }
-  
-  .news-article-title {
+}
+
+.news-article-title {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
     color: #000066;
     text-align: center;
-  }
-  
-  .news-article-date {
+}
+
+.news-article-date {
     text-align: center;
     font-size: 1rem;
     color: #666;
     margin-bottom: 2rem;
-  }
-  
-  .news-article-image-container {
+}
+
+.news-article-big-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+
+    @media(max-width:850px){
+        grid-template-columns: 1fr;
+    }
+}
+
+.news-article-image-container {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
-  }
-  
-  .news-article-main-image {
+}
+
+.news-article-main-image {
     width: 100%;
     max-width: 500px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .news-article-full-content {
+}
+
+.news-article-full-content {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 2rem;
-    white-space: pre-wrap; /* Preserves formatting from the `fullContent` string */
-  }
-  
-  /* --- Gallery Section --- */
-  .news-media-gallery {
+    /* Preserves formatting from the `fullContent` string */
+}
+
+/* --- Gallery Section --- */
+.news-media-gallery {
     margin-top: 4rem;
     border-top: 1px solid #ddd;
     padding-top: 2rem;
-  }
-  
-  .gallery-heading {
+}
+
+.gallery-heading {
     font-size: 2rem;
     font-weight: 600;
     color: #000066;
     text-align: center;
     margin-bottom: 2rem;
-  }
-  
-  .gallery-grid {
+}
+
+.gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1rem;
-  }
-  
-  .media-item {
+}
+
+.media-item {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-  }
-  
-  .media-item:hover {
+}
+
+.media-item:hover {
     transform: scale(1.05);
-  }
-  
-  .media-thumbnail,
-  .video-thumbnail {
+}
+
+.media-thumbnail,
+.video-thumbnail {
     width: 100%;
-    height: 200px; /* Fixed height for consistent grid layout */
+    height: 200px;
+    /* Fixed height for consistent grid layout */
     object-fit: cover;
     display: block;
-  }
-  
-  .video-thumbnail-container {
+}
+
+.video-thumbnail-container {
     position: relative;
-  }
-  
-  .play-icon {
+}
+
+.play-icon {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1680,10 +1692,10 @@ body {
     color: white;
     font-size: 3rem;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-  }
-  
-  /* --- Modal Styling --- */
-  .modal-overlay {
+}
+
+/* --- Modal Styling --- */
+.modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -1694,27 +1706,27 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 100000;
-  }
-  
-  .modal-content {
+}
+
+.modal-content {
     position: relative;
     max-width: 90%;
     max-height: 90%;
     background: transparent;
     border-radius: 8px;
-  }
-  
-  .modal-content img,
-  .modal-content video {
+}
+
+.modal-content img,
+.modal-content video {
     max-width: 100%;
     max-height: 80vh;
     display: block;
     margin: auto;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  }
-  
-  .modal-close-button {
+}
+
+.modal-close-button {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -1724,17 +1736,18 @@ body {
     color: white;
     cursor: pointer;
     z-index: 1001;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .news-article-title {
-      font-size: 2rem;
+        font-size: 2rem;
     }
+
     .news-article-main-image {
-      width: 100%;
-      border-radius: 0;
+        width: 100%;
+        border-radius: 0;
     }
-  }
+}
 
 /* --------------------------Overall Styles---------------------------- */
 .overall_headings {
