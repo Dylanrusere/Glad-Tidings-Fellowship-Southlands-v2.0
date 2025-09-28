@@ -36,65 +36,17 @@ export const Sermons = () => {
   const sermonsData = [
     {
       imageSrc: sermonsCover,
+      heading: "Tithe - Teaching - Part 2",
+      preacher: "Pastor L. Mucheka",
+      date: "Sun, 14 September 2025",
+      link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
+      notesLink: restorationNotes
+    },
+    {
+      imageSrc: sermonsCover,
       heading: "Tithe - Teaching",
       preacher: "Pastor L. Mucheka",
       date: "Sun, 07 September 2025",
-      link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
-      notesLink: restorationNotes
-    },
-    {
-      imageSrc: sermonsCover,
-      heading: "The Spirit of Forgiveness",
-      preacher: "Pastor L. Mucheka",
-      date: "Sun, 31 August 2025",
-      link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
-      notesLink: restorationNotes
-    },
-    {
-      imageSrc: sermonsCover,
-      heading: "What are you giving God for him to work in your life?",
-      preacher: "Pastor L. Mucheka",
-      date: "Sun, 24 August 2025",
-      link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
-      notesLink: restorationNotes
-    },
-    {
-      imageSrc: sermonsCover,
-      heading: "The Holy Spirit",
-      preacher: "Pastor L. Mucheka",
-      date: "Sun, 17 August 2025",
-      link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
-      notesLink: restorationNotes
-    },
-    {
-      imageSrc: sermonsCover,
-      heading: "The Holy Spirit",
-      preacher: "Pastor L. Mucheka",
-      date: "Sun, 03 August 2025",
-      link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
-      notesLink: restorationNotes
-    },
-    {
-      imageSrc: sermonsCover,
-      heading: "On this rock l will build my church",
-      preacher: "Pastor L. Mucheka",
-      date: "Sun, 27 July 2025",
-      link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
-      notesLink: restorationNotes
-    },
-    {
-      imageSrc: sermonsCover,
-      heading: "On this rock l will build my church",
-      preacher: "Pastor L. Mucheka",
-      date: "Sun, 20 July 2025",
-      link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
-      notesLink: restorationNotes
-    },
-    {
-      imageSrc: sermonsCover,
-      heading: "Restoration - Dry Bones you can live again",
-      preacher: "Brother Blessed Chikowore",
-      date: "Sun, 13 July 2025",
       link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
       notesLink: restorationNotes
     }

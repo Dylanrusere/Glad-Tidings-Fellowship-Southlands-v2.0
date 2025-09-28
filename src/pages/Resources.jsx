@@ -19,84 +19,14 @@ const ResourcesDirectory = [
   },
   {
     resourcesImg: resourcesCoverImg,
-    title: "The Culture of Success - Men should work & provide",
+    title: "The Culture of Success",
     brief: "A continuation of the teaching on the Culture of Success.",
     source: "Sunday Devotion",
     ledBy: "Pastor Mucheka",
     fullDescription: "This resource dives deep into the Culture of Success, through the Word of God...",
-    updatedAt: "August 31, 2025",
-    downloadLink: "/downloads/culture-of-success(part7).pdf"
-  },
-  {
-    resourcesImg: resourcesCoverImg,
-    title: "The Culture of Success - How Do We Become Rich?",
-    brief: "A continuation of the teaching on how we can become rich as children of God.",
-    source: "Sunday Devotion",
-    ledBy: "Pastor Mucheka",
-    fullDescription: "This resource dives deep into how we can become rich as children of God, through the Word of God...",
-    updatedAt: "August 24, 2025",
-    downloadLink: "/downloads/culture-of-success(part6).pdf"
-  },
-  {
-    resourcesImg: resourcesCoverImg,
-    title: "The Culture of Success - Part 5",
-    brief: "A continuation of the teaching of the Culture of Success.",
-    source: "Sunday Devotion",
-    ledBy: "Pastor Mucheka",
-    fullDescription: "This resource dives deep into how to grow our Culture of Success through the Word of God...",
-    updatedAt: "August 17, 2025",
-    downloadLink: "/downloads/culture-of-success(part5).pdf"
-  },
-  {
-    resourcesImg: resourcesCoverImg,
-    title: "The Culture of Success - Part 4 - What should we do to be blessed?",
-    brief: "A continuation of the teaching of the Culture of Success.",
-    source: "Sunday Devotion",
-    ledBy: "Pastor Mucheka",
-    fullDescription: "This resource dives deep into how to grow our Culture of Success through the Word of God...",
-    updatedAt: "August 03, 2025",
-    downloadLink: "/downloads/culture-of-success(part4).pdf"
-  },
-  {
-    resourcesImg: resourcesCoverImg,
-    title: "The Doctrine of Christ",
-    brief: "Explains the true Doctrine of Christ.",
-    source: "Thursday Kingdoms",
-    ledBy: "Pastor Mucheka",
-    fullDescription: "Discover the true Doctrine of Jesus Christ, His Life, His Godlyhood and everything about Him, even what`s to come.",
-    updatedAt: "March - August, 2025",
-    downloadLink: "/downloads/doctrine-of-christ.pdf"
-  },
-  {
-    resourcesImg: resourcesCoverImg,
-    title: "The Culture of Success - Part 3",
-    brief: "A continuation of the teaching of the Culture of Success.",
-    source: "Sunday Devotion",
-    ledBy: "Pastor Mucheka",
-    fullDescription: "A continuation of the teaching of the Culture of Success.",
-    updatedAt: "July 27, 2025",
-    downloadLink: "/downloads/culture-of-success(part3).pdf"
-  },
-  {
-    resourcesImg: resourcesCoverImg,
-    title: "The Culture of Success - Part 2",
-    brief: "A continuation of the teaching of the Culture of Success, this is Part Two(2)",
-    source: "Sunday Devotion",
-    ledBy: "Pastor Mucheka",
-    fullDescription: "A continuation of the teaching of the Culture of Success, this is Part Two(2)",
-    updatedAt: "July 20, 2025",
-    downloadLink: "/downloads/culture-of-success(part2).pdf"
-  },
-  {
-    resourcesImg: resourcesCoverImg,
-    title: "The Culture of Success - Part 1 - Our Mindset",
-    brief: "A deep dive about the importance of our mindset as a Culture of Success.",
-    source: "Sunday Devotion",
-    ledBy: "Pastor Mucheka",
-    fullDescription: "This is a teaching about the importance of our Mindset in order for us to have a good proper Culture of Success.",
-    updatedAt: "July 13, 2025",
-    downloadLink: "/downloads/culture-of-success(part1).pdf"
-  },
+    updatedAt: "August - September",
+    downloadLink: "/downloads/culture-of-success.pdf"
+  }
 ];
 
 export const Resources = () => {
