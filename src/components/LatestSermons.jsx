@@ -11,23 +11,23 @@ export const LatestSermons = () => {
       imageSrc: sermonsCover,
       heading: "Tithe - teaching",
       preacher: "Pastor L. Mucheka",
-      date: "Sun, 07 September 2025",
+      date: "Sun, 28 September 2025",
       link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V'
     },
     {
       imageSrc: sermonsCover,
-      heading: "The Spirit of Forgiveness",
+      heading: "Tithe - teaching - part 3",
       preacher: "Pastor L. Mucheka",
-      date: "Sun, 31 August 2025",
+      date: "Sun, 21 September 2025",
       link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V'
     },
     {
       imageSrc: sermonsCover,
-      heading: "What are you giving God for him to work in your life?",
+      heading: "Tithe - teaching - part 2",
       preacher: "Pastor L. Mucheka",
-      date: "Sun, 24 August 2025",
+      date: "Sun, 14 September 2025",
       link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V'
-    }
+    },
   ];
   
 

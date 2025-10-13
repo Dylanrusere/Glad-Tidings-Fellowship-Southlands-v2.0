@@ -81,7 +81,7 @@ export const About = () => {
             <div className="our_mission_grid">
               <div className="mission_container">
                 <p className="great_commission">go ye therefore...we are going</p>
-                <Link to="/greatcommission" className="card_button ministries_btn">
+                <Link to="#" className="card_button ministries_btn">
                   Great Commission
                 </Link>
               </div>

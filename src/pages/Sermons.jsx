@@ -38,6 +38,22 @@ export const Sermons = () => {
       imageSrc: sermonsCover,
       heading: "Tithe - Teaching - Part 2",
       preacher: "Pastor L. Mucheka",
+      date: "Sun, 28 September 2025",
+      link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
+      notesLink: restorationNotes
+    },
+    {
+      imageSrc: sermonsCover,
+      heading: "Tithe - Teaching - Part 3",
+      preacher: "Pastor L. Mucheka",
+      date: "Sun, 21 September 2025",
+      link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
+      notesLink: restorationNotes
+    },
+    {
+      imageSrc: sermonsCover,
+      heading: "Tithe - Teaching - Part 2",
+      preacher: "Pastor L. Mucheka",
       date: "Sun, 14 September 2025",
       link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
       notesLink: restorationNotes

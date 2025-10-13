@@ -49,8 +49,8 @@ export const Homegroups = () => {
 
       <div className="ministry_heading overall_container homegroup_top_div">
         <p className="ministry_tagline">The topic that we currently discussing at our designated Homegroups:</p>
-        <p className="ministry_theme">The Doctrine of the Holy Spirit</p>
-        <a href="" className='homegroup_btn'>Learn More</a>
+        <p className="ministry_theme">The Doctrine of Men</p>
+        {/* <a href="" className='homegroup_btn'>Learn More</a> */}
       </div>
 
       <div className="ministry_heading overall_container">
@@ -61,7 +61,7 @@ export const Homegroups = () => {
       <div className="overall_container">
         <div className="homegroup_text">
           <p>
-          Homegroups are the heartbeat of our church community—small gatherings of believers meeting regularly in homes across Southlands to grow in faith, build meaningful relationships, and support one another in love. They create a space for deeper Bible study, authentic fellowship, and personal discipleship beyond the Sunday service. Through Homegroups, the church becomes more connected, spiritually nourished, and empowered to live out God’s Word in everyday life.
+            Homegroups are the heartbeat of our church community—small gatherings of believers meeting regularly in homes across Southlands to grow in faith, build meaningful relationships, and support one another in love. They create a space for deeper Bible study, authentic fellowship, and personal discipleship beyond the Sunday service. Through Homegroups, the church becomes more connected, spiritually nourished, and empowered to live out God’s Word in everyday life.
           </p>
         </div>
       </div>
@@ -94,6 +94,8 @@ export const Homegroups = () => {
           ))}
         </div>
       </div>
+
+      {/* Topics we`ve Covered */}
 
 
     </div>

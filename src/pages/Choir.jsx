@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import choirVideo from '../assets/videos/weekly_programs.mp4';
+import choirVideo from '../assets/videos/choir.mp4';
 import { FaArrowUp } from 'react-icons/fa';
 import choirThumb from '../assets/images/Screenshot_20250714-182956_Gallery.jpg';
 import VisionGoalsSection from '../components/VisionGoalsSection';
@@ -57,18 +57,20 @@ export const Choir = () => {
 
   // Vocal Team & Band Members
   const vocalTeamMembers = [
-    { name: "Mrs Mucheka", role: "Alto", image: profilePic },
-    { name: "Mrs Matambo", role: "Tenor", image: mrs_matambo },
+    { name: "Sister Natasha", role: "Suprano", image: profilePic },
+    { name: "Sister Makanaka", role: "Suprano", image: profilePic },
     { name: "Mrs Musara", role: "Suprano", image: profilePic },
-    { name: "Brother Blessing", role: "Tenor", image: profilePic },
+    { name: "Mrs Mucheka", role: "Alto", image: profilePic },
     { name: "Sister Tinotenda", role: "Alto", image: profilePic },
     { name: "Sister Tawana", role: "Alto", image: profilePic },
-    { name: "Sister Makanaka", role: "Suprano", image: profilePic },
+    { name: "Mrs Matambo", role: "Tenor", image: mrs_matambo },
+    { name: "Brother Blessing", role: "Tenor", image: profilePic },
   ];
 
   const bandMembers = [
     { name: "Brother Dylan", role: "Keyboardist", image: profilePic },
     { name: "Brother Blessed", role: "Keyboardist", image: profilePic },
+    { name: "Brother Denzel", role: "Keyboardist", image: profilePic },
     { name: "Brother Learnmore", role: "Bassist", image: profilePic },
     { name: "Brother Tinashe", role: "Drummer", image: profilePic },
   ];
@@ -233,13 +235,13 @@ export const Choir = () => {
       </div>
 
       {/* Call to Action */}
-      <div className="cta_section">
+      {/* <div className="cta_section">
         <div className="cta_section_overlay">
           <h3 className='cta_section_head'>Do you have a heart for worship and music?</h3>
           <p>Join our choir family and be part of something impactful!</p>
           <button className="join_button">Join the Choir</button>
         </div>
-      </div>
+      </div> */}
 
       {/* News, Contact, Footer */}
       <NewsComp />

@@ -3,20 +3,37 @@ import './Components.css';
 import { Link } from 'react-router-dom';
 
 // Import images and videos
-import prayer_fasting from '../assets/images/newsCover/JulyWeekOfPrayer.png';
-import july06 from '../assets/images/sermonsCovers/sundaySermon 06.07.25.png';
-import laah from '../assets/images/newsCover/manu.jpg';
-import wedding from '../assets/images/newsCover/wedding.jpg';
+import youthCampTheme from '../assets/images/eventsCovers/2025 Annual Youth Conference.jpg';
 import augConf from '../assets/images/eventsCovers/2025 August Conference.jpg'
 
 // Let's add more images to make the gallery richer
 import wedding_img_2 from '../assets/images/newsCover/wedding.jpg';
 import wedding_img_3 from '../assets/images/newsCover/wedding.jpg';
 import prayer_video from '../assets/videos/news.mp4';
-import augConfVideo from '../assets/videos/aug-conference.mp4';
-import augConfVideo2 from '../assets/videos/aug-conf-2.mp4';
 
 const newsItems = [
+  {
+    id: '2025-youth-camp-theme-out-venue-confirmed',
+    title: '2025 Youth Camp Theme is OUT & venue is CONFIRMED!!!',
+    date: 'October 04, 2025',
+    status: 'current',
+    image: youthCampTheme,
+    excerpt: 'The 2025 Youth Camp is officially set! Theme: “Now is the Time — Created for a Purpose, Called for a Mission.” Join us at Tripple Tee Group of Schools in Bindura for a life-transforming experience of faith, purpose, and fellowship!',
+    fullContent: `
+      The wait is over — the 2025 Youth Camp theme and venue have been revealed!
+  
+      📖 Theme: “Now is the Time — Created for a Purpose, Called for a Mission”  
+      🕊️ Key Scriptures: Ephesians 2:10, 2 Timothy 1:8–9, Matthew 28:19–20, Esther 4:14  
+      📍 Venue: Tripple Tee Group of Schools, Bindura
+  
+      This year’s Youth Camp promises to be a powerful encounter with God. It’s a call to every young believer to rise, embrace their divine purpose, and walk boldly in the mission God has set before them. Expect dynamic sessions filled with worship, impactful teachings, leadership training, and life-changing fellowship moments.
+  
+      Prepare your heart, gather your friends, and get ready for an unforgettable journey of spiritual awakening and transformation. *Now is the Time!*
+    `,
+    media: [
+      { type: 'image', src: youthCampTheme, alt: '2025 Youth Camp Flyer' },
+    ]
+  },
   {
     id: 'august-annual-conference-2025-is-ON',
     title: '2025 August Annual Conference is ON!!!',
@@ -33,8 +50,6 @@ const newsItems = [
       `,
     media: [
       { type: 'image', src: augConf, alt: 'Believers gathered in worship during the conference' },
-      { type: 'image', src: augConfVideo, alt: 'Speaker addressing the congregation live' },
-      { type: 'image', src: augConfVideo2, alt: 'Praise and worship session in progress' },
     ]
   },
   {
@@ -52,32 +67,8 @@ const newsItems = [
         Come expectant and ready to receive. Invite friends and family—this is more than a conference, it’s a divine appointment!
       `,
     media: [
-      { type: 'image', src: wedding, alt: 'Believers gathered in worship (previous event)' },
-      { type: 'image', src: wedding_img_2, alt: 'Speaker addressing the congregation' },
-      { type: 'image', src: wedding_img_3, alt: 'Praise and worship session' },
-      { type: 'video', src: prayer_video, alt: 'A clip from a previous prayer session' },
     ]
-  },
-
-  {
-    id: 'emmanuel-lovejoys-wedding',
-    title: 'Emmanuel & Lovejoy\'s Wedding',
-    date: 'July 19, 2025',
-    status: 'past',
-    image: wedding,
-    excerpt: 'Emmanuel and Lovejoy’s wedding was a beautiful and spirit-filled celebration held at The Living Rock in Waterfalls.',
-    fullContent: `
-      The historic union of Emmanuel and Lovejoy took place on a glorious Saturday, July 19, 2025, at The Living Rock in Waterfalls. The atmosphere was charged with heartfelt worship and a powerful message of love and commitment. It was a joyous occasion for the entire church family, marking the first white wedding to be held at our new sanctuary.
-
-      The couple exchanged vows with an overwhelming sense of gratitude and faith, surrounded by family and friends. The ceremony was filled with vibrant fellowship, inspiring hymns, and a powerful message on the sanctity of marriage. The day concluded with a celebratory reception, leaving lasting memories for all who attended. We pray for God's blessings over their new life together.
-    `,
-    media: [
-      { type: 'image', src: wedding, alt: 'Emmanuel and Lovejoy at the altar' },
-      { type: 'image', src: wedding_img_2, alt: 'The couple celebrating' },
-      { type: 'image', src: wedding_img_3, alt: 'Wedding ceremony' },
-      { type: 'video', src: prayer_video, alt: 'A short clip of the prayer session' },
-    ]
-  },
+  }
 ];
 
 const getNewsStatus = (newsItem) => {

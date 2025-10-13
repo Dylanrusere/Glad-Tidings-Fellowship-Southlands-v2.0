@@ -6,10 +6,21 @@ import youthConf from "../assets/images/eventsCovers/2025 Annual Youth Conferenc
 import mensConf from "../assets/images/eventsCovers/2025 Men`s Conference - 2.png"
 import couples from '../assets/images/eventsCovers/August Couples Meeting.jpg'
 import augConf from '../assets/images/eventsCovers/2025 August Conference.jpg'
+import youthrealifeissues2 from '../assets/images/eventsCovers/southlandsgtf-financial literacy flyer.jpg'
 import './Components.css';
 
 const AllEvents = ({ showUpcomingOnly = false }) => {
   const [events] = useState([
+    {
+      name: "Youth Real Life Issues 2.0",
+      startDate: new Date("2025-10-05T14:00:00"),
+      endDate: new Date("2025-10-05T16:00:00"),
+      venue: "Southlands Glad Tidings Fellowship",
+      image: youthrealifeissues2,
+      organizers: "Youth Ministry",
+      whatsappNumber: "263783002822",
+      location: "https://maps.app.goo.gl/BD9CNsuk57hFAyz5A",
+    },
     {
       name: "Couples Meeting",
       startDate: new Date("2025-08-30T10:00:00"),
@@ -175,8 +186,8 @@ const AllEvents = ({ showUpcomingOnly = false }) => {
               <input type="email" placeholder="Your Email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} required />
               <input type="text" placeholder="Your Phone" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} required />
               <div className="modal_btns">
-                <button type="submit">Submit RSVP</button>
                 <button type="button" onClick={closeModals}>Cancel</button>
+                <button type="submit">Submit RSVP</button>
               </div>
             </form>
           </div>
@@ -196,7 +207,7 @@ const AllEvents = ({ showUpcomingOnly = false }) => {
               <a href={selectedEvent.location} target="_blank" rel="noopener noreferrer">
                 <button type="button">Directions</button>
               </a>
-              <button type="button" onClick={closeModals}>Close</button>
+              <button className="close_btn" type="button" onClick={closeModals}>Close</button>
             </div>
           </div>
         </div>
