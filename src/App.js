@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { Home, About, Children, Contact, Choir, Events, Gallery, Homegroups, Ladies, Men, NewsArticle, Resources, Sermons, Youth, News, GreatCommission, MediaTeam, OurSocials } from "./pages";
+import { Home, About, Children, Contact, Choir, Events, Gallery, Give, Homegroups, Ladies, Men, NewsArticle, Resources, Sermons, Youth, News, GreatCommission, MediaTeam, OurSocials } from "./pages";
 import { Navbar } from "./components/Navbar";
 import ScrollToTop from './components/ScrollToTop';
 
@@ -16,6 +16,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/events" element={<Events />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/give" element={<Give />} />
         <Route path="/greatcommission" element={<GreatCommission />} />
         <Route path="/homegroups" element={<Homegroups />} />
         <Route path="/ladies" element={<Ladies />} />

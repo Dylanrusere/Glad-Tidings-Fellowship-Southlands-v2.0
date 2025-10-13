@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { FaArrowUp } from 'react-icons/fa';
-import homegroups_bg from '../assets/videos/weekly_programs.mp4'
+import homegroups_bg from '../assets/videos/homegroups.mp4'
 
 export const Homegroups = () => {
   const [scrollProgress, setScrollProgress] = useState(0);

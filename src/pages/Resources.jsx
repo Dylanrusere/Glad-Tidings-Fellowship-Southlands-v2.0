@@ -15,7 +15,7 @@ const ResourcesDirectory = [
     ledBy: "Homegroup Leaders",
     fullDescription: "This resource dives deep into The Doctrine of The Holy Spirit.",
     updatedAt: "August - September",
-    downloadLink: "/downloads/culture-of-success(part7).pdf"
+    downloadLink: "#"
   },
   {
     resourcesImg: resourcesCoverImg,
@@ -25,7 +25,7 @@ const ResourcesDirectory = [
     ledBy: "Pastor Mucheka",
     fullDescription: "This resource dives deep into the Culture of Success, through the Word of God...",
     updatedAt: "August - September",
-    downloadLink: "/downloads/culture-of-success.pdf"
+    downloadLink: "#"
   }
 ];
 
@@ -100,7 +100,11 @@ export const Resources = () => {
         </div>
       </div>
 
-      <div className="top_sermons"></div>
+      <div className="top_sermons">
+      <div className="overall_container">
+          <p><strong>NB: Resources notes will be available starting from 20th of October 2025</strong></p>
+        </div>
+      </div>
 
       <Footer />
 

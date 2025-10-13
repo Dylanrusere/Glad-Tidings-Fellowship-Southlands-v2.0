@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { FaArrowUp } from 'react-icons/fa';
-import homegroups_bg from '../assets/videos/weekly_programs.mp4'
+import homegroups_bg from '../assets/videos/socials.mp4'
 import { ContactComp } from '../components/ContactComp';
 import { Footer } from '../components/Footer';
 

@@ -1421,6 +1421,24 @@ body {
     margin-bottom: 0.8rem;
 }
 
+/* ---------------------Give Page--------------------- */
+.give_btn {
+    background-color: #000066;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.give_btn:hover {
+    background-color: #000099;
+    transform: translateY(-2px);
+}
+
+
 /* -------------------------Contact Page--------------------- */
 .google_map_location {
     width: 100%;

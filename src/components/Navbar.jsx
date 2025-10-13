@@ -28,7 +28,7 @@ export const Navbar = () => {
           <Link to="https://youtube.com/@GladTidingsFellowshipSouthland"><FaYoutube /></Link>
           <Link><FaTiktok /></Link>
         </div>
-        <Link className="top_menu-button">Give</Link>
+        <Link to="/give" className="top_menu-button">Give</Link>
       </div>
 
       {/* Main Navbar */}

@@ -3,7 +3,6 @@ import { FaArrowUp } from 'react-icons/fa';
 import { LatestSermonsCard } from '../components/Props/LatestSermonsCard';
 import sermonsCover from '../assets/sermonsNotes/sermons-cover.jpg';
 import sermonsVideo from '../assets/videos/sermons.mp4';
-import restorationNotes from '../assets/sermonsNotes/sermons-cover.jpg'
 import { Footer } from '../components/Footer';
 
 export const Sermons = () => {
@@ -36,11 +35,19 @@ export const Sermons = () => {
   const sermonsData = [
     {
       imageSrc: sermonsCover,
+      heading: "Why are you here?",
+      preacher: "Mr Kamwetsa",
+      date: "Sun, 05 October 2025",
+      link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
+      notesLink: '#'
+    },
+    {
+      imageSrc: sermonsCover,
       heading: "Tithe - Teaching - Part 2",
       preacher: "Pastor L. Mucheka",
       date: "Sun, 28 September 2025",
       link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
-      notesLink: restorationNotes
+      notesLink: '#'
     },
     {
       imageSrc: sermonsCover,
@@ -48,7 +55,7 @@ export const Sermons = () => {
       preacher: "Pastor L. Mucheka",
       date: "Sun, 21 September 2025",
       link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
-      notesLink: restorationNotes
+      notesLink: '#'
     },
     {
       imageSrc: sermonsCover,
@@ -56,7 +63,7 @@ export const Sermons = () => {
       preacher: "Pastor L. Mucheka",
       date: "Sun, 14 September 2025",
       link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
-      notesLink: restorationNotes
+      notesLink: '#'
     },
     {
       imageSrc: sermonsCover,
@@ -64,7 +71,7 @@ export const Sermons = () => {
       preacher: "Pastor L. Mucheka",
       date: "Sun, 07 September 2025",
       link: 'https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V',
-      notesLink: restorationNotes
+      notesLink: '#'
     }
   ];
 
@@ -139,7 +146,11 @@ export const Sermons = () => {
         </div>
       </div>
 
-      <div className="top_sermons"></div>
+      <div className="top_sermons">
+        <div className="overall_container">
+          <p><strong>NB: Sermons recordings are available in the whatsapp channel, and Notes will be available starting from 20th of October 2025</strong></p>
+        </div>
+      </div>
 
       <Footer/>
     </div>

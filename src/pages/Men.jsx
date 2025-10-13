@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { FaArrowUp } from 'react-icons/fa';
-import ladies_bg from '../assets/videos/weekly_programs.mp4'
+import mens_bg from '../assets/videos/mens.mp4'
 import men from '../assets/images/home-3.jpg'
 import VisionGoalsSection from '../components/VisionGoalsSection'
 import ProgramsSection from '../components/ProgramsSection';
@@ -62,7 +62,7 @@ export const Men = () => {
 
       <div className="video_container">
         <video className='video_background' autoPlay loop muted>
-          <source src={ladies_bg} type="video/mp4" />
+          <source src={mens_bg} type="video/mp4" />
         </video>
 
         <div className="events_head_container">
