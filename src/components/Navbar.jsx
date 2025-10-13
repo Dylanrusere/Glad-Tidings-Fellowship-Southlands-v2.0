@@ -24,8 +24,8 @@ export const Navbar = () => {
         <div className="top_menu-icons">
           <Link to="https://whatsapp.com/channel/0029Van79H99cDDb2PNgCc1V"><FaWhatsapp /></Link>
           <Link to="https://www.facebook.com/share/1CEabtwQB9"><FaFacebook /></Link>
-          <Link to="https://www.instagram.com/southlandsgladtidings"><FaInstagram /></Link>
-          <Link to="https://youtube.com/@GladTidingsFellowshipSouthland"><FaYoutube /></Link>
+          <Link to="https://www.instagram.com/gtfsouthlands"><FaInstagram /></Link>
+          <Link to="https://youtube.com/@gtfsouthlands"><FaYoutube /></Link>
           <Link><FaTiktok /></Link>
         </div>
         <Link to="/give" className="top_menu-button">Give</Link>
